@@ -1,30 +1,29 @@
-"use client"
-import React, { Fragment, useState, useEffect } from "react"
-import { Dialog, Transition } from "@headlessui/react"
+'use client'
+import Image from 'next/image'
+import IconLogo from './../asset/Icons/logo.svg'
+import Link from 'next/link'
+import React, { Fragment, useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
+
+import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import { HiMenu } from "react-icons/hi";
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { HiMenu } from 'react-icons/hi'
 
 const navigationMenu = [
-  { href:'/', label:'Home'},
-  { href:'/projects', label:'Projects'},
-  { href:'/blog', label:'Blog'},
-  // { href:'/pricing', label:'Pricing'},
-  { href:'/about', label:'About'},
-  { href:'/contact', label:'Contact'},
+  { href: '/', label: 'Accueil' },
+  { href: '/prestations', label: 'Prestations' },
+  { href: '/team', label: 'Team' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
-  const[open,setOpen]= useState(false)
+  const [open, setOpen] = useState(false)
   const pathname = usePathname()
   let newPathname = ''
 
   newPathname = pathname
-  if(pathname && pathname.includes('/blog')) {
-    newPathname ='/blog';
-
-  } else if(pathname && pathname.includes('/projects')) {
-    newPathname ='/projects'
+  if (pathname && pathname.includes('/blog')) {
+    newPathname = '/blog'
   }
 
   const [] = useState({})
@@ -32,8 +31,8 @@ export default function Navigation() {
   let wHeight = null
   let wWidth = null
   if (typeof window !== 'undefined') {
-    wHeight= window.innerHeight;
-    wWidth= window.innerWidth;
+    wHeight = window.innerHeight
+    wWidth = window.innerWidth
   }
 
   const [dimensions, setDimensions] = useState({
@@ -47,13 +46,13 @@ export default function Navigation() {
         height: window.innerHeight,
         width: window.innerWidth,
       })
-      if(dimensions.width >768 && open) {
+      if (dimensions.width > 768 && open) {
         setOpen(false)
       }
     }
     window.addEventListener('resize', handleResize)
 
-    return(_) => {
+    return (_) => {
       window.removeEventListener('resize', handleResize)
     }
   })
@@ -63,39 +62,70 @@ export default function Navigation() {
       <header role="banner" className="py-10 absolute w-full z-[3]">
         <div className="container px-4 mx-auto flex items-center justify-between">
           <div>
-           <Link
+            <Link
               href="/"
-              className="text-[22px] text-gray-700 font-bold">
-                Lemurian Agency
-                <span className="text-orange-600">.</span>
+              className=" flex flex-row text-[22px] text-gray-700 font-bold "
+            >
+              {/* Logo - content left*/}
+              <span className="my-[-14px] mx-2">
+                <Image src={IconLogo} weight={60} height={60} alt="logo" />
+              </span>
+              {/* Name Link - content left*/}
+              Unlcoaching
+              <span className="text-orange-400">.</span>
             </Link>
           </div>
+
+          {/* Menu Navigation - content center - Link */}
           <div className="flex">
-            <ul role="list" className="hidden space-x-8">
-              { navigationMenu.map((menu, index) => (
+            <ul role="list" className="hidden md:flex space-x-8">
+              {navigationMenu.map((menu, index) => (
                 <li key={menu.label}>
-                  <Link href={menu.href} className={`relative before:content-['']
+                  <Link
+                    href={menu.href}
+                    className={`relative before:content-['']
                      before:absolute before:bottom-0 before:left-0 before:w-full
-                     before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
+                     before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                      before:transistion-all before:duration-300 before:ease-in-out
                      before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                      before:wil-change-transform hover:before:origin-[100%, 0%]
                      hover:before:scale-x-[1] hover:before:scale-y-[1]
                      hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
-                     font-semibold pb-2 ${newPathname == menu.href ?
-                     "border-orange-600 before:scale-x-[1]" : " border-transparent" }`}>
-                      { menu.label}
+                     font-semibold pb-2 ${
+                       newPathname == menu.href
+                         ? 'border-orange-400 before:scale-x-[1]'
+                         : ' border-transparent'
+                     }`}
+                  >
+                    {menu.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <button className=" text-sm" onClick={()=> setOpen(true)}>
-              {open ? null: <HiMenu className="text-[24px]"/>}
+            <button className="md:hidden text-md" onClick={() => setOpen(true)}>
+              {open ? null : <HiMenu className="text-[24px] " />}
             </button>
+          </div>
+
+          {/* Menu Navigation - content right - btn */}
+          <div className="border-gray-200 px-4 py-6 sm:px-6">
+            <div>
+              <Link
+                href="#"
+                alt="Btn Subcribes"
+                target="_blank"
+                className="block text-center text-[11.5px] tracking-2[2px]
+                            font-bold uppercase bg-orange-400 py-4 px-5 text-white
+                            rounded-md"
+              >
+                Nous Rejoindre
+              </Link>
+            </div>
           </div>
         </div>
       </header>
 
+      {/* Menu Navigation - open content right */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={setOpen}>
           <Transition.Child
@@ -107,7 +137,7 @@ export default function Navigation() {
             leaveForm="opacity-100"
             leaveTo="opacity-0"
           >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"/>
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
@@ -120,7 +150,7 @@ export default function Navigation() {
                   leave="transform transition-all ease-in-out duration-500 sm:duration-500"
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
-                  >
+                >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-sm">
                     <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-6 sm:px-12">
@@ -128,17 +158,20 @@ export default function Navigation() {
                           <Dialog.Title className="text-lg font-medium text-gray-900">
                             Menu
                           </Dialog.Title>
-                            <div className="ml-3 flex h-7 items-center">
-                              <button
-                                type="button"
-                                className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
-                                onClick={() => setOpen(false)}>
-                                <span className="absolute -inset-0.5"/>
-                                <span className="sr-only">Close panel</span>
-                                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                              </button>
-                            </div>
-
+                          <div className="ml-3 flex h-7 items-center">
+                            <button
+                              type="button"
+                              className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
+                              onClick={() => setOpen(false)}
+                            >
+                              <span className="absolute -inset-0.5" />
+                              <span className="sr-only">Close panel</span>
+                              <XMarkIcon
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
+                            </button>
+                          </div>
                         </div>
                         <div className="mt-8">
                           <div className="flow-root">
@@ -147,8 +180,9 @@ export default function Navigation() {
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
-                                    className="py-2 inline-block">
-                                      {menu.label}
+                                    className="py-2 inline-block"
+                                  >
+                                    {menu.label}
                                   </Link>
                                 </li>
                               ))}
@@ -157,15 +191,17 @@ export default function Navigation() {
                         </div>
                       </div>
 
+                      {/* Menu Navigation - open content right - btn */}
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
-
                         <div>
                           <Link
-                            href="https://calendly.com/lemurian-agency/30min"
-                            add target="_blank"
+                            href="#"
+                            target="_blank"
+                            alt="btn contact"
                             className="block text-center text-[11.5px] tracking-2[2px]
                             font-bold uppercase bg-orange-300 py-4 px-5 text-white
-                            rounded-md">
+                            rounded-md"
+                          >
                             Me Contacter
                           </Link>
                         </div>
