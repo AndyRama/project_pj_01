@@ -64,7 +64,7 @@ export default function Navigation() {
           <div>
             <Link
               href="/"
-              className=" flex flex-row text-[22px] text-gray-700 font-bold "
+              className=" flex flex-row text-[22px] text-white font-bold "
             >
               {/* Logo - content left*/}
               <span className="my-[-14px] mx-2">
@@ -78,7 +78,10 @@ export default function Navigation() {
 
           {/* Menu Navigation - content center - Link */}
           <div className="flex">
-            <ul role="list" className="hidden md:flex space-x-8">
+            <ul
+              role="list"
+              className="hidden md:flex space-x-8 text-white font-bold"
+            >
               {navigationMenu.map((menu, index) => (
                 <li key={menu.label}>
                   <Link
@@ -102,13 +105,18 @@ export default function Navigation() {
                 </li>
               ))}
             </ul>
-            <button className="md:hidden text-md" onClick={() => setOpen(true)}>
+            <button
+              className="md:hidden text-md text-white rounded-md"
+              onClick={() => setOpen(true)}
+            >
               {open ? null : <HiMenu className="text-[24px] " />}
             </button>
           </div>
 
           {/* Menu Navigation - content right - btn */}
           <div className="border-gray-200 px-4 py-6 sm:px-6">
+            {' '}
+            {/* Error rendu Btn mobile: Hidden */}
             <div>
               <Link
                 href="#"
