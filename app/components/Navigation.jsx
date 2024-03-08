@@ -114,7 +114,7 @@ export default function Navigation() {
           </div>
 
           {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6">
+          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden">
             {' '}
             {/* Error rendu Btn mobile: Hidden */}
             <div>
@@ -188,7 +188,20 @@ export default function Navigation() {
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
-                                    className="py-2 inline-block"
+                                    // className=""
+                                    className={`py-2 inline-block relative before:content-['']
+                                    before:absolute before:bottom-0 before:left-0 before:w-full
+                                    before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                                    before:transistion-all before:duration-300 before:ease-in-out
+                                    before:scale-x-0 before:scale-y-[1] before:scale-z[1]
+                                    before:wil-change-transform hover:before:origin-[100%, 0%]
+                                    hover:before:scale-x-[1] hover:before:scale-y-[1]
+                                    hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
+                                    font-semibold pb-2 ${
+                                      newPathname == menu.href
+                                        ? 'border-orange-400 before:scale-x-[1]'
+                                        : ' border-transparent'
+                                    }`}
                                   >
                                     {menu.label}
                                   </Link>
