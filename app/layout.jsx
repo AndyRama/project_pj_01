@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.scss'
 
 import Navigation from './components/Navigation'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
       </body>
+      <Footer className="bg-white py-16 md:py-24" />
     </html>
   )
 }
