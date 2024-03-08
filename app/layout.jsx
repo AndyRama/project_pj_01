@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body
-        className={`{inter.className} bg-[#2f2e2e] overflow-x-hidden w-full`}
+        className={`{inter.className} bg-[#1D1D1D] overflow-x-hidden w-full`}
       >
         <Navigation />
         {children}
