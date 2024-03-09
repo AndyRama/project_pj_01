@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Hero className="pt-32 pb-10 lg-pb:20" />
       {/* <CardDescription className="py-16 lg:py-32" /> */}
-      <RecentBlog />
+      <RecentBlog className="pt-14 pb-15 lg:pb-32" />
     </>
   )
 }
