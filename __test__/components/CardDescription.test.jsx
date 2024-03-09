@@ -28,6 +28,7 @@ Object.defineProperty(global, 'IntersectionObserverEntry', {
     }
   },
 })
+
 describe('CardDescription', () => {
   // Teste si le titre et le sous-titre sont rendus correctement
   it('should render title and subtitle correctly', () => {
