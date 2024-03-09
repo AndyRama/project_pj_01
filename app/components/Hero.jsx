@@ -72,7 +72,7 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="hero-title"
-                className=" text-orange-600 font-bold text-3xl sm:text-6xl md:text-6xl lg:text-7xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-orange-400 font-bold text-5xl sm:text-5xl md:text-6xl lg:text-7xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {heroContent.intro.title}
               </motion.h1>
@@ -90,7 +90,7 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="hero-subTitle"
-                className=" text-white text-3xl font-bold sm:text-6xl md:text-6xl lg:text-7xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
+                className=" text-white text-5xl font-bold sm:text-5xl md:text-6xl lg:text-7xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
               >
                 {heroContent.intro.subTitle}
               </motion.h1>
@@ -156,7 +156,7 @@ const Hero = ({ className }) => {
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
-                src="/images/jeremy.jpg"
+                src="/images/jeremy3.jpg"
                 width={500}
                 height={600}
                 alt="hero image"

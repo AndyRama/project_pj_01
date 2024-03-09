@@ -44,10 +44,10 @@ const CardDescription = ({ className }) => {
   const img2 = useTransform(scrollYProgress, [0, 1], ['100%', '100%'])
 
   return (
-    <section className={`${className}`} ref={ref}>
+    <section className={`${className} bg-[#2f2e2e]`} ref={ref}>
       <div className="container px-4 mx-auto">
         {/* Main Card Description - content - Left */}
-        <div className="bg-[#2f2e2e] lg:flex justify-center  ">
+        <div className="bg-[#1d1d1d] lg:flex justify-center  ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative ">
               {/* Card Description - Image - Right */}
@@ -157,7 +157,7 @@ const CardDescription = ({ className }) => {
         </div>
 
         {/* Main Card Description - content - Right */}
-        <div className="bg-[#2f2e2e] lg:flex justify-center mt-20">
+        <div className="bg-[#1d1d1d] lg:flex justify-center mt-20">
           <div className=" lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
               {/* Card Description - subTitle - Left */}
