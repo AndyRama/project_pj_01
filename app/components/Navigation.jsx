@@ -68,7 +68,13 @@ export default function Navigation() {
             >
               {/* Logo - content left*/}
               <span className="my-[-14px] mx-2">
-                <Image src={IconLogo} weight={60} height={60} alt="logo" />
+                <Image
+                  src={IconLogo}
+                  weight={60}
+                  height={60}
+                  alt="logo"
+                  className="bg-black rounded-full"
+                />
               </span>
               {/* Name Link - content left*/}
               Unlcoaching
@@ -114,9 +120,8 @@ export default function Navigation() {
           </div>
 
           {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6">
+          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden lg:contents">
             {' '}
-            {/* Error rendu Btn mobile: Hidden */}
             <div>
               <Link
                 href="#"
