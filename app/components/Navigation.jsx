@@ -64,7 +64,7 @@ export default function Navigation() {
           <div>
             <Link
               href="/"
-              className=" flex flex-row text-[22px] text-white font-bold "
+              className=" flex flex-row text-4xl text-orange-400 font-bold "
             >
               {/* Logo - content left*/}
               <span className="my-[-14px] mx-2">
@@ -72,7 +72,7 @@ export default function Navigation() {
               </span>
               {/* Name Link - content left*/}
               Unlcoaching
-              <span className="text-orange-400">.</span>
+              <span className=" text-white ">.</span>
             </Link>
           </div>
 
@@ -114,7 +114,7 @@ export default function Navigation() {
           </div>
 
           {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden">
+          <div className="border-gray-200 px-4 py-6 sm:px-6">
             {' '}
             {/* Error rendu Btn mobile: Hidden */}
             <div>
