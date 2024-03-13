@@ -44,9 +44,9 @@ const Hero = ({ className }) => {
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[120vh] xl:h-[120vh] w-[max] -mt-[150px] bg-center bg-cover z-[3] "
+        className="h-[120vh] xl:h-[120vh] w-[max] -mt-[150px] bg-fixed bg-center bg-cover"
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710256344/salle-de-sport-fermeture-covid19-coronavirus-paris-iledefrance-perfecture-de-police-1_iabzqk.jpg')`,
+          backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
       >
         <div className="container px-4 mx-auto pt-20">
