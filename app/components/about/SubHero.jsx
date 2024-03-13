@@ -1,9 +1,7 @@
 'use client'
 
-import React, { useRef } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const subHeroContent = {
   heading: {

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
       </body>
-      <Footer className="bg-white py-16 md:py-24" />
+      <Footer className="bg-[#1d1d1d] " />
     </html>
   )
 }

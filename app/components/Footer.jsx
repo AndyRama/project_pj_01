@@ -79,7 +79,7 @@ const footerContent = {
 
 const Copyright = () => {
   return (
-    <div className="pt-7 mt-7 md:mt-14 md:pt-14 border-t border-t-gray-100 text-center text-gray-500">
+    <div className="pt-3 mb-3  md:mt-10 md:pt-10 border-t border-t-gray-100 text-center text-white">
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2023{' '}
         <Link href="/" className="text-orange-400">
@@ -98,11 +98,13 @@ const Copyright = () => {
 
 const Footer = ({ className }) => {
   return (
-    <footer className={`${className} overflow-hidden w-full h-full relative`}>
-      <div className="container mx-auto px-4 z-20 relative">
+    <footer
+      className={`${className} overflow-hidden w-full h-full mt-5 z-[2] `}
+    >
+      <div className="container mx-auto px-4 relative">
         <div className="md:flex">
           <div className="md:w-4/12 mb-10 md:mb-0">
-            <Link href="#" className="text-[22px] text-gray-800 font-bold">
+            <Link href="#" className="text-[22px] text-white font-bold">
               Unlcoaching
               <span className="text-orange-400">.</span>
             </Link>
@@ -112,7 +114,7 @@ const Footer = ({ className }) => {
             <div className="grid grid-cols-3 md:grid-cols-3">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
-                  <h3 className="text-gray-800 mb-3 ,n=3">{item.heading}</h3>
+                  <h3 className="text-gray-600 mb-3 ,n=3">{item.heading}</h3>
                   <ul className="list-none">
                     {item.links.map((link, index) => (
                       <li className="mb-2" key={link.label}>
@@ -121,7 +123,7 @@ const Footer = ({ className }) => {
                           className={`${
                             link.badge ? 'flex gap-2 items-center' : ''
                           }
-                            text-gray-500 duration-300 transition-all ease-in-out hover:text-orange-400`}
+                            text-white duration-300 transition-all ease-in-out hover:text-orange-400`}
                         >
                           {link.badge ? (
                             <>

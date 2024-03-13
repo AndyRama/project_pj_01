@@ -59,7 +59,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <header role="banner" className="py-10 absolute w-full z-[3]">
+      <header role="navbar" className="py-10 absolute w-full z-[1]">
         <div className="container px-4 mx-auto flex items-center justify-between">
           <div>
             <Link
