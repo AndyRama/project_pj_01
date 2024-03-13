@@ -44,7 +44,7 @@ const Hero = ({ className }) => {
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[120vh] xl:h-[120vh] w-[max] -mt-[150px] bg-fixed bg-center bg-cover"
+        className="h-[120vh] xl:h-[100vh] w-[max] -mt-[150px] bg-fixed bg-center bg-cover "
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
@@ -52,7 +52,7 @@ const Hero = ({ className }) => {
         <div className="container px-4 mx-auto pt-20">
           <div className="lg:flex justify-between items-center space-x-0 mt-12 md:mt-28">
             <div className="w-full lg:w-8/12 lg:mb-32">
-              <div className="grid grid-cols-2 md:grid-cols-4 ">
+              <div className="grid grid-cols-2 md:grid-cols-3 ">
                 {statContent.stats.map((stat, index) => (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -154,9 +154,9 @@ const Hero = ({ className }) => {
 
             {/* Image right */}
 
-            <div className="lg:w-7/12 relative rounded-md">
+            <div className="lg:w-7/12 relative ">
               <motion.div
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 10 }}
                 whileInView={{
                   opacity: 1,
                   x: 0,
@@ -167,7 +167,7 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 style={{ y: imgScroll1 }}
-                className="z-[2] relative bg-cover bg-center"
+                className="z-[2] relative bg-cover bg-center rounded-md"
               >
                 <Image
                   src="/images/jeremy3.jpg"

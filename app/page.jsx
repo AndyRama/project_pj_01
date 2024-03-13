@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero className="pt-32 pb-10 lg-pb:20" />
-      <CardDescription className="py-16 lg:py-32" />
+      <CardDescription className=" bg-[#1D1D1D]" />
       <RecentBlog className="pt-14 pb-15 lg:pb-32" />
     </>
   )

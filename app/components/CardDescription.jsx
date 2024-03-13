@@ -45,9 +45,9 @@ const CardDescription = ({ className }) => {
 
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto  ">
         {/* Main Card Description - content - Left */}
-        <div className="lg:flex justify-center  ">
+        <div className="bg-black lg:flex justify-center md:py-16 rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative ">
               {/* Card Description - Image - Right */}
@@ -56,14 +56,14 @@ const CardDescription = ({ className }) => {
                   src="/images/jeremy2.jpg"
                   className="object-cover
                   !w-full !h-[400] lg:max-w-2xl object-center"
-                  width={400}
-                  height={400}
+                  width={700}
+                  height={900}
                   alt="Card Description Image"
                 />
               </motion.div>
             </div>
 
-            <div className="lg:w-6/12 mt-10">
+            <div className="lg:w-6/12 mt-20">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionContent.heading.subTitle && (
                 <motion.span
@@ -131,7 +131,7 @@ const CardDescription = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white text-block"
               >
                 {cardDescriptionContent.content.description1}
               </motion.p>
@@ -157,7 +157,7 @@ const CardDescription = ({ className }) => {
         </div>
 
         {/* Main Card Description - content - Right */}
-        <div className="bg-[#1d1d1d] lg:flex justify-center mt-20">
+        <div className="bg-black lg:flex justify-center py-16 mt-20 rounded-md">
           <div className=" lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
               {/* Card Description - subTitle - Left */}
