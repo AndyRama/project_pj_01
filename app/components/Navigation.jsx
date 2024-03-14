@@ -59,15 +59,15 @@ export default function Navigation() {
 
   return (
     <div>
-      <header role="navbar" className="py-10 absolute w-full z-[1]">
+      <header role="navbar" className="py-8 absolute w-full z-[1]">
         <div className="container px-4 mx-auto flex items-center justify-between">
           <div>
             <Link
               href="/"
-              className=" flex flex-row text-4xl text-orange-400 font-bold "
+              className=" flex flex-row text-3xl md:text-4xl text-orange-400 font-bold "
             >
               {/* Logo - content left*/}
-              <span className="my-[-14px] mx-2">
+              <span className="my-[-10px] mx-3">
                 <Image
                   src={IconLogo}
                   weight={60}
@@ -83,10 +83,10 @@ export default function Navigation() {
           </div>
 
           {/* Menu Navigation - content center - Link */}
-          <div className="flex">
+          <div>
             <ul
               role="list"
-              className="hidden md:flex space-x-8 text-white font-bold"
+              className="hidden lg:flex space-x-8 text-white text-2xl"
             >
               {navigationMenu.map((menu, index) => (
                 <li key={menu.label}>
@@ -112,15 +112,15 @@ export default function Navigation() {
               ))}
             </ul>
             <button
-              className="md:hidden text-md text-white rounded-md"
+              className="lg:hidden text-lg text-white rounded-md"
               onClick={() => setOpen(true)}
             >
-              {open ? null : <HiMenu className="text-[24px] " />}
+              {open ? null : <HiMenu className="text-[32px] mt-2" />}
             </button>
           </div>
 
           {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden lg:contents">
+          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden  lg:contents">
             {' '}
             <div>
               <Link
@@ -128,7 +128,7 @@ export default function Navigation() {
                 alt="Btn Subcribes"
                 target="_blank"
                 className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-4 px-5 text-white
+                            font-bold uppercase bg-orange-400 py-3 px-5 text-white
                             rounded-md"
               >
                 Nous Rejoindre
@@ -166,7 +166,7 @@ export default function Navigation() {
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-sm">
                     <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
-                      <div className="flex-1 overflow-y-auto px-8 py-6 sm:px-12">
+                      <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium text-gray-900">
                             Menu
@@ -174,7 +174,7 @@ export default function Navigation() {
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="relative -m-2 p-2 text-gray-400 hover:text-gray-500"
+                              className="relative -m-2 p-2 mt-3 -mr-7 text-gray-400 hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
                               <span className="absolute -inset-0.5" />
@@ -222,13 +222,12 @@ export default function Navigation() {
                         <div>
                           <Link
                             href="#"
-                            target="_blank"
                             alt="btn contact"
                             className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-300 py-4 px-5 text-white
+                            font-bold uppercase bg-orange-400 py-4 px-5 text-white
                             rounded-md"
                           >
-                            Me Contacter
+                            Nous Rejoindre
                           </Link>
                         </div>
                       </div>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const cardDescriptionContent = {
+const cardDescriptionLContent = {
   heading: {
     title: 'Qui suis-je ?',
     subTitle: 'Mes valeurs',
@@ -33,7 +33,7 @@ const cardDescriptionContent = {
   },
 }
 
-const CardDescription = ({ className }) => {
+const CardDescriptionL = ({ className }) => {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -47,25 +47,11 @@ const CardDescription = ({ className }) => {
     <section className={`${className}]`} ref={ref}>
       <div className="container px-4 mx-auto  ">
         {/* Main Card Description - content - Left */}
-        <div className="lg:flex justify-center md:py-16 rounded-md py-0 ">
+        <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative ">
-              {/* Card Description - Image - Right */}
-              <motion.div style={{ y: img1 }} className="z-[2] relative">
-                <Image
-                  src="/images/jeremy2.jpg"
-                  className="object-cover
-                  !w-full !h-[400] lg:max-w-2xl object-center"
-                  width={700}
-                  height={900}
-                  alt="Card Description Image"
-                />
-              </motion.div>
-            </div>
-
-            <div className="lg:w-6/12 mt-20">
               {/* Card Description - subTitle - Left */}
-              {cardDescriptionContent.heading.subTitle && (
+              {cardDescriptionLContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -79,12 +65,12 @@ const CardDescription = ({ className }) => {
                   viewport={{ once: true }}
                   className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400"
                 >
-                  {cardDescriptionContent.heading.subTitle}
+                  {cardDescriptionLContent.heading.subTitle}
                 </motion.span>
               )}
 
-              {/* CardDescriptionContent - Left - Title */}
-              {cardDescriptionContent.heading.title && (
+              {/* CardDescriptionLContent - Left - Title */}
+              {cardDescriptionLContent.heading.title && (
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -98,7 +84,7 @@ const CardDescription = ({ className }) => {
                   viewport={{ once: true }}
                   className="text-2xl lg:text-4xl text-white mb-7"
                 >
-                  {cardDescriptionContent.heading.title}
+                  {cardDescriptionLContent.heading.title}
                 </motion.h2>
               )}
 
@@ -116,7 +102,7 @@ const CardDescription = ({ className }) => {
                 viewport={{ once: true }}
                 className="leading-relaxed mb-10 text-white "
               >
-                {cardDescriptionContent.content.description}
+                {cardDescriptionLContent.content.description}
               </motion.p>
 
               {/* Card Description - description Left - 2 */}
@@ -133,7 +119,7 @@ const CardDescription = ({ className }) => {
                 viewport={{ once: true }}
                 className="leading-relaxed mb-10 text-white text-block"
               >
-                {cardDescriptionContent.content.description1}
+                {cardDescriptionLContent.content.description1}
               </motion.p>
 
               {/* Card Description - description Left - 3 */}
@@ -150,107 +136,27 @@ const CardDescription = ({ className }) => {
                 viewport={{ once: true }}
                 className="leading-relaxed mb-10 text-white "
               >
-                {cardDescriptionContent.content.description2}
-              </motion.p>
-            </div>
-          </div>
-        </div>
-
-        {/* Main Card Description - content - Right */}
-        <div className="lg:flex justify-center py-16 mt-20 rounded-md">
-          <div className=" lg:w-8/12 lg:flex gap-20 items-center">
-            <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
-              {/* Card Description - subTitle - Left */}
-              {cardDescriptionContent.heading1.subTitle && (
-                <motion.span
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      delay: 0.2,
-                      duration: 0.5,
-                    },
-                  }}
-                  viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400"
-                >
-                  {cardDescriptionContent.heading1.subTitle}
-                </motion.span>
-              )}
-
-              {/* CardDescriptionContent - Left - Title */}
-              {cardDescriptionContent.heading1.title && (
-                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      delay: 0.3,
-                      duration: 0.5,
-                    },
-                  }}
-                  viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7"
-                >
-                  {cardDescriptionContent.heading1.title}
-                </motion.h2>
-              )}
-
-              {/* Card Description - description Left - 1 */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
-              >
-                {cardDescriptionContent.content1.description}
-              </motion.p>
-
-              {/* Card Description - description Left - 2 */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
-              >
-                {cardDescriptionContent.content1.description1}
+                {cardDescriptionLContent.content.description2}
               </motion.p>
             </div>
 
-            {/* Card Description - Image - Left */}
-            <div className="lg:w-6/12 mt-10">
+            <div className="lg:w-6/12 mt-20">
+              {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
-                  src="/images/colaborate.jpg"
+                  src="/images/jeremy2.jpg"
                   className="object-cover
-                  !w-full !h-[400] lg:max-w-2xl object-center"
+                  !w-full !h-[400] max-w-md object-center"
                   width={400}
                   height={400}
-                  alt="coaching personel Image"
+                  alt="Card Description Image"
                 />
               </motion.div>
             </div>
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   )
 }
-export default CardDescription
+export default CardDescriptionL

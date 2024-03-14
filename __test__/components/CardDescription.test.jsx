@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import CardDescription from '@/app/components/CardDescription'
+import CardDescription from '@/app/components/CardDescriptionL'
 
 // Mock IntersectionObserver
 class MockIntersectionObserver {

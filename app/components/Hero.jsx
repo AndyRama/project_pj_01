@@ -38,21 +38,21 @@ const Hero = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
 
   return (
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[120vh] xl:h-[100vh] w-[max] -mt-[150px] bg-fixed bg-center bg-cover "
+        className="sm:h-[50vh] md:h-[80vh] lg:h-[100vh] -mt-[150px] bg-fixed bg-center bg-cover "
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
       >
         <div className="container px-4 mx-auto pt-20">
-          <div className="lg:flex justify-between items-center space-x-0 mt-12 md:mt-28">
-            <div className="w-full lg:w-8/12 lg:mb-32">
-              <div className="grid grid-cols-2 md:grid-cols-3 ">
+          <div className="sm:flex justify-between items-center space-x-0 mt-12 md:mt-28">
+            <div className=" lg:w-8/12 lg:mb-32">
+              <div className="grid grid-cols-2 lg:grid-cols-3 ">
                 {statContent.stats.map((stat, index) => (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -121,7 +121,7 @@ const Hero = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="leading-relaxed text-white w-auto lg:w-screen max-w-xl
+                  className="leading-relaxed text-white md:w-[400px] lg:w-screen max-w-xl
                   text-xl xl:text-2xl mb-10 lg:mb-16"
                 >
                   {heroContent.intro.description}
@@ -154,7 +154,7 @@ const Hero = ({ className }) => {
 
             {/* Image right */}
 
-            <div className="lg:w-7/12 relative ">
+            <div className="md:w-6/12 ">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
@@ -171,8 +171,8 @@ const Hero = ({ className }) => {
               >
                 <Image
                   src="/images/jeremy3.jpg"
-                  width={800}
-                  height={900}
+                  width={400}
+                  height={400}
                   alt="hero image"
                 />
               </motion.div>
