@@ -29,7 +29,7 @@ const CardDescriptionR = ({ className }) => {
 
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto  ">
+      <div className="container px-4 mx-auto">
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">

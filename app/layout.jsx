@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
       </body>
-      <Footer className="bg-[#1d1d1d] " />
+      <Footer className="bg-[#2F2E2E]" />
     </html>
   )
 }
+
+//

@@ -5,24 +5,24 @@ import Image from 'next/image'
 
 const cards = [
   {
-    title: '#Archachon #Team #Vélo #Event',
+    title: '#Arcachon #Team #Vélo #Event',
     years: '#2023',
-    image: '/images/jeremy.jpg',
+    image: '/images/groupArcachon.jpg',
   },
   {
     title: '#Compétition #Fitness #France',
     years: '#2024',
-    image: '/images/jeremy2.jpg',
+    image: '/images/fitnessFrance.jpg',
   },
   {
-    title: '#Training #Remise#en#forme',
+    title: '#Training #Remise #en #forme',
     years: '#2023',
-    image: '/images/jeremy3.jpg',
+    image: '/images/reducation.jpg',
   },
   {
-    title: '#Concours #Préparation #Jeremy Prat',
-    years: '#2023',
-    image: '/images/jeremy4.jpg',
+    title: '#Concours #Prépa #Jeremy Prat',
+    years: '#2024',
+    image: '/images/coaching.jpg',
   },
 ]
 
@@ -46,13 +46,13 @@ const CardImage = ({ card, index }) => {
       <Image
         src={card.image}
         alt={card.title}
-        width={1064}
-        height={544}
-        className="object-cover object-center h-[200px] duration-300
+        width={400}
+        height={400}
+        className="object-cover object-center h-[300px] w-[300px] duration-300
             transition-all ease-in-out group-hover:scale-[1.1]"
       />
-      <div className="p-6">
-        <p className="mb-2 uppercase text-[12px] text-boldtracking-[1px] text-orange-400">
+      <div className="p-6 bg-[#2F2E2E]">
+        <p className="mb-2 uppercase text-[18px] text-bold tracking-[1px] text-orange-400">
           {card.title} {card.years}
         </p>
       </div>
@@ -63,7 +63,7 @@ const CardImage = ({ card, index }) => {
 const CardGridImage = ({ className }) => {
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto bg-[#1d1d1d] rounded-md ">
+      <div className="container px-4 mx-auto rounded-md ">
         <div className=" py-16 lg:flex justify-center mb-2 ">
           <div
             className="grid grid-cols-1 md:grid-cols-2

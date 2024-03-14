@@ -61,7 +61,7 @@ const footerContent = {
           label: 'Blog',
         },
         {
-          href: '/prestations',
+          href: '/prestations/#Ebook',
           label: 'Ebook',
         },
       ],
@@ -71,7 +71,7 @@ const footerContent = {
 
 const Copyright = () => {
   return (
-    <div className="pt-3 mb-3  md:mt-5 md:pt-5 border-t border-t-gray-100 text-center text-white">
+    <div className="pt-3 md:mt-5 md:pt-5 border-t border-t-gray-100 text-center text-white">
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2023{' '}
         <Link href="/" className="text-orange-400">
@@ -90,10 +90,8 @@ const Copyright = () => {
 
 const Footer = ({ className }) => {
   return (
-    <footer
-      className={`${className} overflow-hidden w-full h-full mt-5 z-[2] `}
-    >
-      <div className="container mx-auto px-4 relative">
+    <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
+      <div className="container mx-auto px-4 relative mt-10">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-10 md:mb-0">
             <Link href="#" className="text-[28px] text-orange-400 font-bold">

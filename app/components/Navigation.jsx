@@ -124,14 +124,13 @@ export default function Navigation() {
             {' '}
             <div>
               <Link
-                href="#"
+                href="/prestations"
                 alt="Btn Subcribes"
-                target="_blank"
                 className="block text-center text-[11.5px] tracking-2[2px]
                             font-bold uppercase bg-orange-400 py-3 px-5 text-white
                             rounded-md"
               >
-                Nous Rejoindre
+                Rejoingnez-nous !
               </Link>
             </div>
           </div>
@@ -221,13 +220,13 @@ export default function Navigation() {
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                         <div>
                           <Link
-                            href="#"
-                            alt="btn contact"
+                            href="/prestations"
+                            alt="btn subscribes"
                             className="block text-center text-[11.5px] tracking-2[2px]
                             font-bold uppercase bg-orange-400 py-4 px-5 text-white
                             rounded-md"
                           >
-                            Nous Rejoindre
+                            Rejoingnez-nous !
                           </Link>
                         </div>
                       </div>
