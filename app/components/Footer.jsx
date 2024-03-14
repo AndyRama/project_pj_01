@@ -9,42 +9,42 @@ const footerContent = {
       heading: 'Pack',
       links: [
         {
-          href: '/Pricing',
+          href: '/prestations',
           label: 'Débutant',
         },
         {
-          href: '/Pricing',
+          href: '/prestations',
           label: 'Intermédiaire',
           badge: 'New',
         },
         {
-          href: '/Pricing',
+          href: '/prestations',
           label: 'Confirmé',
         },
       ],
     },
     {
-      heading: 'Company',
+      heading: 'Site Map',
       links: [
         {
           href: '/',
           label: 'Accueil',
         },
         {
-          href: '/Prestation',
-          label: 'Prestation',
+          href: '/prestations',
+          label: 'Prestations',
         },
         {
-          href: '/Team',
+          href: '/team',
           label: 'Team',
           badge: '🧡 De la team',
         },
         {
-          href: '/Blog',
+          href: '/blog',
           label: 'Blog',
         },
         {
-          href: '/Contact',
+          href: '/contact',
           label: 'Contact',
         },
       ],
@@ -53,24 +53,16 @@ const footerContent = {
       heading: 'Ressources',
       links: [
         {
-          href: '/Blog',
-          label: 'Blog',
-        },
-        {
           href: '/',
           label: 'Application',
         },
         {
-          href: '/Pricing',
+          href: '/blog',
+          label: 'Blog',
+        },
+        {
+          href: '/prestations',
           label: 'Ebook',
-        },
-        {
-          href: '#',
-          label: 'Calories',
-        },
-        {
-          href: '/Contact',
-          label: 'Support',
         },
       ],
     },
@@ -102,11 +94,11 @@ const Footer = ({ className }) => {
       className={`${className} overflow-hidden w-full h-full mt-5 z-[2] `}
     >
       <div className="container mx-auto px-4 relative">
-        <div className="md:flex">
+        <div className="md:flex ">
           <div className="md:w-4/12 mb-10 md:mb-0">
-            <Link href="#" className="text-[22px] text-white font-bold">
+            <Link href="#" className="text-[28px] text-orange-400 font-bold">
               Unlcoaching
-              <span className="text-orange-400">.</span>
+              <span className="text-white">.</span>
             </Link>
           </div>
 
@@ -114,7 +106,7 @@ const Footer = ({ className }) => {
             <div className="grid grid-cols-3 md:grid-cols-3">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
-                  <h3 className="text-gray-600 mb-3 ,n=3">{item.heading}</h3>
+                  <h3 className="text-gray-400 mb-3">{item.heading}</h3>
                   <ul className="list-none">
                     {item.links.map((link, index) => (
                       <li className="mb-2" key={link.label}>
