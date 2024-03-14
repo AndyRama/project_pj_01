@@ -47,7 +47,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 md:invisible "
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 md:hidden "
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -66,7 +66,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 md:invisible sm:-pt-20"
+                  className="text-2xl lg:text-4xl text-white mb-7  md:hidden sm:-pt-20"
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -99,7 +99,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 invisible md:visible"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 hidden md:contents"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>

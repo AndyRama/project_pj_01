@@ -6,19 +6,13 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 const cardDescriptionLContent = {
   heading: {
-    title: 'Qui suis-je ?',
+    title: 'Mon approche',
     subTitle: 'Mes valeurs',
   },
   content: {
-    img: '/images/jeremy2.jpg',
+    img: '/images/jeremy4.jpg',
     description:
-      "Bienvenue dans mon univers, je suis Jeremy, un ancien militaire qui a trouvé sa passion dans le coaching sportif et l'athlétisme de haut niveau en tant qu'athlète compétitif en Men's Physique IFBB.",
-    description1:
-      "Fort de mon expérience dans l'armée, j'ai forgé ma détermination et mon engagement envers l'excellence, que ce soit sur le plan physique ou mental.",
-    description2:
-      "Mon parcours m'a conduit à briller sur des scènes nationales et internationales telles que le championnat de France et la Diamond Cup, où j'ai pu démontrer mon savoir-faire et ma passion pour le fitness. Ma mission est simple : vous aider à réaliser vos objectifs de fitness, qu'ils soient modestes ou ambitieux.",
-    description3:
-      'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable. Je crois fermement que la réussite en matière de fitness réside dans un équilibre entre un entraînement bien structuré et une alimentation adaptée.',
+      "Ma passion pour le fitness et la santé globale m'a amené à devenir coach sportif, spécialisé dans les transformations physiques, la perte de poids, la préparation aux compétitions, et plus encore.",
   },
 }
 
@@ -92,47 +86,13 @@ const CardDescriptionL = ({ className }) => {
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
-
-              {/* Card Description - description Left - 2 */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-block"
-              >
-                {cardDescriptionLContent.content.description1}
-              </motion.p>
-
-              {/* Card Description - description Left - 3 */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
-              >
-                {cardDescriptionLContent.content.description2}
-              </motion.p>
             </div>
 
             <div className="lg:w-6/12 mt-20">
               {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
-                  src="/images/jeremy2.jpg"
+                  src="/images/jeremy4.jpg"
                   className="object-cover
                   !w-full !h-[400] max-w-md object-center"
                   width={400}
