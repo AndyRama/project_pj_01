@@ -48,7 +48,7 @@ const CardImage = ({ card, index }) => {
         alt={card.title}
         width={400}
         height={400}
-        className="object-cover object-center h-[300px] w-[300px] duration-300
+        className="object-cover object-center h-[300px] duration-300
             transition-all ease-in-out group-hover:scale-[1.1]"
       />
       <div className="p-6 bg-[#2F2E2E]">
