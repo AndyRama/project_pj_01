@@ -28,7 +28,7 @@ const PostCard = ({ index, post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="bg-transparent relative overflow-hidden group rounded "
+      className="bg-transparent relative overflow-hidden group rounded"
     >
       <Link href={post.url} className="relative block overflow-hidden">
         <Image

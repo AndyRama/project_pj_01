@@ -10,7 +10,7 @@ const cards = [
     image: '/images/groupArcachon.jpg',
   },
   {
-    title: '#Compétition #Fitness #France',
+    title: '#Compétition #FR #Fitness',
     years: '#2024',
     image: '/images/fitnessFrance.jpg',
   },

@@ -71,7 +71,7 @@ const footerContent = {
 
 const Copyright = () => {
   return (
-    <div className="pt-3 md:mt-5 md:pt-5 border-t border-t-gray-100 text-center text-white">
+    <div className="pt-3 mb-5 md:mt-5 md:pt-5 border-t border-t-gray-100 text-center text-white">
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2023{' '}
         <Link href="/" className="text-orange-400">

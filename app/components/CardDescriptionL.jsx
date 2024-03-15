@@ -37,7 +37,7 @@ const CardDescriptionL = ({ className }) => {
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
-            <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative ">
+            <div className="lg:w-6/12 lg:order-2 relative ">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionLContent.heading.subTitle && (
                 <motion.span
@@ -70,7 +70,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7"
+                  className="text-2xl lg:text-3xl text-white mb-7"
                 >
                   {cardDescriptionLContent.heading.title}
                 </motion.h2>
@@ -88,7 +88,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white w-[500px]  "
+                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -105,7 +105,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-block w-[500px] "
+                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description1}
               </motion.p>
@@ -122,7 +122,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white w-[500px] "
+                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description2}
               </motion.p>
