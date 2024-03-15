@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero className="pt-32 pb-10 lg-pb:20" />
-      <CardDescriptionL className=" pt-14 pb-15 bg-[#1D1D1D]" />
+      <CardDescriptionL className=" pt-14 pb-15" />
       <CardDescriptionR className=" pt-14 pb-15 bg-[#1D1D1D]" />
       <CardGridImage />
       <CardDescription className="pb-15 bg-[#1D1D1D]" />

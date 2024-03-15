@@ -41,7 +41,7 @@ const CardImage = ({ card, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className="bg-transparent relative overflow-hidden group rounded "
+      className="bg-transparent relative overflow-hidden group rounded"
     >
       <Image
         src={card.image}

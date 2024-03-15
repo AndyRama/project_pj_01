@@ -23,11 +23,11 @@ const CardDescriptionL = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const img1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
+  const img1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
 
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto ">
+      <div className="container px-4 mx-auto bg-[#232323] ">
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">

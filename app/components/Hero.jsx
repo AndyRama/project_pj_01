@@ -38,21 +38,21 @@ const Hero = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-30%'])
 
   return (
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="sm:h-[50vh] md:h-[80vh] lg:h-[100vh] -mt-[150px] bg-fixed bg-center bg-cover "
+        className="h-[100vh] md-h-[110vh] -mt-[125px] bg-fixed bg-center bg-cover "
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
       >
-        <div className="container px-4 mx-auto pt-20">
-          <div className="sm:flex justify-between items-center space-x-0 mt-12 md:mt-28">
-            <div className=" lg:w-8/12 lg:mb-32">
-              <div className="grid grid-cols-2 lg:grid-cols-3 ">
+        <div className="container px-4 mx-auto pt-28 md:pt-32">
+          <div className="md:flex justify-between items-center space-x-0 ">
+            <div className="lg:w-8/12 lg:mb-32">
+              <div className="grid grid-cols-2">
                 {statContent.stats.map((stat, index) => (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,6 @@ const Hero = ({ className }) => {
               </div>
 
               {/* Content left - title */}
-
               {heroContent.intro.title && (
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
@@ -93,7 +92,6 @@ const Hero = ({ className }) => {
               )}
 
               {/* Content left - subTitle */}
-
               {heroContent.intro.subTitle && (
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
@@ -111,7 +109,6 @@ const Hero = ({ className }) => {
               )}
 
               {/* Content left - description */}
-
               {heroContent.intro.description && (
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -121,7 +118,7 @@ const Hero = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="leading-relaxed text-white md:w-[400px] lg:w-screen max-w-xl
+                  className="leading-relaxed text-white w-[400px] lg:w-[500px] max-w-xl
                   text-xl xl:text-2xl mb-10 lg:mb-16"
                 >
                   {heroContent.intro.description}
@@ -142,7 +139,7 @@ const Hero = ({ className }) => {
                 >
                   <Link
                     href={heroContent.intro.btn.href}
-                    className="transistion-all duration-300 ease-in-out text-[14px]
+                    className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase bg-white py-4 px-5
                     rounded text-orange-400 inline-block hover:bg-transparent hover:text-white hover:shadow-2xl mb-10"
                   >
@@ -167,13 +164,14 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 style={{ y: imgScroll1 }}
-                className="z-[2] relative bg-cover bg-center rounded-md"
+                className="z-[2] relative bg-cover bg-center"
               >
                 <Image
                   src="/images/jeremy3.jpg"
-                  width={400}
-                  height={400}
+                  width={800}
+                  height={900}
                   alt="hero image"
+                  className="rounded-md sm:h-[300px] sm:w-[500px] md:w-[400px] md:h-[500px] lg:w-[800px] lg:h-[600px]"
                 />
               </motion.div>
             </div>

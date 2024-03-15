@@ -29,11 +29,11 @@ const CardDescriptionL = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const img1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
+  const img1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
 
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto bg-[#232323]">
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
@@ -88,7 +88,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white w-[500px]  "
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -105,7 +105,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-block"
+                className="leading-relaxed mb-10 text-white text-block w-[500px] "
               >
                 {cardDescriptionLContent.content.description1}
               </motion.p>
@@ -122,21 +122,21 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white w-[500px] "
               >
                 {cardDescriptionLContent.content.description2}
               </motion.p>
             </div>
 
-            <div className="lg:w-6/12 mt-20">
+            <div className="lg:w-6/12">
               {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
                   src="/images/jeremy2.jpg"
                   className="object-cover
-                  !w-full !h-[400] max-w-md object-center"
+                  !w-full !h-[900] max-w-md items-center object-center rounded-md"
                   width={400}
-                  height={400}
+                  height={500}
                   alt="Card Description Image"
                 />
               </motion.div>
