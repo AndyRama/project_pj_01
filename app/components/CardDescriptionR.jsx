@@ -135,7 +135,7 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white text-justify "
               >
                 {cardDescriptionRContent.content1.description}
               </motion.p>
@@ -152,7 +152,7 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white text-justify"
               >
                 {cardDescriptionRContent.content1.description1}
               </motion.p>
