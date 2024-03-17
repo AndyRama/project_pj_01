@@ -12,7 +12,7 @@ const cardDescriptionLContent = {
   content: {
     img: '/images/jeremy2.jpg',
     description:
-      "Bienvenue dans mon univers, je suis Jeremy, un ancien militaire qui a trouvé sa passion dans le coaching sportif et l'athlétisme de haut niveau en tant qu'athlète compétitif en Men's Physique IFBB.",
+      "Bienvenue dans mon univers, je suis Jeremy, un ancien militaire qui a trouvé sa passion dans le coaching sportif et athléte de haut niveau en tant qu'athlète compétitif en Men's Physique IFBB.",
     description1:
       "Fort de mon expérience dans l'armée, j'ai forgé ma détermination et mon engagement envers l'excellence, que ce soit sur le plan physique ou mental.",
     description2:
