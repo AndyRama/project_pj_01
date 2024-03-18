@@ -12,9 +12,7 @@ const cardDescriptionRContent = {
   content1: {
     img1: '/images/colaborate.jpg',
     description:
-      'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
-    description1:
-      'Je crois fermement que la réussite en matière de fitness réside dans un équilibre entre un entraînement bien structuré et une alimentation adaptée.  ',
+      'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable. Je crois fermement que la réussite en matière de fitness réside dans un équilibre entre un entraînement bien structuré et une alimentation adaptée.',
   },
 }
 
@@ -47,7 +45,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 md:hidden "
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 content sm:hidden"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -66,7 +64,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7  md:hidden sm:-pt-20"
+                  className="text-2xl lg:text-4xl text-white mb-7 content sm:hidden"
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -83,6 +81,23 @@ const CardDescriptionR = ({ className }) => {
                   alt="coaching personel Image"
                 />
               </motion.div>
+
+              {/* Card Description - description Left - 1 */}
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    delay: 0.4,
+                    duration: 0.5,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="leading-relaxed mb-10 text-white text-justify content sm:hidden "
+              >
+                {cardDescriptionRContent.content1.description}
+              </motion.p>
             </div>
 
             <div className="lg:w-6/12 mt-10">
@@ -99,7 +114,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 hidden md:contents"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 hidden lg:content"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -118,7 +133,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 invisible md:visible"
+                  className="text-2xl lg:text-4xl text-white mb-7 hidden lg:content "
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -135,26 +150,9 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify "
+                className="leading-relaxed text-white text-justify hidden lg:content mb-10 "
               >
                 {cardDescriptionRContent.content1.description}
-              </motion.p>
-
-              {/* Card Description - description Left - 2 */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify"
-              >
-                {cardDescriptionRContent.content1.description1}
               </motion.p>
             </div>
           </div>

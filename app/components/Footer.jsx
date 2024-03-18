@@ -31,6 +31,14 @@ const footerContent = {
           label: 'Accueil',
         },
         {
+          href: '/blog',
+          label: 'Blog',
+        },
+        {
+          href: '/contact',
+          label: 'Contact',
+        },
+        {
           href: '/prestations',
           label: 'Prestations',
         },
@@ -39,23 +47,11 @@ const footerContent = {
           label: 'Team',
           badge: '🧡 De la team',
         },
-        {
-          href: '/blog',
-          label: 'Blog',
-        },
-        {
-          href: '/contact',
-          label: 'Contact',
-        },
       ],
     },
     {
       heading: 'Ressources',
       links: [
-        {
-          href: '/',
-          label: 'Application',
-        },
         {
           href: '/blog',
           label: 'Blog',
@@ -63,6 +59,10 @@ const footerContent = {
         {
           href: '/prestations/#Ebook',
           label: 'Ebook',
+        },
+        {
+          href: '/',
+          label: 'School',
         },
       ],
     },

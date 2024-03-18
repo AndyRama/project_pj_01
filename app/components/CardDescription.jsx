@@ -45,7 +45,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400"
+                  className="uppercase tracking-[2px] text-[12.5px] mt-10 mb-2 inline-block text-orange-400"
                 >
                   {cardDescriptionLContent.heading.subTitle}
                 </motion.span>
@@ -88,13 +88,13 @@ const CardDescriptionL = ({ className }) => {
               </motion.p>
             </div>
 
-            <div className="lg:w-6/12 mt-20">
+            <div className="lg:w-6/12 mt">
               {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
                   src="/images/jeremy4.jpg"
                   className="object-cover
-                  !w-full !h-[400] max-w-md object-center"
+                  !w-full !h-[400] max-w-md object-center rounded-md"
                   width={400}
                   height={400}
                   alt="Card Description Image"

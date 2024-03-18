@@ -96,7 +96,7 @@ const RecentBlog = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   className="uppercase tracking-[3px] text-sm mb-5 inline-block
-                 text-white"
+                 text-orange-400"
                 >
                   {recentBlogContent.heading.subTitle}
                 </motion.span>

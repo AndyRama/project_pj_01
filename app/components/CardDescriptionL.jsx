@@ -16,7 +16,7 @@ const cardDescriptionLContent = {
     description1:
       "Fort de mon expérience dans l'armée, j'ai forgé ma détermination et mon engagement envers l'excellence, que ce soit sur le plan physique ou mental.",
     description2:
-      "Mon parcours m'a conduit à briller sur des scènes nationales et internationales telles que le championnat de France et la Diamond Cup, où j'ai pu démontrer mon savoir-faire et ma passion pour le fitness. Ma mission est simple : vous aider à réaliser vos objectifs de fitness, qu'ils soient modestes ou ambitieux.",
+      "Mon parcours m'a conduit à briller sur des scènes nationales et internationales telles que le championnat de France et la Diamond Cup, où j'ai pu démontrer mon savoir-faire et ma passion pour le fitness. Ma mission est simple: vous aider à réaliser vos objectifs de fitness, qu'ils soient modestes ou ambitieux.",
     description3:
       'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable. Je crois fermement que la réussite en matière de fitness réside dans un équilibre entre un entraînement bien structuré et une alimentation adaptée.',
   },
@@ -33,7 +33,7 @@ const CardDescriptionL = ({ className }) => {
 
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto bg-[#232323]">
+      <div className="container px-4 mx-auto">
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
@@ -51,7 +51,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 mt-10"
                 >
                   {cardDescriptionLContent.heading.subTitle}
                 </motion.span>
@@ -70,7 +70,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-3xl text-white mb-7"
+                  className="text-2xl lg:text-3xl text-white mb-5"
                 >
                   {cardDescriptionLContent.heading.title}
                 </motion.h2>
@@ -88,7 +88,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
+                className="leading-relaxed mb-5 text-white text-justify md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -105,7 +105,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
+                className="leading-relaxed mb-5 text-white text-justify md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description1}
               </motion.p>
@@ -122,7 +122,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify w-[400px] md-w-[500px]"
+                className="leading-relaxed mb-10 text-white text-justify md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description2}
               </motion.p>
@@ -134,7 +134,7 @@ const CardDescriptionL = ({ className }) => {
                 <Image
                   src="/images/jeremy2.jpg"
                   className="object-cover
-                  !w-full !h-[900] max-w-md items-center object-center rounded-md"
+                  !w-full !h-[900] max-w-md items-center object-center rounded-md "
                   width={400}
                   height={500}
                   alt="Card Description Image"

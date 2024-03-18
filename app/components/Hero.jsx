@@ -38,13 +38,13 @@ const Hero = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-30%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
 
   return (
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[100vh] md-h-[110vh] -mt-[125px] bg-fixed bg-center bg-cover "
+        className="md-h-[110vh] -mt-[125px] bg-fixed bg-center bg-cover "
         style={{
           backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
@@ -118,7 +118,7 @@ const Hero = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="leading-relaxed text-white w-[400px] lg:w-[500px] max-w-xl
+                  className="leading-relaxed text-white md:w-[400px] max-w-xl
                   text-xl xl:text-2xl mb-10 lg:mb-16"
                 >
                   {heroContent.intro.description}

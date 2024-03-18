@@ -7,12 +7,12 @@ import RecentBlog from './components/RecentBlog'
 export default function Home() {
   return (
     <>
-      <Hero className="pt-32 pb-10 lg-pb:20" />
+      <Hero className="pt-32 pb-0 lg-pb:20" />
       <CardDescriptionL className=" pt-14 pb-15" />
-      <CardDescriptionR className=" pt-14 pb-15 bg-[#1D1D1D]" />
+      <CardDescriptionR className=" pt-14 pb-15 sm:bg-[#1D1D1D]" />
       <CardGridImage />
       <CardDescription className="pb-15 bg-[#1D1D1D]" />
-      <RecentBlog className="pt-14 pb-15 lg:pb-32" />
+      <RecentBlog className="pb-5 lg:pb-32" />
     </>
   )
 }
