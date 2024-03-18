@@ -45,7 +45,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 content sm:hidden"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 content md:hidden"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -64,7 +64,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 content sm:hidden"
+                  className="text-2xl lg:text-4xl text-white mb-7 content md:hidden"
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -94,7 +94,7 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify content sm:hidden "
+                className="leading-relaxed mb-10 text-white text-justify content lg:hidden "
               >
                 {cardDescriptionRContent.content1.description}
               </motion.p>
@@ -114,7 +114,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 hidden lg:content"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 content sm:hidden"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -133,7 +133,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 hidden lg:content "
+                  className="text-2xl lg:text-4xl text-white mb-7 content sm:hidden "
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>

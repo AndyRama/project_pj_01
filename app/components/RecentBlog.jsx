@@ -10,8 +10,8 @@ const recentBlogContent = {
   heading: {
     title: 'Articles récent',
     subTitle: 'Blog / Nouveau',
-    description:
-      "Nous nous spécialisons dans la création d'applications web sur-mesure, destinées à optimiser le quotidien de nos clients.",
+    // description:
+    // "Nous nous spécialisons dans la création d'applications web sur-mesure, destinées à optimiser le quotidien de nos clients.",
   },
 }
 const PostCard = ({ index, post }) => {
@@ -65,7 +65,7 @@ const PostCard = ({ index, post }) => {
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] text-white pb-2"
           >
-            Read More
+            Lire
           </Link>
         </p>
       </div>
