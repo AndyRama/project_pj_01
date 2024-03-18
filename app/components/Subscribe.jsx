@@ -10,7 +10,7 @@ const subscribeContent = {
     title: 'Ne manquez jamais une revue',
     subtitle: 'Rejoinds la communauté',
     description:
-      'Je partage de nombreux conseil et pratique dans mes articles!',
+      'Je partage de nombreux conseils et pratique dans mes articles !',
   },
   form: {
     placeholder: 'Entrer ton Email',
@@ -22,11 +22,11 @@ const Subscribe = ({ className }) => {
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
         {/* Logo - content left*/}
-        <div className=" flex justify-center items-center pb-10">
+        <div className=" flex justify-center items-center pb-10 ">
           <Image
             src={IconLogo}
-            weight={100}
-            height={100}
+            weight={150}
+            height={150}
             alt="logo"
             className="bg-black rounded-full"
           />

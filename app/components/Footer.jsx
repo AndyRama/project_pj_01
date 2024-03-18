@@ -64,6 +64,15 @@ const footerContent = {
           href: '/',
           label: 'School',
         },
+        // Version1
+        // {
+        //   href: '/terms',
+        //   label: 'Terms',
+        // },
+        // {
+        //   href: '/privacy',
+        //   label: 'Privacy',
+        // },
       ],
     },
   ],
@@ -75,11 +84,11 @@ const Copyright = () => {
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2023{' '}
         <Link href="/" className="text-orange-400">
-          Unlcoaching.{' '}
+          Unlcoaching{' '}
         </Link>
-        All rights reserved. Created with{' '}
+        Tous droits réservés. Crée avec{' '}
         <BiSolidHeart className="text-red-400 mx-1 inline-block" />
-        by{' '}
+        par{' '}
         <Link href="/" className="text-orange-400">
           Andy Ramaroson
         </Link>
@@ -137,6 +146,15 @@ const Footer = ({ className }) => {
               ))}
             </div>
           </div>
+          {/* Version 2 */}
+          <p className="text-right items-right mx-auto text-sm mb-2 ">
+            <Link href="/privacy" className="text-orange-400">
+              Privacy{' '}
+            </Link>{' '}
+            <Link href="/therms" className="text-white">
+              Terms{' '}
+            </Link>
+          </p>
         </div>
         <Copyright />
       </div>
