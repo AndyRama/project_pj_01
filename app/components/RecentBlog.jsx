@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { allPosts } from '.contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
@@ -10,8 +10,6 @@ const recentBlogContent = {
   heading: {
     title: 'Articles récent',
     subTitle: 'Blog / Nouveau',
-    // description:
-    // "Nous nous spécialisons dans la création d'applications web sur-mesure, destinées à optimiser le quotidien de nos clients.",
   },
 }
 const PostCard = ({ index, post }) => {

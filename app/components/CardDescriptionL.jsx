@@ -36,7 +36,7 @@ const CardDescriptionL = ({ className }) => {
       <div className="container px-4 mx-auto">
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
-          <div className="lg:w-8/12 lg:flex gap-20 items-center">
+          <div className="lg:w-8/12 lg:flex gap-10 items-center">
             <div className="lg:w-6/12 lg:order-2 relative ">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionLContent.heading.subTitle && (
@@ -88,7 +88,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-5 text-white text-justify md-w-[500px]"
+                className="leading-relaxed mb-5 text-white text-justify lg-w-[500px]"
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -134,7 +134,7 @@ const CardDescriptionL = ({ className }) => {
                 <Image
                   src="/images/jeremy2.jpg"
                   className="object-cover
-                  !w-full !h-[900] max-w-md items-center object-center rounded-md "
+                  !w-full h-[900] !lg:h-[600] max-w-md items-center object-center rounded-md "
                   width={400}
                   height={500}
                   alt="Card Description Image"

@@ -29,9 +29,9 @@ const CardDescriptionR = ({ className }) => {
     <section className={`${className}]`} ref={ref}>
       <div className="container px-4 mx-auto bg-[#232323]">
         {/* Main Card Description - content - Left */}
-        <div className="lg:flex justify-center rounded-md py-0 ">
+        <div className="md:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
-            <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative ">
+            <div className="mb-7 lg:mb-0 md:w-6/12 lg:order-2 relative ">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionRContent.heading.subTitle && (
                 <motion.span
@@ -45,7 +45,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 content md:hidden"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 content sm:hidden"
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -64,7 +64,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 content md:hidden"
+                  className="text-2xl lg:text-4xl text-white mb-7 content sm:hidden"
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -75,9 +75,9 @@ const CardDescriptionR = ({ className }) => {
                 <Image
                   src="/images/colaborate.jpg"
                   className="object-cover
-                  !w-full !h-[600] lg:max-w-2xl object-center rounded-md"
-                  width={600}
-                  height={800}
+                  !w-[600] !h-[600] lg:h-[400px] lg:w-[400px] object-center rounded-md"
+                  width={400}
+                  height={600}
                   alt="coaching personel Image"
                 />
               </motion.div>
@@ -94,13 +94,13 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify content lg:hidden "
+                className="leading-relaxed mb-10 text-white text-justify content sm:hidden "
               >
                 {cardDescriptionRContent.content1.description}
               </motion.p>
             </div>
 
-            <div className="lg:w-6/12 mt-10">
+            <div className="lg:w-6/12">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionRContent.heading.subTitle && (
                 <motion.span
@@ -114,7 +114,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 content sm:hidden"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 md:visible invisible "
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>
@@ -133,7 +133,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7 content sm:hidden "
+                  className="text-2xl lg:text-4xl text-white mb-7 md:visible invisible "
                 >
                   {cardDescriptionRContent.heading.title}
                 </motion.h2>
@@ -150,7 +150,7 @@ const CardDescriptionR = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify hidden lg:content mb-10 "
+                className="leading-relaxed mb-10 text-white text-justify md:visible invisible "
               >
                 {cardDescriptionRContent.content1.description}
               </motion.p>

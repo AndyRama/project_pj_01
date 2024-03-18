@@ -171,7 +171,7 @@ const Hero = ({ className }) => {
                   width={800}
                   height={900}
                   alt="hero image"
-                  className="rounded-md sm:h-[300px] sm:w-[500px] md:w-[400px] md:h-[500px] lg:w-[800px] lg:h-[600px]"
+                  className="rounded-md h-[300px] w-[400px] md:h-[400px] lg:w-[800px] lg:h-[600px]"
                 />
               </motion.div>
             </div>
