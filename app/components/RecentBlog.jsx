@@ -138,7 +138,7 @@ const RecentBlog = ({ className }) => {
         </div>
 
         <div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+          className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
           gap-4 w-full lg:w-10/12 mx-auto mt-10 text-gray-500"
         >
           {posts.slice(0, 4).map((post, index) => (
