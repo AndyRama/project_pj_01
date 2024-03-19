@@ -6,24 +6,6 @@ import Link from 'next/link'
 const footerContent = {
   footerLinks: [
     {
-      heading: 'Pack',
-      links: [
-        {
-          href: '/prestations',
-          label: 'Débutant',
-        },
-        {
-          href: '/prestations',
-          label: 'Intermédiaire',
-          badge: 'New',
-        },
-        {
-          href: '/prestations',
-          label: 'Confirmé',
-        },
-      ],
-    },
-    {
       heading: 'Site Map',
       links: [
         {
@@ -50,6 +32,24 @@ const footerContent = {
       ],
     },
     {
+      heading: 'Pack',
+      links: [
+        {
+          href: '/prestations',
+          label: 'Débutant',
+        },
+        {
+          href: '/prestations',
+          label: 'Intermédiaire',
+          badge: 'New',
+        },
+        {
+          href: '/prestations',
+          label: 'Confirmé',
+        },
+      ],
+    },
+    {
       heading: 'Ressources',
       links: [
         {
@@ -64,23 +64,27 @@ const footerContent = {
           href: '/',
           label: 'School',
         },
-        // Version1
-        // {
-        //   href: '/terms',
-        //   label: 'Terms',
-        // },
-        // {
-        //   href: '/privacy',
-        //   label: 'Privacy',
-        // },
       ],
     },
+    // {
+    //   heading: 'Mention ',
+    //   links: [
+    //     {
+    //       href: '/privacy',
+    //       label: 'Privacy',
+    //     },
+    //     {
+    //       href: '/terms',
+    //       label: 'Terms',
+    //     },
+    //   ],
+    // },
   ],
 }
 
 const Copyright = () => {
   return (
-    <div className="pt-3 mb-5 md:mt-5 md:pt-5 border-t border-t-gray-100 text-center text-white">
+    <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white">
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2023{' '}
         <Link href="/" className="text-orange-400">
@@ -110,7 +114,7 @@ const Footer = ({ className }) => {
           </div>
 
           <div className="md:w-8/12">
-            <div className="grid grid-cols-3 md:grid-cols-3">
+            <div className="grid grid-cols-3 md:grid-cols-3 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
                   <h3 className="text-gray-400 mb-3">{item.heading}</h3>
@@ -128,9 +132,9 @@ const Footer = ({ className }) => {
                             <>
                               <span>{link.label}</span>
                               <span
-                                className="py-0.5 px-2 rounded-full bg-orange-100
+                                className="py-0.5 px-1 rounded-full bg-orange-100
                                     border border-orange-400 text-[10px] text-orange-400
-                                    font-semibold invisible sm:visible"
+                                    invisible sm:visible"
                               >
                                 {link.badge}
                               </span>
@@ -146,16 +150,16 @@ const Footer = ({ className }) => {
               ))}
             </div>
           </div>
-          {/* Version 2 */}
-          <p className="text-right items-right mx-auto text-sm mb-2 ">
-            <Link href="/privacy" className="text-orange-400">
-              Privacy{' '}
-            </Link>{' '}
-            <Link href="/therms" className="text-white">
-              Terms{' '}
-            </Link>
-          </p>
-        </div>
+        </div>{' '}
+        {/* Version 2 */}
+        <p className="text-right items-right mx-auto text-sm pb-0">
+          <Link href="/privacy" className="text-orange-400">
+            Privacy{' '}
+          </Link>{' '}
+          <Link href="/terms" className="text-white">
+            Terms{' '}
+          </Link>
+        </p>
         <Copyright />
       </div>
     </footer>
