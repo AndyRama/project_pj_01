@@ -25,7 +25,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white relative overflow-hidden group rounded-md"
+              className="bg-[#2F2E2E] relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -46,14 +46,17 @@ const Items = ({ currentItems }) => {
                   </p>
 
                   <h3 className="mb-4">
-                    <Link href={post.url} className="text-lg leading-none">
+                    <Link
+                      href={post.url}
+                      className="text-lg text-white leading-none"
+                    >
                       {post.title}
                     </Link>
                   </h3>
                   <p>
                     <Link
                       href={post.url}
-                      className={`text-[12px] tracking-[2px] uppercase
+                      className={`text-[12px] text-white tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
