@@ -29,25 +29,22 @@ const CardProgram = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const img1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
   return (
     <section className={`${className}]`} ref={ref}>
-      <div className="container px-4 mx-auto bg-[#232323] ">
+      <div className="container px-4 mx-auto bg-white ">
         {/* Card Description - Image - Right */}
-        <motion.div style={{ y: img1 }} className="z-[2] relative">
+        <div className="card flex flex-col sm:flex-row md:mx-20 md:rounded-md">
           <Image
             src="/images/jeremy4.jpg"
-            className="object-cover !w-full !h-[400] max-w-md object-center rounded-md"
-            width={400}
-            height={400}
+            className="object-cover !w-full !h-[300] max-w-md object-center rounded-md"
+            width={300}
+            height={300}
             alt="Card Description Image"
           />
-          <div>
-            <div>Top</div>
-            <div>Middle</div>
-            <div>Footer</div>
-          </div>
-        </motion.div>
+          <div>Top</div>
+          <div>Middle</div>
+          <div>Footer</div>
+        </div>
       </div>
     </section>
   )

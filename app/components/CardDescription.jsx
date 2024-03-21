@@ -82,7 +82,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white "
+                className="leading-relaxed mb-10 text-white"
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -94,9 +94,9 @@ const CardDescriptionL = ({ className }) => {
                 <Image
                   src="/images/jeremy4.jpg"
                   className="object-cover
-                  !w-full !h-[400] max-w-md object-center rounded-md"
-                  width={400}
-                  height={400}
+                  !w-full !h-[400] max-w-xl object-center rounded-md"
+                  width={600}
+                  height={500}
                   alt="Card Description Image"
                 />
               </motion.div>
