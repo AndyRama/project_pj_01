@@ -14,6 +14,7 @@ const navigationMenu = [
   { href: '/prestations', label: 'Prestations' },
   { href: '/team', label: 'Team' },
   { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
