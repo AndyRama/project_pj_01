@@ -1,7 +1,12 @@
 import React from 'react'
+import SubHero from '../components/about/SubHero'
 
-function page() {
-  return <div>page</div>
+const Aboutpage = () => {
+  return (
+    <>
+      <SubHero className="pt-52 pb-24" />
+    </>
+  )
 }
 
-export default page
+export default Aboutpage
