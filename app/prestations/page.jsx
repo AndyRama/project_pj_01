@@ -12,7 +12,8 @@ const page = () => {
     <>
       <SubHero className="pt-32" title="Prestations" />
       <Pricing className="mt-20 mb-20" />
-      <Subscribe className="py-16 pt-64 lg:py-32 bg-orange-600" />
+      <SubHero className="pt-32" />
+      <Subscribe className="py-16 pt-32lg:py-32 " />
     </>
   )
 }
