@@ -11,10 +11,10 @@ const pricingOptions = [
     features: [
       'Pack adapter aux débutants en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs.',
-      'Plan alimentaire adapté à tes besoins',
+      'Plan alimentaire adapté à tes besoins.',
       'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel photo + mensuration avec un suivi plus approfondie',
-      'Communication whatsApp & Email + visio ou call chaque mois',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondie.',
+      'Communication whatsApp & Email + visio ou call chaque mois.',
     ],
   },
   {
@@ -23,11 +23,11 @@ const pricingOptions = [
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois) ',
     features: [
-      'Pack adapter aux initiés ayant déja des bases en musculation',
+      'Pack adapter aux initiés ayant déja des bases en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs. ',
       'Plan alimentaire adapté à tes besoins. Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel photo + mensuration avec un suivi plus approfondie',
-      'Communication whatsApp & Email + visio ou call chaque mois',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondie.',
+      'Communication whatsApp & Email + visio ou call chaque mois.',
     ],
   },
   {
@@ -36,11 +36,11 @@ const pricingOptions = [
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois) ',
     features: [
-      'Pack adapter aux initiés ayant déja des bases en musculation depuis plusieurs années',
+      'Pack adapter aux initiés ayant déja des bases en musculation depuis plusieurs années.',
       'Programme de musculation personalisé en fonction de tes objectifs. ',
       'Plan alimentaire adapté à tes besoins. Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel photo + mensuration avec un suivi plus approfondie',
-      'Communication whatsApp & Email + visio ou call chaque mois',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondie.',
+      'Communication whatsApp & Email + visio ou call chaque mois.',
     ],
   },
   {
@@ -51,7 +51,7 @@ const pricingOptions = [
     features: [
       'Pack adapter aux débutants en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs.',
-      'Plan alimentaire adapté à tes besoins',
+      'Plan alimentaire adapté à tes besoins.',
       'Accompagnement sur les divers TCA ou problématique de santé.',
       'Bilan mensuel par email après 4 semaines pour le suivie.',
     ],
@@ -62,11 +62,11 @@ const pricingOptions = [
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois) ',
     features: [
-      'Pack adapter aux initiés ayant déja des bases en musculation',
+      'Pack adapter aux initiés ayant déja des bases en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs. ',
       'Plan alimentaire adapté à tes besoins.',
       'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel par email après 4 semaines',
+      'Bilan mensuel par email après 4 semaines.',
     ],
   },
   {
@@ -75,11 +75,11 @@ const pricingOptions = [
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois) ',
     features: [
-      'Pack adapter aux initiés ayant déja des bases en musculation',
+      'Pack adapter aux initiés ayant déja des bases en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs. ',
       'Plan alimentaire adapté à tes besoins.',
       'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel par email après 4 semaines',
+      'Bilan mensuel par email après 4 semaines.',
     ],
   },
 ]

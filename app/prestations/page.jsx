@@ -2,6 +2,7 @@ import React from 'react'
 import SubHero from '../components/about/SubHero'
 import Subscribe from '@/app/components/Subscribe'
 import PricingPack from '@/app/components/PricingPack'
+import PricingDetails from '@/app/components/PricingDetails'
 import PricingEbook from '@/app/components/PricingEbook'
 
 export const metadata = {
@@ -14,6 +15,7 @@ const page = () => {
       <SubHero className="pt-32" title="Prestations" />
       <PricingPack />
       <PricingEbook />
+      <PricingDetails />
       <SubHero className="pt-32" />
       <Subscribe className="py-16 pt-32 lg:py-32 " />
     </>
