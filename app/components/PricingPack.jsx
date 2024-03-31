@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const pricingOptions = [
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Débutant(4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois) ',
@@ -18,7 +18,7 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Intermerdaire (4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois) ',
@@ -31,7 +31,7 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Confirmé (4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois) ',
@@ -44,7 +44,7 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Débutant(1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois) ',
@@ -57,7 +57,7 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Intermerdaire (1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois) ',
@@ -70,7 +70,7 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Pack Niveau',
+    title: ' Programmation niveau',
     subtitle: 'Confirmé (1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois) ',
@@ -89,7 +89,7 @@ const PricingPack = () => {
 
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-4xl text-center mb-20">
+      <h2 className="text-white text-2xl md:text-4xl text-center mb-20">
         Pack <br />
         Musculation / Perte de poids
       </h2>
@@ -104,9 +104,9 @@ const PricingPack = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full sm:w-1/2 lg:w-1/3 p-2"
             >
-              <div className="p-10 border border-white rounded-xl">
+              <div className="p-10 bg-[#2F2E2E]  rounded-md">
                 {/* Card Pricing - Header - Title */}
-                <p className="text-4xl mb-1 text-center text-white">
+                <p className="text-3xl mb-1 text-center text-white">
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
@@ -119,7 +119,7 @@ const PricingPack = () => {
                   <span className="text-4xl text-orange-400  mt-6 mr-2">
                     {option.price}
                   </span>
-                  <span className="text-orange-400 tracking-tight">/Mois</span>
+                  <span className="text-orange-400 tracking-tight">/ Mois</span>
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
                 <p className="text-xl mb-6 text-white text-center">
@@ -136,7 +136,10 @@ const PricingPack = () => {
                     delay: delay(pricingOptions.length),
                     duration: 0.5,
                   }}
-                  className="inline-flex justify-center items-center text-black text-center w-full h-12 p-5 tracking-tight text-xl bg-orange-400 hover:bg-transparent hover:border hover:border-orange-400 hover:text-white rounded-md transition duration-200"
+                  className="inline-flex justify-center items-center text-black text-center
+                   w-full h-12 p-5 tracking-tight text-xl bg-orange-400 hover:bg-transparent
+                   hover:border hover:border-orange-400 hover:text-white rounded-md transition 
+                   duration-200"
                 >
                   Choisir le plan
                 </motion.a>

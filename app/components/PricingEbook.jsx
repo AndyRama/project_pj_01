@@ -37,7 +37,10 @@ const PricingEbook = () => {
 
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-4xl text-center mb-20" id="E-Books">
+      <h2
+        className="text-white text-2xl md:text-4xl text-center mb-20"
+        id="E-Books"
+      >
         Les E-Books
       </h2>
       <div className="container px-4 mx-auto">
@@ -51,7 +54,7 @@ const PricingEbook = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full sm:w-1/2 lg:w-1/3 p-2"
             >
-              <div className="p-10 border border-white rounded-xl">
+              <div className="p-10 bg-[#2F2E2E] rounded-md">
                 {/* Card Pricing - Header - Title */}
                 <p className="text-4xl mb-1 text-center text-white">
                   {option.title}
@@ -60,12 +63,32 @@ const PricingEbook = () => {
                 <p className="text-xl mb-6 text-orange-400 text-center">
                   {option.subtitle}
                 </p>
+                <hr />
+
                 {/* Card Pricing - Header - Price  */}
-                <p className="mb-1 text-center">
-                  <span className="text-4xl text-white mt-6 mr-2">
+                <p className="mt-2 mb-1 text-center">
+                  <span className="text-4xl text-orange-400 mt-6 mr-2">
                     {option.price}
                   </span>
                 </p>
+
+                {/* Card Pricing - btn - action */}
+                <motion.a
+                  href="#"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: delay(EbookOptions.length),
+                    duration: 0.5,
+                  }}
+                  className="inline-flex justify-center items-center text-black text-center 
+                  w-full h-12 p-5 mt-6 tracking-tight text-xl bg-orange-400 hover:bg-transparent 
+                  hover:border hover:border-orange-400 hover:text-white rounded-md transition 
+                  duration-200"
+                >
+                  Commander
+                </motion.a>
+
                 {/* Card Pricing - main - contents */}
                 <ul>
                   {option.features.map((feature, index) => (
@@ -80,18 +103,6 @@ const PricingEbook = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <motion.a
-                  href="#"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: delay(EbookOptions.length),
-                    duration: 0.5,
-                  }}
-                  className="inline-flex justify-center items-center text-white text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-400 border border-orange-400 rounded-lg transition duration-200"
-                >
-                  Commander
-                </motion.a>
               </div>
             </motion.div>
           ))}

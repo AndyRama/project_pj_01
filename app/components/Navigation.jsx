@@ -78,7 +78,7 @@ export default function Navigation() {
               </span>
               {/* Name Link - content left*/}
               Unlcoaching
-              <span className=" text-white ">.</span>
+              <span className=" text-white">.</span>
             </Link>
           </div>
 
@@ -127,7 +127,7 @@ export default function Navigation() {
                 href="/prestations"
                 alt="Btn Subcribes"
                 className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-3 px-5 text-white
+                            font-bold uppercase bg-orange-400 py-3 px-5 text-black
                             rounded-md"
               >
                 Rejoingnez-nous !

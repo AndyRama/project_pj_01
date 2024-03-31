@@ -16,7 +16,7 @@ const PricingContentDetails = {
       icon: BiNote,
       title: 'Préparation aux Compétitions',
       description:
-        'Coaching spécialisé pour les athlètes : si la compétition, le dépassement de soi et la discipline sont essentiels à votre vie et à votre bien être, se fixer des objectifs concrets est un moyen efficace de les atteindre. Je vous propose un suivi musculation et alimentaire personnalisés pour relever les défis que vous vous fixerez. En tant qu’athlète, je sais également que le mentale est mis à rude épreuve lors des préparations. Je serais également présent pour vous écouter et vous rebooster lorsque cela sera nécessaire. ',
+        'Coaching spécialisé pour les athlètes : si la compétition, le dépassement de soi et la discipline sont essentiels à votre vie et à votre bien être, se fixer des objectifs concrets est un moyen efficace de les atteindre. Je vous propose un suivi musculation et alimentaire personnalisés pour relever les défis que vous vous fixerez. En tant qu’athlète, je sais également que le mental est mis à rude épreuve lors des préparations. Je serais également présent pour vous écouter et vous rebooster lorsque cela sera nécessaire. ',
     },
     {
       icon: BiLayer,
@@ -28,7 +28,7 @@ const PricingContentDetails = {
       icon: BiPaintRoll,
       title: 'Support pour TCA',
       description:
-        'Coaching spécialisé pour les candidats aux concours de police, pompier, armée, gendarmerie. La réussite de ses concours et des carrières requiert une très bonne santé physique et mentale. En tant qu’ancien militaire je connais parfaitement les facultés requises pour réussir ses concours et je peux vous apporter un suivi personnalisé et efficace. ',
+        'Coaching spécialisé pour les candidats aux concours de police, pompier, armée, gendarmerie. La réussite de ses concours et des carrières requiert une très bonne santé physique et mentale. En tant qu’ancien militaire je connais parfaitement les facultés requises pour réussir ces concours et je peux vous apporter un suivi personnalisé et efficace. ',
     },
   ],
 }
