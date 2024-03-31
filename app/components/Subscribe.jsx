@@ -79,7 +79,7 @@ const Subscribe = ({ className }) => {
           >
             <input
               className="appearance-none bg-white py-4 px-7 w-auto lg:w-screen
-                !pr-16 mwx-w-md shadow-md rounded-full outline outline-none"
+                !pr-16 mwx-w-md shadow-md rounded-md outline outline-none"
               placeholder={subscribeContent.form.placeholder}
               required
               type="email"

@@ -63,10 +63,10 @@ const PricingDetails = ({ className }) => {
                       viewport={{ once: true }}
                       key={feature.title}
                       className="relative z-40 flex gap-3
-                      items-start"
+                      items-start "
                     >
                       <div>
-                        <span className="text-3xl text-white">
+                        <span className="text-3xl text-orange-400">
                           <feature.icon />
                         </span>
                       </div>
@@ -76,7 +76,7 @@ const PricingDetails = ({ className }) => {
                         </h3>
                         <p
                           className="leading-relaxed text-[15px] text-white
-                            text-opacity-75 mb-7"
+                            text-opacity-75 mb-7 text-justify"
                         >
                           {feature.description}
                         </p>
