@@ -82,36 +82,7 @@ const pricingOptions = [
   },
 ]
 
-const EbookOptions = [
-  {
-    title: 'Ebook1',
-    subtitle: 'Sujet numero 1',
-    price: 'Free',
-    features: [
-      'Pack adapter aux débutants en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs.',
-      'Plan alimentaire adapté à tes besoins',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel photo + mensuration avec un suivi plus approfondie',
-      'Communication whatsApp & Email + visio ou call chaque mois',
-    ],
-  },
-  {
-    title: 'Ebook2',
-    subtitle: 'Sujet numero 2',
-    price: '15€',
-    features: [
-      'Pack adapter aux débutants en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs.',
-      'Plan alimentaire adapté à tes besoins',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel photo + mensuration avec un suivi plus approfondie',
-      'Communication whatsApp & Email + visio ou call chaque mois',
-    ],
-  },
-]
-
-const Pricing = () => {
+const PricingPack = () => {
   return (
     <section className="mt-10 mb-20">
       <h2 className="text-white text-4xl text-center mb-20">
@@ -169,4 +140,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default PricingPack
