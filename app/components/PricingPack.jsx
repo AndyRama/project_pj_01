@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const pricingOptions = [
   {
@@ -82,10 +84,12 @@ const pricingOptions = [
   },
 ]
 
-const PricingPack = () => {
+const PricingPack = ({ option, index }) => {
+  const delay = (index) => index * 0.05
+
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-4xl text-center mb-20" id="Packs">
+      <h2 className="text-white text-4xl text-center mb-20">
         Pack <br />
         Musculation / Perte de poids
       </h2>
@@ -93,7 +97,13 @@ const PricingPack = () => {
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
           {pricingOptions.map((option, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: delay(index), duration: 0.5 }}
+              className="w-full sm:w-1/2 lg:w-1/3 p-2"
+            >
               <div className="p-10 border border-white rounded-xl">
                 {/* Card Pricing - Header - Title */}
                 <p className="text-4xl mb-1 text-center text-white">
@@ -117,22 +127,31 @@ const PricingPack = () => {
                 {/* Card Pricing - main - contents */}
                 <ul>
                   {option.features.map((feature, index) => (
-                    <li
+                    <motion.li
                       key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: delay(index), duration: 0.5 }}
                       className="mt-8 flex items-center text-orange-400"
                     >
                       •<span className="ml-2 text-white">{feature}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
-                <a
+                <motion.a
                   href="#"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: delay(pricingOptions.length),
+                    duration: 0.5,
+                  }}
                   className="inline-flex justify-center items-center text-white text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-400 border border-orange-400 rounded-lg transition duration-200"
                 >
                   Choisir le plan
-                </a>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
