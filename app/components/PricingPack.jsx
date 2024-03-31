@@ -84,7 +84,7 @@ const pricingOptions = [
   },
 ]
 
-const PricingPack = ({ option, index }) => {
+const PricingPack = () => {
   const delay = (index) => index * 0.05
 
   return (

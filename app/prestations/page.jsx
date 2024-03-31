@@ -15,7 +15,7 @@ const page = () => {
       <PricingPack />
       <PricingEbook />
       <SubHero className="pt-32" />
-      <Subscribe className="py-16 pt-32lg:py-32 " />
+      <Subscribe className="py-16 pt-32 lg:py-32 " />
     </>
   )
 }
