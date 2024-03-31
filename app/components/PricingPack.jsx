@@ -85,7 +85,7 @@ const pricingOptions = [
 const PricingPack = () => {
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-4xl text-center mb-20">
+      <h2 className="text-white text-4xl text-center mb-20" id="Packs">
         Pack <br />
         Musculation / Perte de poids
       </h2>

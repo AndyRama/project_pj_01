@@ -32,8 +32,10 @@ const EbookOptions = [
 const PricingEbook = () => {
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-4xl text-center mb-20">Les E-Books</h2>
-      <div className="container px-4 mx-auto">
+      <h2 className="text-white text-4xl text-center mb-20" id="E-Books">
+        Les E-Books
+      </h2>
+      <div className="container px-4 mx-auto ">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
           {EbookOptions.map((option, index) => (

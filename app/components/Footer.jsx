@@ -35,16 +35,16 @@ const footerContent = {
       heading: 'Pack',
       links: [
         {
-          href: '/prestations',
+          href: '/prestations/#Packs',
           label: 'Débutant',
         },
         {
-          href: '/prestations',
+          href: '/prestations/#Packs',
           label: 'Intermédiaire',
           badge: 'New',
         },
         {
-          href: '/prestations',
+          href: '/prestations/#Packs',
           label: 'Confirmé',
         },
       ],
@@ -57,8 +57,8 @@ const footerContent = {
           label: 'Blog',
         },
         {
-          href: '/prestations/#Ebook',
-          label: 'Ebook',
+          href: '/prestations/#E-Books',
+          label: 'E-Books',
         },
         {
           href: '/',
