@@ -76,8 +76,9 @@ const PricingDetails = ({ className }) => {
                         </h3>
                         <p
                           className="leading-relaxed text-[15px] text-white
-                            text-opacity-75 mb-7 text-justify"
+                          text-opacity-75 mb-7 text-justify"
                         >
+                          <span>• </span>
                           {feature.description}
                         </p>
                       </div>

@@ -113,17 +113,34 @@ const PricingPack = () => {
                 <p className="text-xl mb-6 text-orange-400 text-center">
                   {option.subtitle}
                 </p>
+                <hr />
                 {/* Card Pricing - Header - Price  */}
-                <p className="mb-1 text-center">
-                  <span className="text-4xl text-white mt-6 mr-2">
+                <p className="mt-2 mb-1 text-center">
+                  <span className="text-4xl text-orange-400  mt-6 mr-2">
                     {option.price}
                   </span>
-                  <span className="text-white tracking-tight">/Mois</span>
+                  <span className="text-orange-400 tracking-tight">/Mois</span>
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
-                <p className="text-xl mb-6 text-orange-400 text-center">
+                <p className="text-xl mb-6 text-white text-center">
                   {option.subPrice}
                 </p>
+
+                {/* Card Pricing - btn - action */}
+
+                <motion.a
+                  href="#"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: delay(pricingOptions.length),
+                    duration: 0.5,
+                  }}
+                  className="inline-flex justify-center items-center text-black text-center w-full h-12 p-5 tracking-tight text-xl bg-orange-400 hover:bg-transparent hover:border hover:border-orange-400 hover:text-white rounded-md transition duration-200"
+                >
+                  Choisir le plan
+                </motion.a>
+
                 {/* Card Pricing - main - contents */}
                 <ul>
                   {option.features.map((feature, index) => (
@@ -138,18 +155,6 @@ const PricingPack = () => {
                     </motion.li>
                   ))}
                 </ul>
-                <motion.a
-                  href="#"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: delay(pricingOptions.length),
-                    duration: 0.5,
-                  }}
-                  className="inline-flex justify-center items-center text-white text-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-orange-400 border border-orange-400 rounded-lg transition duration-200"
-                >
-                  Choisir le plan
-                </motion.a>
               </div>
             </motion.div>
           ))}
