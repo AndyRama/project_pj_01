@@ -113,7 +113,11 @@ const EbookOptions = [
 
 const Pricing = () => {
   return (
-    <section className="mt-20 mb-20">
+    <section className="mt-10 mb-20">
+      <h2 className="text-white text-4xl text-center mb-20">
+        Pack <br />
+        Musculation / Perte de poids
+      </h2>
       <div className="container px-4 mx-auto">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
