@@ -142,7 +142,7 @@ const Hero = ({ className }) => {
                     alt="Team Page redirection"
                     className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-orange-400 inline-block hover:bg-transparent hover:text-white hover:shadow-2xl mb-10"
+                    rounded text-orange-400 inline-block hover:bg-transparent border hover:text-white hover:shadow-2xl mb-10"
                   >
                     {heroContent.intro.btn.label}
                   </Link>

@@ -11,8 +11,8 @@ const page = ({}) => {
     <>
       <SubHero
         className="pt-32 capitalize"
-        title="Recent Updates"
-        subTitle="My Blog"
+        title="Dernier articles"
+        subTitle="Mon Blog"
       />
       <Subscribe className="py-16 pt-32 lg:py-32" />
     </>
