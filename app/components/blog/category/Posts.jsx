@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import ReactPaginate from 'react-paginate'
+import Banner from '../../Banner'
 
 import { motion } from 'framer-motion'
 
@@ -127,7 +128,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
     itemsPerPage,
     clickPaginate,
     ref,
-    items,
+    Items,
   ])
 
   const handlePageClick = (event) => {

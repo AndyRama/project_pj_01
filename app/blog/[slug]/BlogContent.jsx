@@ -23,8 +23,7 @@ const BlogContent = ({ post }) => {
   )
 
   let MDXContent
-
-  if (!posts) return null
+  if (!post) return null
 
   if (!post) {
     console.log('Blog Post not found')

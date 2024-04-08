@@ -5,5 +5,6 @@ import blog__fondementDeLaPerformanceAthlTiqueMdx from './blog__Fondement-de-la-
 import blog__laGestionDuStressMdx from './blog__la-gestion-du-stress .mdx.json' assert { type: 'json' }
 import blog__laVariTMdx from './blog__la-variété.mdx.json' assert { type: 'json' }
 import blog__leSommeilMdx from './blog__le-sommeil.mdx.json' assert { type: 'json' }
+import blog__leSommeil2Mdx from './blog__le-sommeil2.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__entraNementEnSalleMdx, blog__fondementDeLaPerformanceAthlTiqueMdx, blog__laGestionDuStressMdx, blog__laVariTMdx, blog__leSommeilMdx]
+export const allPosts = [blog__entraNementEnSalleMdx, blog__fondementDeLaPerformanceAthlTiqueMdx, blog__laGestionDuStressMdx, blog__laVariTMdx, blog__leSommeilMdx, blog__leSommeil2Mdx]

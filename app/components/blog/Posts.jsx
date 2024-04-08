@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import ReactPaginate from 'react-paginate'
+
 import { motion } from 'framer-motion'
 
 const Items = ({ currentItems }) => {
@@ -25,7 +26,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-[#2F2E2E] relative overflow-hidden group rounded-md"
+              className="bg-white relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -46,28 +47,25 @@ const Items = ({ currentItems }) => {
                   </p>
 
                   <h3 className="mb-4">
-                    <Link
-                      href={post.url}
-                      className="text-lg text-white leading-none"
-                    >
+                    <Link href={post.url} className="text-lg leading-none">
                       {post.title}
                     </Link>
                   </h3>
                   <p>
                     <Link
                       href={post.url}
-                      className={`text-[12px] text-white tracking-[2px] uppercase
+                      className={`text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
                         hover:before:scale-x-[1] hover:before:scale-y-[1]
                         hover:before:scale-z-[1]`}
                     >
-                      Lire
+                      Read More
                     </Link>
                   </p>
                 </div>

@@ -3,7 +3,7 @@ import { allPosts } from 'contentlayer/generated'
 import BlogContent from './BlogContent'
 
 export async function generateStaticParams() {
-  const posts = allPosts
+  const posts = await allPosts
 
   return posts.map((post) => ({ slug: post.slug }))
 }
