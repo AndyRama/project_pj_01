@@ -26,7 +26,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white relative overflow-hidden group rounded-md"
+              className="relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -41,17 +41,17 @@ const Items = ({ currentItems }) => {
                   className="object-cover object-center h-[200px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
-                <div className="p-8">
-                  <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
+                <div className="p-8 bg-[#2F2E2E]">
+                  <p className="text-white mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
                   </p>
 
-                  <h3 className="mb-4">
+                  <h3 className="mb-4 text-white">
                     <Link href={post.url} className="text-lg leading-none">
                       {post.title}
                     </Link>
                   </h3>
-                  <p>
+                  <p className="text-white">
                     <Link
                       href={post.url}
                       className={`text-[12px] tracking-[2px] uppercase
