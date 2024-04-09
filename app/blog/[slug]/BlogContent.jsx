@@ -48,7 +48,7 @@ const BlogContent = ({ post }) => {
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           {/* Content title post */}
-          <h1 className="text-slate-900 text-center text-4xl/none lg:text-6xl/none font-medium">
+          <h1 className="text-white text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
           </h1>
 
@@ -86,12 +86,12 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Article */}
-        <article className="prose mx-auto max-w-2xl">
-          <MDXContent />
+        <article className="text-white prose mx-auto max-w-2xl ">
+          <MDXContent className="text-white !important" />
         </article>
 
         <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-          <h2 className="text-2xl text-gray-700 mb-10"> More Blogs Posts</h2>
+          <h2 className="text-2xl text-white mb-10"> More Blogs Posts</h2>
 
           {/* Card others posts */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
