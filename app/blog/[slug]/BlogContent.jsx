@@ -87,7 +87,7 @@ const BlogContent = ({ post }) => {
 
         {/* Content Article */}
         <article className="text-white prose mx-auto max-w-2xl ">
-          <MDXContent className="text-white !important" />
+          <MDXContent />
         </article>
 
         <div className="max-w-4xl mx-auto mt-20 lg:mt-32">

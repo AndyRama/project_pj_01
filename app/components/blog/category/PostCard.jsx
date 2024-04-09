@@ -20,7 +20,7 @@ const PostCard = ({ post, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden "
     >
       {/* Image top card */}
       <Link
@@ -37,12 +37,15 @@ const PostCard = ({ post, index }) => {
         />
       </Link>
 
-      <div className="p-8">
+      <div className="p-8 bg-[#2F2E2E]">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
         <h3 className="mb-4">
-          <Link href={`/${post.url}`} className="text-lg leading-none">
+          <Link
+            href={`/${post.url}`}
+            className="text-lg leading-none text-white"
+          >
             {post.title}
           </Link>
         </h3>
