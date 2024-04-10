@@ -74,7 +74,7 @@ const Copyright = () => {
   return (
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white">
       <p className="text-center items-center mx-auto text-sm">
-        &copy; 2023{' '}
+        &copy; 2024{' '}
         <Link href="/" className="text-orange-400">
           Unlcoaching{' '}
         </Link>
@@ -141,10 +141,16 @@ const Footer = ({ className }) => {
         </div>{' '}
         {/* Version 2 */}
         <p className="text-right items-right mx-auto text-sm pb-0">
-          <Link href="/document/privacy" className="text-orange-400">
+          <Link
+            href="/document/privacy"
+            className="text-orange-400 hover:text-white"
+          >
             Privacy{' '}
           </Link>{' '}
-          <Link href="/document/terms" className="text-white">
+          <Link
+            href="/document/terms"
+            className="text-white hover:text-orange-400"
+          >
             Terms{' '}
           </Link>
         </p>

@@ -13,7 +13,7 @@ const page = ({}) => {
       <SubHero
         className="pt-32 capitalize"
         title="Dernier articles"
-        subTitle="Mon Blog"
+        subTitle=""
       />
       <Posts className="pt-0 pb-52" itemsPerPage={9} />
       <Subscribe className="py-16 pt-32 lg:py-32" />
