@@ -60,7 +60,46 @@ const Category = defineNestedType(() => ({
   },
 }))
 
+const Document = defineDocumentType(() => ({
+  name: 'Document',
+  filePathPattern: `document/*.mdx`,
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the document',
+      require: true,
+    },
+    excerpt: {
+      type: 'string',
+      description: 'the description of the document ',
+      required: true,
+    },
+    date: {
+      type: 'date',
+      description: 'The date of the document',
+      require: true,
+    },
+    author: {
+      type: 'string',
+      description: 'the  author image of the document ',
+      required: true,
+    },
+    // description: {
+    //   type: 'string',
+    //   description: 'the  description content of the document ',
+    //   required: true,
+    // },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+  },
+}))
+
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Post],
+  documentTypes: [Post, Document],
 })
