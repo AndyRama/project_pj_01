@@ -49,6 +49,35 @@ const Post = defineDocumentType(() => ({
   },
 }))
 
+const Info = defineDocumentType(() => ({
+  name: 'Info',
+  filePathPattern: `document/*.mdx`,
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'the title of the info ',
+      required: true,
+    },
+    excerpt: {
+      type: 'string',
+      description: 'the description of the info ',
+      required: true,
+    },
+    // description: {
+    //   type: 'string',
+    //   description: 'the  description content of the info ',
+    //   required: true,
+    // },
+  },
+  computedFields: {
+    url: {
+      type: 'string',
+      resolve: (doc) => `${doc._raw.flattenedPath}`,
+    },
+  },
+}))
+
 const Category = defineNestedType(() => ({
   name: 'Category',
   fields: {
@@ -60,46 +89,7 @@ const Category = defineNestedType(() => ({
   },
 }))
 
-const Document = defineDocumentType(() => ({
-  name: 'Document',
-  filePathPattern: `document/*.mdx`,
-  contentType: 'mdx',
-  fields: {
-    title: {
-      type: 'string',
-      description: 'The title of the document',
-      require: true,
-    },
-    excerpt: {
-      type: 'string',
-      description: 'the description of the document ',
-      required: true,
-    },
-    date: {
-      type: 'date',
-      description: 'The date of the document',
-      require: true,
-    },
-    author: {
-      type: 'string',
-      description: 'the  author image of the document ',
-      required: true,
-    },
-    // description: {
-    //   type: 'string',
-    //   description: 'the  description content of the document ',
-    //   required: true,
-    // },
-  },
-  computedFields: {
-    url: {
-      type: 'string',
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
-    },
-  },
-}))
-
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [Post, Document],
+  documentTypes: [Post, Info],
 })

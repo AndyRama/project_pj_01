@@ -48,6 +48,34 @@ var Post = defineDocumentType(() => ({
     }
   }
 }));
+var Info = defineDocumentType(() => ({
+  name: "Info",
+  filePathPattern: `document/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      description: "the title of the info ",
+      required: true
+    },
+    excerpt: {
+      type: "string",
+      description: "the description of the info ",
+      required: true
+    }
+    // description: {
+    //   type: 'string',
+    //   description: 'the  description content of the info ',
+    //   required: true,
+    // },
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (doc) => `${doc._raw.flattenedPath}`
+    }
+  }
+}));
 var Category = defineNestedType(() => ({
   name: "Category",
   fields: {
@@ -58,49 +86,11 @@ var Category = defineNestedType(() => ({
     }
   }
 }));
-var Document = defineDocumentType(() => ({
-  name: "Document",
-  filePathPattern: `document/*.mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      description: "The title of the document",
-      require: true
-    },
-    // excerpt: {
-    //   type: 'string',
-    //   description: 'the description of the document ',
-    //   required: true,
-    // },
-    date: {
-      type: "date",
-      description: "The date of the document",
-      require: true
-    },
-    author: {
-      type: "string",
-      description: "the  author image of the document ",
-      required: true
-    },
-    description: {
-      type: "string",
-      description: "the  description content of the document ",
-      required: true
-    }
-  },
-  computedFields: {
-    url: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`
-    }
-  }
-}));
 var contentlayer_config_default = makeSource({
   contentDirPath: "content",
-  documentTypes: [Post, Document]
+  documentTypes: [Post, Info]
 });
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-T2NIYVX6.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-OYXIH5WF.mjs.map
