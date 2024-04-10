@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
 import Link from 'next/link'
@@ -66,19 +67,6 @@ const footerContent = {
         },
       ],
     },
-    // {
-    //   heading: 'Mention ',
-    //   links: [
-    //     {
-    //       href: '/privacy',
-    //       label: 'Privacy',
-    //     },
-    //     {
-    //       href: '/terms',
-    //       label: 'Terms',
-    //     },
-    //   ],
-    // },
   ],
 }
 
@@ -153,10 +141,10 @@ const Footer = ({ className }) => {
         </div>{' '}
         {/* Version 2 */}
         <p className="text-right items-right mx-auto text-sm pb-0">
-          <Link href="/privacy" className="text-orange-400">
+          <Link href="/document/privacy" className="text-orange-400">
             Privacy{' '}
           </Link>{' '}
-          <Link href="/terms" className="text-white">
+          <Link href="/document/terms" className="text-white">
             Terms{' '}
           </Link>
         </p>
