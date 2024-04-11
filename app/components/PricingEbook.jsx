@@ -8,6 +8,10 @@ const EbookOptions = [
     title: 'E-Book',
     subtitle: 'Nutrition & Alimentation',
     price: 'Free',
+    btn: {
+      href: './images/E-bookFree.pdf',
+      label: 'Télécharger',
+    },
     features: [
       'Pack adapté aux débutants en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs.',
@@ -21,6 +25,10 @@ const EbookOptions = [
     title: 'E-Book',
     subtitle: 'la Mental',
     price: '15€',
+    btn: {
+      href: '#',
+      label: 'Commander',
+    },
     features: [
       'Pack adapté aux débutants en musculation.',
       'Programme de musculation personalisé en fonction de tes objectifs.',
@@ -74,7 +82,8 @@ const PricingEbook = () => {
 
                 {/* Card Pricing - btn - action */}
                 <motion.a
-                  href="#"
+                  href={option.btn.href}
+                  target="blank"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
@@ -86,7 +95,7 @@ const PricingEbook = () => {
                   hover:border hover:border-orange-400 hover:text-white rounded-md transition 
                   duration-200"
                 >
-                  Commander
+                  {option.btn.label}
                 </motion.a>
 
                 {/* Card Pricing - main - contents */}
