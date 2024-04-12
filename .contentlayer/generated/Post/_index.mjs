@@ -3,6 +3,7 @@
 import blog__cardioMdx from './blog__Cardio.mdx.json' assert { type: 'json' }
 import blog__uneBonneAlimentationMdx from './blog__Une-bonne-alimentation.mdx.json' assert { type: 'json' }
 import blog__leSommeilMdx from './blog__le-sommeil.mdx.json' assert { type: 'json' }
+import blog__lesProduitsMdx from './blog__les-produits.mdx.json' assert { type: 'json' }
 import blog__salleDeSportMdx from './blog__salle-de-sport.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__cardioMdx, blog__uneBonneAlimentationMdx, blog__leSommeilMdx, blog__salleDeSportMdx]
+export const allPosts = [blog__cardioMdx, blog__uneBonneAlimentationMdx, blog__leSommeilMdx, blog__lesProduitsMdx, blog__salleDeSportMdx]
