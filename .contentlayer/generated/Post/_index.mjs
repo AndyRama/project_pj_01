@@ -5,5 +5,10 @@ import blog__uneBonneAlimentationMdx from './blog__Une-bonne-alimentation.mdx.js
 import blog__leSommeilMdx from './blog__le-sommeil.mdx.json' assert { type: 'json' }
 import blog__lesProduitsMdx from './blog__les-produits.mdx.json' assert { type: 'json' }
 import blog__salleDeSportMdx from './blog__salle-de-sport.mdx.json' assert { type: 'json' }
+import blog__test_1Mdx from './blog__test-1.mdx.json' assert { type: 'json' }
+import blog__test_2Mdx from './blog__test-2.mdx.json' assert { type: 'json' }
+import blog__test_3Mdx from './blog__test-3.mdx.json' assert { type: 'json' }
+import blog__test_4Mdx from './blog__test-4.mdx.json' assert { type: 'json' }
+import blog__test_5Mdx from './blog__test-5.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__cardioMdx, blog__uneBonneAlimentationMdx, blog__leSommeilMdx, blog__lesProduitsMdx, blog__salleDeSportMdx]
+export const allPosts = [blog__cardioMdx, blog__uneBonneAlimentationMdx, blog__leSommeilMdx, blog__lesProduitsMdx, blog__salleDeSportMdx, blog__test_1Mdx, blog__test_2Mdx, blog__test_3Mdx, blog__test_4Mdx, blog__test_5Mdx]
