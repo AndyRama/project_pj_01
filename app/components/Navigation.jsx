@@ -226,7 +226,7 @@ export default function Navigation() {
                             font-bold uppercase bg-orange-400 py-4 px-5 text-white
                             rounded-md"
                           >
-                            Rejoingnez-nous !
+                            Rejoignez-nous !
                           </Link>
                         </div>
                       </div>
