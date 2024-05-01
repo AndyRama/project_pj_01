@@ -1,0 +1,19 @@
+{
+  "name": "Unlcoaching",
+  "short_name": "Unl",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "splash_screen": {
+    "full": "https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg",
+    "2048x2732": "https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg"
+  },
+  "icons": [
+    {
+      "src": "/asset/Icons/logo.svg",
+      "type": "image/svg",
+      "sizes": "60x60"
+    }
+  ]
+}

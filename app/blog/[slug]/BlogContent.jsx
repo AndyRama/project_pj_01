@@ -62,14 +62,14 @@ const BlogContent = ({ post }) => {
             <span className="mx-3">•</span>
 
             {post.categories?.map((category, index) => (
-              <Link
+              <div
                 href={`/blog/categories/${slugify(category.title)}`}
                 key={category.title}
                 className="font-medium"
               >
                 {category.title}
                 {index < post.categories.length - 1 ? ` | ` : ``}
-              </Link>
+              </div>
             ))}
           </p>
         </div>
