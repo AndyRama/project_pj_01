@@ -127,7 +127,7 @@ export default function Navigation() {
                 href="/prestations"
                 alt="Btn Subcribes"
                 className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-3 px-5 text-white
+                            font-bold uppercase bg-orange-400 py-3 px-5 text-black hover:text-white
                             rounded-md"
               >
                 Rejoignez-nous !
@@ -223,7 +223,7 @@ export default function Navigation() {
                             href="/prestations"
                             alt="btn subscribes"
                             className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-4 px-5 text-white
+                            font-bold uppercase bg-orange-400 py-4 px-5 text-black hover:text-white
                             rounded-md"
                           >
                             Rejoignez-nous !
