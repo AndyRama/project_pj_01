@@ -46,7 +46,7 @@ const Hero = ({ className }) => {
       <div
         className="md-h-[110vh] -mt-[125px] bg-fixed bg-center bg-cover "
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
+          backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
         <div className="container px-6 mx-auto pt-28 md:pt-32">
