@@ -27,7 +27,7 @@ const SubHero = ({ className, title, subTitle }) => {
       <div
         className="h-[50vh] xl:h-[50vh] w-[max] -mt-[150px] bg-center bg-cover "
         style={{
-          backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
+          backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
         <div className="lg:flex lg:w-10/12 mx-auto items-center justify-between">
