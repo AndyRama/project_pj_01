@@ -105,6 +105,7 @@ export default function Navigation() {
                          ? 'border-orange-400 before:scale-x-[1]'
                          : ' border-transparent'
                      }`}
+                    onClick={() => setOpen(false)}
                   >
                     {menu.label}
                   </Link>
@@ -120,7 +121,7 @@ export default function Navigation() {
           </div>
 
           {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden  lg:contents">
+          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden lg:contents">
             {' '}
             <div>
               <Link
@@ -192,8 +193,7 @@ export default function Navigation() {
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
-                                    // className=""
-                                    className={`py-2 inline-block relative before:content-['']
+                                    className={`py-2 text-white hover:text-gray-500 inline-block relative before:content-['']
                                     before:absolute before:bottom-0 before:left-0 before:w-full
                                     before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
@@ -206,6 +206,7 @@ export default function Navigation() {
                                         ? 'border-orange-400 before:scale-x-[1]'
                                         : ' border-transparent'
                                     }`}
+                                    onClick={() => setOpen(false)}
                                   >
                                     {menu.label}
                                   </Link>

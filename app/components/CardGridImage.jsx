@@ -52,7 +52,7 @@ const CardImage = ({ card, index }) => {
             transition-all ease-in-out group-hover:scale-[1.1]"
       />
       <div>
-        <p className=" uppercase text-[13px] mt-5 text-left tracking-[1px] text-orange-400">
+        <p className=" uppercase text-[13px] mt-5 text-left tracking-[1px] text-orange-400 font-bold">
           {card.title} {card.years}
         </p>
       </div>
@@ -64,7 +64,7 @@ const CardGridImage = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto rounded-md ">
-        <div className="py-16 md:flex justify-center mb-2 ">
+        <div className="py-16 mt-[-20rem] md:mt-0 md:flex justify-center mb-2 ">
           <div
             className="grid grid-cols-1 md:grid-cols-2
              lg:grid-cols-2 xl:grid-cols-4 gap-6 w-full lg:w-10/12 
