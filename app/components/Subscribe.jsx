@@ -89,7 +89,6 @@ const Subscribe = ({ className }) => {
               className="apperance-none absolute top-1 right-1
              bg-[#fb9e25] text-[#1D1D1D] shadow-md w-12 h-12 rounded-full flex items-center justify-center"
               alt="submit"
-              aria-label="Submit"
             >
               <BiSolidPaperPlane />
             </button>
