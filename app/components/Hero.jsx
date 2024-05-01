@@ -49,7 +49,7 @@ const Hero = ({ className }) => {
           backgroundImage: `url('https://res.cloudinary.com/dbtnehfrf/image/upload/v1710337493/Component_1_lzksva.jpg')`,
         }}
       >
-        <div className="container px-4 mx-auto pt-28 md:pt-32">
+        <div className="container px-6 mx-auto pt-28 md:pt-32">
           <div className="md:flex justify-between items-center space-x-0 ">
             <div className="lg:w-8/12 lg:mb-32">
               <div className="grid grid-cols-2">

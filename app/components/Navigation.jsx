@@ -127,10 +127,10 @@ export default function Navigation() {
                 href="/prestations"
                 alt="Btn Subcribes"
                 className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-3 px-5 text-black
+                            font-bold uppercase bg-orange-400 py-3 px-5 text-white
                             rounded-md"
               >
-                Rejoingnez-nous !
+                Rejoignez-nous !
               </Link>
             </div>
           </div>
@@ -164,16 +164,16 @@ export default function Navigation() {
                   leaveTo="opacity-0"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-sm">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-[#1D1D1D] shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
-                          <Dialog.Title className="text-lg font-medium text-gray-900">
+                          <Dialog.Title className="text-lg font-medium text-white">
                             Menu
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="relative -m-2 p-2 mt-3 -mr-7 text-gray-400 hover:text-gray-500"
+                              className="relative -m-2 p-2 mt-3 -mr-7 text-white hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
                               <span className="absolute -inset-0.5" />
