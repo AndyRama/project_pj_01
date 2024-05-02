@@ -63,7 +63,7 @@ const PostCard = ({ index, post }) => {
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] text-white pb-2"
           >
-            Lire
+            lire l&apos;article
           </Link>
         </p>
       </div>

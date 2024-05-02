@@ -68,7 +68,7 @@ const Items = ({ currentItems, Post }) => {
                         hover:before:scale-x-[1] hover:before:scale-y-[1]
                         hover:before:scale-z-[1]`}
                     >
-                      Read More
+                      lire l&apos;article
                     </Link>
                   </p>
                 </div>

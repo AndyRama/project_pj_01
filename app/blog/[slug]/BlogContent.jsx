@@ -62,14 +62,14 @@ const BlogContent = ({ post }) => {
             <span className="mx-3">•</span>
 
             {post.categories?.map((category, index) => (
-              <div
+              <span
                 href={`/blog/categories/${slugify(category.title)}`}
                 key={category.title}
                 className="font-medium"
               >
                 {category.title}
                 {index < post.categories.length - 1 ? ` | ` : ``}
-              </div>
+              </span>
             ))}
           </p>
         </div>
@@ -111,7 +111,7 @@ const BlogContent = ({ post }) => {
               text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
               hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
             >
-              View All Blog Posts
+              Voir tous les postes
             </Link>
           </div>
         </div>

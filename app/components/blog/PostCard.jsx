@@ -52,7 +52,7 @@ const PostCard = ({ post, index }) => {
             className="uppercase text-[12px] tracking-[2px] border-b-2
             pb-2 inline-block border-orange-600"
           >
-            Read More
+            lire l&apos;article
           </Link>
         </p>
       </div>
