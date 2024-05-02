@@ -111,7 +111,7 @@ const BlogContent = ({ post }) => {
               text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
               hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
             >
-              Voir tous les postes
+              Voir tous les articles
             </Link>
           </div>
         </div>

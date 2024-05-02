@@ -7,10 +7,10 @@ import { BiSolidPaperPlane } from 'react-icons/bi'
 
 const subscribeContent = {
   heading: {
-    title: 'Ne manquez jamais une revue',
+    title: 'Ne manquez jamais une actualité.',
     subtitle: 'Rejoinds la communauté',
     description:
-      'Je partage de nombreux conseils et pratique dans mes articles !',
+      'Je partage de nombreux conseils et pratique chaques semaines dans mes articles !',
   },
   form: {
     placeholder: 'Entrer ton Email',
@@ -58,7 +58,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.3, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white"
+                  className="text-2xl lg:text-3xl text-white"
                 >
                   {subscribeContent.heading.title}
                 </motion.h2>
@@ -102,8 +102,7 @@ const Subscribe = ({ className }) => {
               transition: { delay: 0.9, duration: 0.5 },
             }}
             viewport={{ once: true }}
-            className="w-auto max-w-md mx-auto mt-10 text-center text-white
-              text-opacity-60 "
+            className="w-auto max-w-md mx-auto mt-10 text-center text-white text-opacity-80 "
           >
             {subscribeContent.heading.description}
           </motion.p>

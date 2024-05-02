@@ -51,7 +51,7 @@ const PricingEbook = () => {
       >
         Les E-Books
       </h2>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 lg:px-20 mx-auto">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
           {EbookOptions.map((option, index) => (

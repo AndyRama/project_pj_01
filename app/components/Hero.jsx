@@ -44,13 +44,13 @@ const Hero = ({ className }) => {
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="md-h-[110vh] -mt-[125px] bg-fixed bg-center bg-cover "
+        className="md-h-[110vh] -mt-[125px] bg-fixed bg-cover "
         style={{
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
-        <div className="container px-6 mx-auto pt-28 md:pt-32">
-          <div className="md:flex justify-between items-center space-x-0 ">
+        <div className="container px-4 lg:px-20 mx-auto pt-28 md:pt-32">
+          <div className="md:flex justify-between  space-x-0 ">
             <div className="lg:w-8/12 lg:mb-32">
               <div className="grid grid-cols-2">
                 {statContent.stats.map((stat, index) => (

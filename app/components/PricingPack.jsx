@@ -91,11 +91,11 @@ const PricingPack = () => {
 
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-2xl md:text-4xl text-center mb-20">
+      <h2 className="text-white text-2xl md:text-5xl text-center mb-20">
         Pack <br />
         Musculation / Perte de poids
       </h2>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 lg:px-20  mx-auto">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
           {pricingOptions.map((option, index) => (

@@ -28,7 +28,7 @@ const footerContent = {
         {
           href: '/team',
           label: 'Team',
-          badge: '🧡 De la team',
+          badge: 'Coup de 🧡',
         },
       ],
     },
@@ -38,11 +38,11 @@ const footerContent = {
         {
           href: '/prestations/#Packs',
           label: 'Débutant',
+          badge: 'New',
         },
         {
           href: '/prestations/#Packs',
           label: 'Intermédiaire',
-          badge: 'New',
         },
         {
           href: '/prestations/#Packs',
@@ -58,12 +58,13 @@ const footerContent = {
           label: 'Blog',
         },
         {
-          href: '/prestations/#E-Books',
-          label: 'E-Books',
-        },
-        {
           href: '/',
           label: 'School',
+        },
+        {
+          href: '/prestations/#E-Books',
+          label: 'E-Books',
+          badge: 'New',
         },
       ],
     },
