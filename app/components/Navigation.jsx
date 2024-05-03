@@ -60,7 +60,7 @@ export default function Navigation() {
   return (
     <div>
       <header className="py-8 absolute w-full z-[1]" alt="NavBar">
-        <div className="container px-4 lg:px-20  mx-auto flex items-center justify-between">
+        <div className="container px-4 md:px-14  mx-auto flex items-center justify-between">
           <div>
             <Link
               href="/"

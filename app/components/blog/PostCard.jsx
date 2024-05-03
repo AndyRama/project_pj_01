@@ -20,12 +20,12 @@ const PostCard = ({ post, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className="relative overflow-hidden"
+      className="relative overflow-hidden rounded-t-md"
     >
       {/* Image top card */}
       <Link
         href={`/${post.url}`}
-        className="relative block overflow-hidden group"
+        className="relative block overflow-hidden group "
       >
         <Image
           src={post.image}

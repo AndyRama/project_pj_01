@@ -25,7 +25,7 @@ const heroContent = {
     description:
       'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
     btn: {
-      href: '/about',
+      href: '/team',
       label: '🧡 De la team !',
     },
   },
@@ -49,7 +49,7 @@ const Hero = ({ className }) => {
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
-        <div className="container px-4 lg:px-20 mx-auto pt-28 md:pt-32">
+        <div className="container px-4 md:px-16 mx-auto pt-28 md:pt-32">
           <div className="md:flex justify-between  space-x-0 ">
             <div className="lg:w-8/12 lg:mb-32">
               <div className="grid grid-cols-2">
