@@ -2,6 +2,9 @@
 
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
+import { FaInstagramSquare } from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 
 const footerContent = {
@@ -95,11 +98,47 @@ const Footer = ({ className }) => {
     <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
       <div className="container mx-auto px-4 relative mt-10">
         <div className="md:flex ">
-          <div className="md:w-4/12 mb-10 md:mb-0">
+          <div className="md:w-4/12 mb-5 md:mb-0">
             <Link href="#" className="text-[28px] text-orange-400 font-bold">
               Unlcoaching
               <span className="text-white">.</span>
             </Link>
+            <br />
+            <div className="flex mt-5 pr-10">
+              <span>
+                <Link
+                  href="#"
+                  className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
+                >
+                  <FaInstagramSquare />
+                  {/* <span className="text-white">.</span> */}
+                </Link>
+              </span>
+              <span>
+                <Link
+                  href="#"
+                  className="text-[28px] text-white  hover:text-orange-200  font-bold mr-10"
+                >
+                  <FaFacebook />
+                  {/* <span className="text-white">.</span> */}
+                </Link>
+              </span>
+              <span>
+                <Link
+                  href="#"
+                  className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
+                >
+                  <FaLinkedin />
+                  {/* <span className="text-white">.</span> */}
+                </Link>
+              </span>
+            </div>
+
+            {/* <br />
+            <Link href="#" className="text-[28px] text-orange-400 font-bold">
+              BasicFit
+              <span className="text-white">.</span>
+            </Link> */}
           </div>
 
           <div className="md:w-8/12">
