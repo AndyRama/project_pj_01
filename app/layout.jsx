@@ -10,6 +10,9 @@ export const metadata = {
   title: 'Unlcoaching',
   description:
     'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
+  icon: {
+    icon: ['favicon.icon'],
+  },
 }
 
 export default function RootLayout({ children }) {
