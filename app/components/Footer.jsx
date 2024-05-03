@@ -111,7 +111,6 @@ const Footer = ({ className }) => {
                   className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
                 >
                   <FaInstagramSquare />
-                  {/* <span className="text-white">.</span> */}
                 </Link>
               </span>
               <span>
@@ -120,7 +119,6 @@ const Footer = ({ className }) => {
                   className="text-[28px] text-white  hover:text-orange-200  font-bold mr-10"
                 >
                   <FaFacebook />
-                  {/* <span className="text-white">.</span> */}
                 </Link>
               </span>
               <span>
@@ -129,16 +127,9 @@ const Footer = ({ className }) => {
                   className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
                 >
                   <FaLinkedin />
-                  {/* <span className="text-white">.</span> */}
                 </Link>
               </span>
             </div>
-
-            {/* <br />
-            <Link href="#" className="text-[28px] text-orange-400 font-bold">
-              BasicFit
-              <span className="text-white">.</span>
-            </Link> */}
           </div>
 
           <div className="md:w-8/12">
