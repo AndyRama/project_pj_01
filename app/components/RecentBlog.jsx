@@ -79,61 +79,60 @@ const RecentBlog = ({ className }) => {
     <section className={`${className}`}>
       <div className="container px-4 mx-auto rounded-md ">
         <div className=" py-16 lg:flex justify-center mb-2 ">
-          <div className="w-full lg:w-8/12 lg:flex gap-0 items-center">
-            <div className="lg:w-7/12">
-              {recentBlogContent.heading.subTitle && (
-                <motion.span
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      delay: 0.05,
-                      duration: 0.5,
-                    },
-                  }}
-                  viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-sm mb-5 inline-block
-                 text-orange-400"
-                >
-                  {recentBlogContent.heading.subTitle}
-                </motion.span>
-              )}
-              {recentBlogContent.heading.title && (
-                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      delay: 0.1,
-                      duration: 0.5,
-                    },
-                  }}
-                  viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-white"
-                >
-                  {recentBlogContent.heading.title}
-                </motion.h2>
-              )}
-            </div>
-            <div className="lg:w-5/12 self-end">
-              <motion.p
+          {/* <div className="w-full lg:w-8/12 lg:flex gap-0 items-center"> */}
+          <div className="lg:w-7/12">
+            {recentBlogContent.heading.subTitle && (
+              <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
                   transition: {
-                    delay: 0.15,
+                    delay: 0.05,
                     duration: 0.5,
                   },
                 }}
                 viewport={{ once: true }}
-                className="text-white"
+                className="uppercase tracking-[3px] text-sm mb-5 inline-block
+                 text-orange-400"
               >
-                {recentBlogContent.heading.description}
-              </motion.p>
-            </div>
+                {recentBlogContent.heading.subTitle}
+              </motion.span>
+            )}
+            {recentBlogContent.heading.title && (
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    delay: 0.1,
+                    duration: 0.5,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-white"
+              >
+                {recentBlogContent.heading.title}
+              </motion.h2>
+            )}
+          </div>
+          <div className="lg:w-5/12 self-end">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  delay: 0.15,
+                  duration: 0.5,
+                },
+              }}
+              viewport={{ once: true }}
+              className="text-white"
+            >
+              {recentBlogContent.heading.description}
+            </motion.p>
           </div>
         </div>
 

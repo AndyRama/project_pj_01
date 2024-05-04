@@ -91,7 +91,7 @@ const CardProgram = ({ className }) => {
         )}
       </div>
       <div className="container px-4 mx-auto">
-        <div className="md:flex justify-between space-x-0 border-b border-t-gray-100 mb-10 ">
+        <div className="md:flex justify-between space-x-0 border-b border-t-gray-500 mb-10 ">
           <div className="lg:w-8/12">
             {/* Content left - title - card 1 */}
             {ProgramContent.card.title && (
@@ -104,7 +104,7 @@ const CardProgram = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="program-title"
-                className=" text-orange-500 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-orange-400 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {ProgramContent.card.title}
               </motion.h1>
@@ -120,7 +120,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 text-justify  max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {ProgramContent.card.description}
               </motion.p>
@@ -140,10 +140,10 @@ const CardProgram = ({ className }) => {
               >
                 <Link
                   href={ProgramContent.card.btn.href}
-                  alt="Team Page redirection"
+                  alt="prestations page"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-[#1D1D1D] inline-block hover:bg-transparent border hover:text-white hover:shadow-2xl mb-10"
+                    tracking-[2px] font-bold uppercase text-white hover:text-orange-400  hover:border-orange-400 bg-transparent py-4 px-5
+                    rounded inline-block border hover:shadow-2xl mb-10"
                 >
                   {ProgramContent.card.btn.label}
                 </Link>
@@ -177,7 +177,7 @@ const CardProgram = ({ className }) => {
             </motion.div>
           </div>
         </div>
-        <div className="md:flex justify-between space-x-0 border-b border-t-gray-100 mb-10 ">
+        <div className="md:flex justify-between space-x-0 border-b border-t-gray-500 mb- mb-10 ">
           <div className="lg:w-8/12 ">
             {/* Content left - title -card 2  */}
             {ProgramContent.card2.title && (
@@ -190,7 +190,7 @@ const CardProgram = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="program-title"
-                className=" text-orange-500 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-orange-400 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {ProgramContent.card2.title}
               </motion.h1>
@@ -206,7 +206,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 text-justify max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {ProgramContent.card2.description}
               </motion.p>
@@ -228,8 +228,8 @@ const CardProgram = ({ className }) => {
                   href={ProgramContent.card2.btn.href}
                   alt="Team Page redirection"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-[#1D1D1D] inline-block hover:bg-transparent border hover:text-white hover:shadow-2xl mb-10"
+                    tracking-[2px] font-bold uppercase bg-transparent py-4 px-5
+                    rounded text-white inline-block border hover:text-orange-400  hover:border-orange-400 hover:shadow-2xl mb-10"
                 >
                   {ProgramContent.card2.btn.label}
                 </Link>
@@ -263,7 +263,7 @@ const CardProgram = ({ className }) => {
             </motion.div>
           </div>
         </div>
-        <div className="md:flex justify-between space-x-0 border-b border-t-gray-100">
+        <div className="md:flex justify-between space-x-0 border-b border-t-gray-500 mb-">
           <div className="lg:w-8/12 ">
             {/* Content left - title -card 2  */}
             {ProgramContent.card3.title && (
@@ -276,7 +276,7 @@ const CardProgram = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="program-title"
-                className=" text-orange-500 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-orange-400 font-bold text-2xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {ProgramContent.card3.title}
               </motion.h1>
@@ -292,7 +292,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 text-justify max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {ProgramContent.card3.description}
               </motion.p>
@@ -314,8 +314,8 @@ const CardProgram = ({ className }) => {
                   href={ProgramContent.card3.btn.href}
                   alt="Team Page redirection"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-[#1D1D1D] inline-block hover:bg-transparent border hover:text-white hover:shadow-2xl mb-10"
+                    tracking-[2px] font-bold uppercase bg-transparent py-4 px-5
+                    rounded inline-block hover:text-orange-400  hover:border-orange-400 border text-white hover:shadow-2xl mb-10"
                 >
                   {ProgramContent.card3.btn.label}
                 </Link>
