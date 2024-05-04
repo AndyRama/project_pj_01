@@ -21,7 +21,7 @@ const programs = [
     mount: '3 mois (minimum)',
     time: '8h/semaine',
     btn: {
-      href: '/team',
+      href: '/prestations/#pack',
       label: 'Ok, je change de vie !',
     },
     image: '/images/post3.jpg',
@@ -34,7 +34,7 @@ const programs = [
     mount: '3 mois (minimum)',
     time: '8h/semaine',
     btn: {
-      href: '/team',
+      href: '/prestations/#pack',
       label: 'Ok, je change de vie !',
     },
     image: '/images/post5.jpg',
@@ -47,7 +47,7 @@ const programs = [
     mount: '3 mois (minimum)',
     time: '8h/semaine',
     btn: {
-      href: '/team',
+      href: '/prestations/#pack',
       label: 'Ok, je change de vie !',
     },
     image: '/images/post4.jpg',

@@ -91,13 +91,16 @@ const PricingPack = () => {
 
   return (
     <section className="mt-10 mb-20">
-      <h2 className="text-white text-2xl md:text-5xl text-center mb-20">
+      <h2
+        id="pack"
+        className="text-white text-2xl md:text-5xl text-center mb-20"
+      >
         Pack <br />
         Musculation / Perte de poids
       </h2>
       <div className="container px-4 md:px-16 mx-auto">
         {/* Main Card Pricing - content  */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap ">
           {pricingOptions.map((option, index) => (
             <motion.div
               key={index}
@@ -106,7 +109,7 @@ const PricingPack = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full sm:w-1/2 lg:w-1/3 p-2"
             >
-              <div className="p-10 bg-[#2F2E2E]  rounded-md">
+              <div className="p-10 bg-[#2F2E2E] rounded-md">
                 {/* Card Pricing - Header - Title */}
                 <p className="text-3xl mb-1 text-center text-white">
                   {option.title}

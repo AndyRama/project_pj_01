@@ -39,16 +39,16 @@ const footerContent = {
       heading: 'Pack',
       links: [
         {
-          href: '/prestations/#Packs',
+          href: '/prestations/#pack',
           label: 'Débutant',
           badge: 'New',
         },
         {
-          href: '/prestations/#Packs',
+          href: '/prestations/#pack',
           label: 'Intermédiaire',
         },
         {
-          href: '/prestations/#Packs',
+          href: '/prestations/#pack',
           label: 'Confirmé',
         },
       ],
