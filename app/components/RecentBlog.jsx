@@ -78,7 +78,7 @@ const RecentBlog = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto rounded-md ">
-        <div className=" py-16 lg:flex justify-center mb-2 ">
+        <div className=" px-4 md:px-20 lg:flex justify-center mb-2 ">
           {/* <div className="w-full lg:w-8/12 lg:flex gap-0 items-center"> */}
           <div className="lg:w-7/12">
             {recentBlogContent.heading.subTitle && (

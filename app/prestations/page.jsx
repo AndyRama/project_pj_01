@@ -14,8 +14,8 @@ const page = () => {
     <>
       <SubHero className="pt-32" title="Prestations" />
       <PricingPack />
-      <PricingEbook />
       <PricingDetails />
+      <PricingEbook />
       <SubHero className="pt-32" />
       <Subscribe className="py-16 pt-32 lg:py-32 " />
     </>

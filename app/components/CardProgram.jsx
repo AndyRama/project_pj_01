@@ -30,7 +30,7 @@ const programs = [
     title: 'Pack 2 Musculation | Homme Femme',
     subTitle: 'Personnel',
     description:
-      'Coaching spécialisé pour les athlètes : si la compétition, le dépassement de soi et la discipline sont essentiels à votre vie et à votre bien-être, se fixer des objectifs concrets est un moyen efficace de les atteindre. Je vous propose un suivi musculation et alimentaire personnalisés pour relever les défis que vous vous fixerez.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus pariatur soluta corrupti quisquam illo ducimus adipisci recusandae possimus tempora esse, aspernatur repudiandae cupiditate ipsum enim, quibusdam porro odio sit. Quis!',
     mount: '3 mois (minimum)',
     time: '8h/semaine',
     btn: {
@@ -43,7 +43,7 @@ const programs = [
     title: 'Pack 3 Musculation | Homme Femme',
     subTitle: 'Personnel',
     description:
-      'Coaching spécialisé pour les athlètes : si la compétition, le dépassement de soi et la discipline sont essentiels à votre vie et à votre bien-être, se fixer des objectifs concrets est un moyen efficace de les atteindre. Je vous propose un suivi musculation et alimentaire personnalisés pour relever les défis que vous vous fixerez.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus pariatur soluta corrupti quisquam illo ducimus adipisci recusandae possimus tempora esse, aspernatur repudiandae cupiditate ipsum enim, quibusdam porro odio sit. Quis!',
     mount: '3 mois (minimum)',
     time: '8h/semaine',
     btn: {
@@ -57,7 +57,7 @@ const programs = [
 const CardProgram = ({ className }) => {
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto w-10/12 mb-16 ">
+      <div className="container px-4 md:px-20 mx-auto w-12/12 mb-10">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -89,7 +89,7 @@ const CardProgram = ({ className }) => {
           {program.heading.title}
         </motion.h2>
       </div>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 md:px-20 mx-auto">
         {programs.map((program, index) => (
           <div
             key={index}
@@ -142,7 +142,7 @@ const CardProgram = ({ className }) => {
                 </Link>
               </motion.button>
             </div>
-            <div className="md:w-6/12 mb-10 md:mb-0 ">
+            <div className="md:w-6/12 mb-10">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
