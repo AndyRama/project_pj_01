@@ -146,7 +146,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
             <Items currentItems={currentItems} />
           </div>
 
-          {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-white">
+          <div className="lg:w-10/12 mx-auto flex flex-wrap text-white">
             <ReactPaginate
               nextLabel="Next"
               onPageChange={handlePageClick}
@@ -167,7 +167,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
               activeClassName="active"
               renderOnZeroPageCount={null}
             />
-          </div> */}
+          </div>
         </div>
       </section>
     </>
