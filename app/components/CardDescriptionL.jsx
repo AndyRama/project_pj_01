@@ -144,6 +144,9 @@ const CardDescriptionL = ({ className }) => {
           </div>
         </div>
       </div>
+      <div className="transform-gpu blur-3xl">
+        <div className="absolute left-0 opacity-50 -z-30 w-72 h-80 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+      </div>
     </section>
   )
 }

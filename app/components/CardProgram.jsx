@@ -117,7 +117,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-gray-500 text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {program.description}
               </motion.p>
@@ -167,6 +167,9 @@ const CardProgram = ({ className }) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="transform-gpu blur-3xl">
+        <div className="absolute left-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </section>
   )

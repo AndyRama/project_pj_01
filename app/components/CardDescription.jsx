@@ -28,6 +28,9 @@ const CardDescriptionL = ({ className }) => {
   return (
     <section className={`${className}]`} ref={ref}>
       <div className="container px-4 mx-auto">
+        <div className="transform-gpu blur-3xl">
+          <div className="absolute right-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+        </div>
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">

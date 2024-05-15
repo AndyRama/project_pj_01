@@ -164,10 +164,6 @@ const PricingPack = () => {
                   ))}
                 </ul>
               </div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              pariatur soluta corrupti quisquam illo ducimus adipisci recusandae
-              possimus tempora esse, aspernatur repudiandae cupiditate ipsum
-              enim, quibusdam porro odio sit. Quis!
             </motion.div>
           ))}
         </div>

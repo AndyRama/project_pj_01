@@ -76,7 +76,7 @@ const footerContent = {
 
 const Copyright = () => {
   return (
-    <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white">
+    <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white ">
       <p className="text-center items-center mx-auto text-sm">
         &copy; 2024{' '}
         <Link href="/" className="text-orange-400">
@@ -132,7 +132,7 @@ const Footer = ({ className }) => {
             </div>
           </div>
 
-          <div className="md:w-8/12">
+          <div className="md:w-8/12 ">
             <div className="grid grid-cols-3 md:grid-cols-3 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
@@ -186,6 +186,10 @@ const Footer = ({ className }) => {
           </Link>
         </p>
         <Copyright />
+      </div>
+      <div className="transform-gpu blur-3xl center">
+        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute -mt-120 right-0 opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </footer>
   )

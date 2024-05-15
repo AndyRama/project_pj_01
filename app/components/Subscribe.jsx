@@ -108,6 +108,9 @@ const Subscribe = ({ className }) => {
           </motion.p>
         </div>
       </div>
+      <div className="transform-gpu blur-3xl">
+        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-52 h-64 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+      </div>
     </section>
   )
 }
