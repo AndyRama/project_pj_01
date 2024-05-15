@@ -108,8 +108,8 @@ const BlogContent = ({ post }) => {
             <Link
               href="/blog"
               className="transition-all duration-300 ease-in-out
-              text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
-              hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
+              text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-400
+              hover:text-orange-400 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
             >
               Voir tous les articles
             </Link>

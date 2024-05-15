@@ -87,7 +87,7 @@ const Subscribe = ({ className }) => {
             <button
               type="submit"
               className="apperance-none absolute top-1 right-1
-             bg-[#fb9e25] text-[#1D1D1D] shadow-md w-12 h-12 rounded-full flex items-center justify-center"
+             bg-orange-400 text-[#1D1D1D] shadow-md w-12 h-12 rounded-full flex items-center justify-center"
               alt="submit"
               aria-label="Submit Form"
             >
@@ -109,7 +109,7 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-52 h-64 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </section>
   )

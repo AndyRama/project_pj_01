@@ -187,9 +187,9 @@ const Footer = ({ className }) => {
         </p>
         <Copyright />
       </div>
-      <div className="transform-gpu blur-3xl center">
-        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
-        <div className="absolute -mt-120 right-0 opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+      <div className="transform-gpu blur-3xl ">
+        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </footer>
   )

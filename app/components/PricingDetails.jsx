@@ -30,6 +30,12 @@ const PricingContentDetails = {
       description:
         'Coaching spécialisé pour les candidats aux concours de police, pompier, armée, gendarmerie. La réussite de ses concours et des carrières requiert une très bonne santé physique et mentale. En tant qu’ancien militaire je connais parfaitement les facultés requises pour réussir ces concours et je peux vous apporter un suivi personnalisé et efficace. ',
     },
+    {
+      icon: BiHardHat,
+      title: 'Unlcoaching.app',
+      description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+    },
   ],
 }
 
@@ -37,6 +43,9 @@ const PricingDetails = ({ className }) => {
   return (
     <>
       <section className="pb-20">
+        <div className="transform-gpu blur-3xl">
+          <div className="absolute left-0 opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+        </div>
         <div className="container px-4 mx-auto">
           <h3 className="text-orange-400 text-xl text-center">
             Ce que tu obtiens
@@ -88,6 +97,9 @@ const PricingDetails = ({ className }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="transform-gpu blur-3xl">
+          <div className="absolute right-0 opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
         </div>
       </section>
     </>
