@@ -139,9 +139,9 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <>
       <section className={`${className}`} ref={ref}>
-        <div className="container px-4 mx-auto mt-10 ">
-          <div className="relative lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 ">
-            <CardCategory className=" justify-start" />
+        <div className="container mt-10 w-auto flex mx-auto">
+          <CardCategory className="lg:w-2/12 mx-4" />
+          <div className="w-9/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
             <Items currentItems={currentItems} />
           </div>
 
