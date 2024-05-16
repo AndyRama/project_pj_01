@@ -7,6 +7,8 @@ import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
 
+import CardCategory from '@/app/components/CardCategory'
+
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
 function slugify(str) {
@@ -45,8 +47,8 @@ const BlogContent = ({ post }) => {
       viewport={{ once: true }}
       className="pt-44 pb-20 lg:py-44 container px-4 mx-auto"
     >
-      <div className="mx-auto max-w-4xl">
-        <div className="text-center mb-16 max-w-4xl mx-auto">
+      <div className="mx-auto max-w-6xl">
+        <div className="text-center mb-16 max-w-6xl mx-auto">
           {/* Content title post */}
           <h1 className="text-white text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
@@ -75,7 +77,7 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Image post */}
-        <div className="mb-16">
+        <div className="flex mb-16 w-max-2xl ">
           <Image
             src={post.image}
             width={1065}
@@ -84,11 +86,13 @@ const BlogContent = ({ post }) => {
             alt={post.title}
           />
         </div>
-
         {/* Content Article */}
-        <article className="text-white prose mx-auto max-w-2xl ">
-          <MDXContent />
-        </article>
+        <div className="flex justify-center md:ml-20 w-12/12">
+          <CardCategory className="w-3/12" />
+          <article className="text-white prose mx-auto max-w-2xl w-auto md:w-9/12 ">
+            <MDXContent />
+          </article>
+        </div>
 
         <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
           <h2 className="text-2xl text-white mb-10"> More Blogs Posts</h2>
