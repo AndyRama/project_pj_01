@@ -19,8 +19,8 @@ const ContactForm = ({ className }) => {
       viewport={{ once: true }}
       className={`${className}`}
     >
-      <div className="container px-4 mx-auto">
-        <div className="lg:flex items-scretch mb-32">
+      <div className="container px-4 mx-auto mt-32">
+        <div className="lg:flex items-scretch mb-20">
           {/* Contact - Left - Image */}
           <div className="lg:w-6/12 flex-1">
             <Image
@@ -32,7 +32,7 @@ const ContactForm = ({ className }) => {
             />
           </div>
           <div className="lg:w-6/12 flex-1">
-            <form className="p-14 bg-[#2F2E2E] h-full">
+            <form className="p-8 bg-[#2F2E2E] h-full">
               {/* Contact - Rigth - Title */}
               <h2 className="text-white mb-4 text-3xl">Get in Touch</h2>
               <p className="text-white mb-6">
@@ -68,7 +68,7 @@ const ContactForm = ({ className }) => {
                   </label>
                   <input
                     type="text"
-                    className="rounded-0 appearance-none !text-base p-2 outline-1mt-1
+                    className="rounded-0 appearance-none !text-base p-2 outline-1 mt-1
                   px-3 py-2  border shadow-sm border-slate-300 placeholder-slate-400
                   focus:outline-none focus:border-orange-600 focus:ring-orange-600
                   block w-full sm:text-sm focus:ring-1 outline-gray-300"
