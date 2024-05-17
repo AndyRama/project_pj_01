@@ -92,7 +92,7 @@ const PricingPack = () => {
   return (
     <section className="mt-10 mb-20">
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
       </div>
       <h2
         id="pack"

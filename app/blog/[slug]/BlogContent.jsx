@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
-
 import CardCategory from '@/app/components/CardCategory'
 
 import { getMDXComponent } from 'next-contentlayer/hooks'
@@ -45,16 +44,16 @@ const BlogContent = ({ post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="pt-44 pb-20 lg:py-44 container px-4 mx-auto"
+      className="pt-44 pb-20 container mx-auto"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="text-center mb-16 max-w-6xl mx-auto">
+        <div className="text-center mb-16 max-w-4xl mx-auto">
           {/* Content title post */}
-          <h1 className="text-white text-center text-4xl/none lg:text-6xl/none font-medium">
+          <h1 className="text-white text-center text-4xl lg:text-6xl font-medium">
             {post.title}
           </h1>
 
-          <p className="text-slate-500 mt-10">
+          <p className="text-slate-500 mt-10 text-center">
             <span className="inline-flex space-x-3">
               <span>{format(parseISO(post.date), 'LLL d, yyyy')}</span>
               <span>•</span>
@@ -77,25 +76,28 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Image post */}
-        <div className="flex mb-16 w-max-2xl ">
+        <div>
           <Image
             src={post.image}
             width={1065}
             height={644}
-            className="object-cover object-top rounded-md"
+            className="object-cover object-top w-full rounded-md mb-16 "
             alt={post.title}
           />
         </div>
         {/* Content Article */}
-        <div className="flex justify-center md:ml-20 w-12/12">
-          <CardCategory className="w-3/12" />
-          <article className="text-white prose mx-auto max-w-2xl w-auto md:w-9/12 ">
+        <div className="flex">
+          <CardCategory className="w-3/12 mr-2" />
+          <article className="text-white prose mx-auto max-w-2xl w-auto lg:w-10/12 ">
             <MDXContent />
           </article>
         </div>
 
-        <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-          <h2 className="text-2xl text-white mb-10"> More Blogs Posts</h2>
+        <div className="max-w-6xl mx-auto mt-20 lg:mt-32">
+          <h2 className="text-2xl text-white mb-10">
+            {' '}
+            Plus d&apos;article de blogs
+          </h2>
 
           {/* Card others posts */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

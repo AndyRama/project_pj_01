@@ -44,7 +44,7 @@ const PricingDetails = ({ className }) => {
     <>
       <section className="pb-20">
         <div className="transform-gpu blur-3xl">
-          <div className="absolute left-0 opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+          <div className="absolute left-0 opacity-30  md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
         </div>
         <div className="container px-4 mx-auto">
           <h3 className="text-orange-400 text-xl text-center">
@@ -99,7 +99,7 @@ const PricingDetails = ({ className }) => {
           </div>
         </div>
         <div className="transform-gpu blur-3xl">
-          <div className="absolute right-0 opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+          <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
         </div>
       </section>
     </>

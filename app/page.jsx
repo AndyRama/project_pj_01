@@ -16,7 +16,7 @@ export default function Home() {
       <CardDescription className="pb-15 sm:bg-[#1D1D1D]" />
       <RecentBlog className="pb-5 lg:pb-32" />
       <CardProgam />
-      <Subscribe className="py-16 pt-64 -mt-48 lg:py-32 bg-[#1D1D1D]" />
+      <Subscribe className="py-16 pt-64 lg:py-32 bg-[#1D1D1D]" />
     </>
   )
 }
