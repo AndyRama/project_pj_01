@@ -1,9 +1,8 @@
 import React from 'react'
 import SubHero from '../components/about/SubHero'
 import Subscribe from '../components/Subscribe'
-import ContactForm from '../components/ContactForm'
-import CardCategory from '../components/CardCategory'
-import CardContact from '../components/CardContact'
+import ContactForm from '../components/contact/ContactForm'
+import CardContact from '../components/contact/CardContact'
 
 export const metadata = {
   title: 'Contact Page - Unlcoaching',

@@ -10,21 +10,21 @@ const CardCategoriesContent = {
     subTitle: '',
     description: '',
   },
+  title: 'Categories',
+  description:
+    ' Lorem ipsum dolor sit, amet consecte Mollitia ipsum ectetur repellat ! ',
   step: [
     {
-      title: 'Categories',
-      description:
-        ' Lorem ipsum dolor sit, amet consecte Mollitia ipsum ectetur repellat ! ',
       title1: 'Alimentation',
       icon1: '',
-      btn1: {
-        href: '#',
+      btn: {
+        href: '/blog/categories/fitness',
         label: '',
       },
       title2: 'Fitness',
       icon2: '',
       btn: {
-        href: '#',
+        href: '',
         label: '',
       },
       title3: 'Complément Alim.',
@@ -46,7 +46,7 @@ const CardCategoriesContent = {
 const CardCategory = ({ className }) => {
   return (
     <section className={className}>
-      <div className="w-auto hidden lg:contents">
+      <div className="w-auto contents">
         {CardCategoriesContent.step.map((step, index) => (
           <motion.div
             key={step.title}

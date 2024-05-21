@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero className="pt-32 pb-0" />
       <CardDescriptionL className=" pt-14 pb-15" />
-      <CardDescriptionR className=" relativee pt-14 pb-15 sm:bg-[#1D1D1D]" />
+      <CardDescriptionR className=" relative pt-14 pb-15 sm:bg-[#1D1D1D]" />
       <CardGridImage />
       <CardDescription className="pb-15 sm:bg-[#1D1D1D]" />
       <RecentBlog className="pb-5 lg:pb-32" />

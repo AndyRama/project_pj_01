@@ -12,27 +12,12 @@ const CardCategoriesContent = {
   },
   step: [
     {
-      title: 'Categories',
-      description:
-        ' Lorem ipsum dolor sit, amet consecte Mollitia ipsum ectetur repellat ! ',
       title1: '5 Washington Square, New York, USA',
       icon1: '',
-      btn1: {
-        href: '#',
-        label: '',
-      },
       title2: '+1 212 425 8617',
       icon2: '',
-      btn: {
-        href: '#',
-        label: '',
-      },
       title3: 'information@office.com.',
       icon3: '',
-      btn: {
-        href: '#',
-        label: '',
-      },
     },
   ],
 }

@@ -31,7 +31,7 @@ const page = ({ params }) => {
         subTitle="Category"
       />
       <Posts
-        className="pt-0 pb-52"
+        className="pt-0 pb-52 "
         archive={true}
         params={params}
         itemsPerPage={6}

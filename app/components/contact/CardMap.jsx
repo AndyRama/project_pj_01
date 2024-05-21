@@ -16,11 +16,6 @@ const CardCategoriesContent = {
       description:
         ' Lorem ipsum dolor sit, amet consecte Mollitia ipsum ectetur repellat ! ',
       title1: 'Alimentation',
-      map: '',
-      btn: {
-        href: '#',
-        label: '',
-      },
     },
   ],
 }
