@@ -46,7 +46,7 @@ const CardCategoriesContent = {
 const CardCategory = ({ className }) => {
   return (
     <section className={className}>
-      <div className="w-auto contents">
+      <div className="w-auto hidden lg:contents ">
         {CardCategoriesContent.step.map((step, index) => (
           <motion.div
             key={step.title}
@@ -63,7 +63,7 @@ const CardCategory = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className="group duration-300 bg-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md"
           >
-            <div className="px-2 lg:px-4 mt-10 mb-10 relative flex flex-col gap-3 items-start ">
+            <div className="px-2 lg:px-4 mt-10 mb-10 relative flex flex-col gap-3">
               <span className="text-2xl flex">
                 {/* <BiHardHat className="mt-2 mr-2 border-dashed border-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" /> */}
                 <h2 className="text-3xl text-white">Catégories</h2>
