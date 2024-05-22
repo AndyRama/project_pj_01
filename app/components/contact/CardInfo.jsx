@@ -1,10 +1,10 @@
 'use client'
+
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import React from 'react'
 import { BiHardHat, BiLayer, BiBulb } from 'react-icons/bi'
 
-const CardCategoriesContent = {
+const CardInfosContent = {
   heading: {
     title: '',
     subTitle: '',
@@ -22,11 +22,11 @@ const CardCategoriesContent = {
   ],
 }
 
-const CardCategory = ({ className }) => {
+const CardInfo = ({ className }) => {
   return (
     <section className={className}>
       <div className="w-[360px] md:w-[330px] xl:w-[350px] xl:ml-[-16px] md:pl-0">
-        {CardCategoriesContent.step.map((step, index) => (
+        {CardInfosContent.step.map((step, index) => (
           <motion.div
             key={step.title}
             initial={{ opacity: 0, y: 30 }}
@@ -53,20 +53,18 @@ const CardCategory = ({ className }) => {
 
               {['title1', 'title2', 'title3'].map((titleKey, idx) => (
                 <div key={idx}>
-                  <Link href={step.btn.href}>
-                    <span className="text-2xl flex">
-                      <BiLayer className="mt-1 mr-2 border-dashed border-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
-                      <h3
-                        className="text-xl hover:text-gray-500 text-white pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
+                  <span className="text-2xl flex">
+                    <BiLayer className="mt-1 mr-2 border-dashed border-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
+                    <h3
+                      className="text-xl hover:text-gray-500 text-white pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
                       relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px]
                       before:bg-orange-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
                       before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
                       hover:before:scale-y-[1] hover:before:scale-z-[1]"
-                      >
-                        {step[titleKey]}
-                      </h3>
-                    </span>
-                  </Link>
+                    >
+                      {step[titleKey]}
+                    </h3>
+                  </span>
                 </div>
               ))}
             </div>
@@ -77,4 +75,4 @@ const CardCategory = ({ className }) => {
   )
 }
 
-export default CardCategory
+export default CardInfo
