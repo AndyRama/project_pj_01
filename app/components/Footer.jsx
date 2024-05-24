@@ -109,6 +109,7 @@ const Footer = ({ className }) => {
                 <Link
                   href="#"
                   className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
+                  alt="Instagrame-iconne"
                 >
                   <FaInstagramSquare />
                 </Link>
@@ -117,6 +118,7 @@ const Footer = ({ className }) => {
                 <Link
                   href="#"
                   className="text-[28px] text-white  hover:text-orange-200  font-bold mr-10"
+                  alt="facebook-iconne"
                 >
                   <FaFacebook />
                 </Link>
@@ -125,6 +127,7 @@ const Footer = ({ className }) => {
                 <Link
                   href="#"
                   className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
+                  alt="Linkedin-iconne"
                 >
                   <FaLinkedin />
                 </Link>

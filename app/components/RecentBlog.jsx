@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { allPosts } from '.contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
@@ -8,8 +8,10 @@ import Image from 'next/image'
 
 const recentBlogContent = {
   heading: {
-    title: 'Articles récent',
-    subTitle: 'Blog / Nouveau',
+    title: 'Articles récents',
+    subTitle: 'Mon blog',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elitd non pariatur veritatis ipsum dolorsit amet consectetur, adipisicing elitd non pariatur veritatis it amet consectetur, adipisicing elitd non pariatur veritatis..',
   },
 }
 const PostCard = ({ index, post }) => {
@@ -26,7 +28,7 @@ const PostCard = ({ index, post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="bg-transparent relative overflow-hidden group rounded"
+      className="bg-[#2F2E2E] relative overflow-hidden group rounded "
     >
       <Link href={post.url} className="relative block overflow-hidden">
         <Image
@@ -39,12 +41,12 @@ const PostCard = ({ index, post }) => {
         />
       </Link>
 
-      <div className="p-6 bg-[#2F2E2E]">
+      <div className="p-6 ">
         <p className="text-white mb-2 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
 
-        <h3 className="mb-4">
+        <h3 className="mb-4 text-white">
           <Link href={post.url} className="text-lg leading-none">
             {post.title}
           </Link>
@@ -52,7 +54,7 @@ const PostCard = ({ index, post }) => {
         <p>
           <Link
             href={post.url}
-            className="text-[12px] tracking-[2px] uppercase
+            className="text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
             inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full
@@ -61,7 +63,7 @@ const PostCard = ({ index, post }) => {
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
             hover:before:scale-x-[1] hover:before:scale-y-[1]
-            hover:before:scale-z-[1] text-white pb-2"
+            hover:before:scale-z-[1] pb-2"
           >
             lire l&apos;article
           </Link>
@@ -77,9 +79,8 @@ const RecentBlog = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto rounded-md ">
-        <div className=" px-4 md:px-20 lg:flex justify-center mb-2 ">
-          {/* <div className="w-full lg:w-8/12 lg:flex gap-0 items-center"> */}
+      <div className="container mx-auto rounded-md">
+        <div className=" px-4 lg:px-20 lg:flex justify-center mb-2">
           <div className="lg:w-7/12">
             {recentBlogContent.heading.subTitle && (
               <motion.span
@@ -135,15 +136,15 @@ const RecentBlog = ({ className }) => {
             </motion.p>
           </div>
         </div>
+      </div>
 
-        <div
-          className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
-          gap-4 w-full lg:w-10/12 mx-auto mt-10 text-white"
-        >
-          {posts.slice(0, 4).map((post, index) => (
-            <PostCard key={index} index={index} post={post} />
-          ))}
-        </div>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+          gap-4 w-full lg:w-10/12 mx-auto mt-10 mb-10"
+      >
+        {posts.slice(0, 4).map((post, index) => (
+          <PostCard key={index} index={index} post={post} />
+        ))}
       </div>
     </section>
   )

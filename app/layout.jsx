@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import './globals.scss'
+import './globals.css'
 
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Unlcoaching',
+  title: 'Unlcoaching | Jérémy Prat',
   description:
     'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
   icon: {

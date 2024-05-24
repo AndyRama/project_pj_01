@@ -1,6 +1,6 @@
 import React from 'react'
 import { allPosts } from 'contentlayer/generated'
-import SubHero from './../../../components/about/SubHero'
+import SubHero from '@/app/components/about/SubHero'
 import Posts from '@/app/components/blog/category/Posts'
 import Subscribe from '@/app/components/Subscribe'
 
@@ -26,12 +26,12 @@ const page = ({ params }) => {
   return (
     <>
       <SubHero
-        className="pt-32 pb-24 capitalize"
-        title={`${newTitle} (${itemsTotal})`}
-        subTitle="Category"
+        className="pt-32 pb-10 capitalize"
+        title={`${newTitle} [${itemsTotal}]`}
+        subTitle="Categories"
       />
       <Posts
-        className="pt-0 pb-52 "
+        className="pb-32"
         archive={true}
         params={params}
         itemsPerPage={6}

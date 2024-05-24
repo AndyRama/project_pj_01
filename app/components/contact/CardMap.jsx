@@ -1,10 +1,10 @@
 'use client'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import React from 'react'
-import { BiHardHat, BiLayer, BiBulb } from 'react-icons/bi'
 
-const CardCategoriesContent = {
+import React from 'react'
+import { motion } from 'framer-motion'
+import { MdHome } from 'react-icons/md'
+
+const CardMapContent = {
   heading: {
     title: '',
     subTitle: '',
@@ -20,11 +20,11 @@ const CardCategoriesContent = {
   ],
 }
 
-const CardCategory = ({ className }) => {
+const CardMap = ({ className }) => {
   return (
     <section className={className}>
       <div className="w-[360px] md:w-[330px] xl:w-[350px] xl:ml-[-16px] md:pl-0">
-        {CardCategoriesContent.step.map((step, index) => (
+        {CardMapContent.step.map((step, index) => (
           <motion.div
             key={step.title}
             initial={{ opacity: 0, y: 30 }}
@@ -40,9 +40,9 @@ const CardCategory = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className="group duration-300 bg-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md w-auto h-[460px]"
           >
-            <div className="px-2 lg:px-4 mt-10 mb-10 relative flex flex-col gap-3 items-start ">
+            <div className="px-2 lg:px-4 mt-5 mb-10 relative flex flex-col gap-3 items-start ">
               <span className="text-2xl flex">
-                <BiHardHat className="mt-2 mr-2 border-dashed border-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
+                <MdHome className="mt-2 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
                 <h2 className="text-3xl text-white">Localisation</h2>
               </span>
 
@@ -61,4 +61,4 @@ const CardCategory = ({ className }) => {
   )
 }
 
-export default CardCategory
+export default CardMap

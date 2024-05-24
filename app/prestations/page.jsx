@@ -1,14 +1,13 @@
 import React from 'react'
-import SubHero from '../components/about/SubHero'
-import Subscribe from '@/app/components/Subscribe'
-import PricingPack from '@/app/components/PricingPack'
-import PricingDetails from '@/app/components/PricingDetails'
-import PricingEbook from '@/app/components/PricingEbook'
+import SubHero from './../components/about/SubHero'
+import PricingPack from '../components/prestation/PricingPack'
+import PricingDetails from '../components/prestation/PricingDetails'
+import PricingEbook from '../components/prestation/PricingEbook'
+import Subscribe from '../components/Subscribe'
 
 export const metadata = {
-  title: 'Prestations Unlcoaching',
+  title: 'Unlcoaching by Jeremy Prat',
 }
-
 const page = () => {
   return (
     <>
@@ -16,8 +15,8 @@ const page = () => {
       <PricingPack />
       <PricingDetails />
       <PricingEbook />
-      <SubHero className="pt-32" />
-      <Subscribe className="py-16 pt-32 lg:py-32 " />
+      <SubHero className="hidden lg:contents" />
+      <Subscribe className="py-16 lg:py-32 lg:mt-[-35rem] xl:mt-[-38rem]" />
     </>
   )
 }

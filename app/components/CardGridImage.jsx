@@ -64,7 +64,7 @@ const CardGridImage = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto rounded-md ">
-        <div className="py-16 mt-[-20rem] md:mt-0 md:flex justify-center mb-2 ">
+        <div className="py-16 mt-[-18rem] md:mt-0 md:flex justify-center mb-2 ">
           <div
             className="grid grid-cols-1 md:grid-cols-2
              lg:grid-cols-2 xl:grid-cols-4 gap-6 w-full lg:w-10/12 

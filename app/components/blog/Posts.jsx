@@ -1,13 +1,13 @@
 'use client'
+
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-import ReactPaginate from 'react-paginate'
-import CardCategory from './../CardCategory'
-
 import { motion } from 'framer-motion'
+import CardCategory from '../CardCategory'
+// import ReactPaginate from 'react-paginate'
 
 const Items = ({ currentItems }) => {
   return (
@@ -27,7 +27,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="relative overflow-hidden group rounded-md"
+              className="bg-[#2F2E2E] relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -42,24 +42,32 @@ const Items = ({ currentItems }) => {
                   className="object-cover object-center h-[200px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
-                <div className="p-8 bg-[#2F2E2E]">
-                  <p className="text-white mb-3 uppercase text-[12px] tracking-[1px]">
-                    {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
+                <div className="p-8">
+                  <p className="text-white mb-3 uppercase text-[12px] tracking-[1px] font-bold">
+                    {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}{' '}
+                    •<span className="text-orange-400"> Lecture 5 min</span>
                   </p>
 
-                  <h3 className="mb-4 text-white">
-                    <Link href={post.url} className="text-lg leading-none">
+                  <h3 className="mb-4 text-orange-400">
+                    <Link
+                      href={post.url}
+                      className="text-lg font-bold leading-none"
+                    >
                       {post.title}
                     </Link>
                   </h3>
-                  <p className="text-white">
+
+                  <p className="text-white mb-3 text-[14px] tracking-[1px]">
+                    {post.excerpt}
+                  </p>
+                  <p>
                     <Link
                       href={post.url}
-                      className={`text-[12px] tracking-[2px] uppercase
+                      className={` text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -139,34 +147,37 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <>
       <section className={`${className}`} ref={ref}>
-        <div className=" mt-10 lg:ml-0 w-auto flex px-4 ">
-          <CardCategory className="lg:w-3/12 lg:mx-8" />
-          <div className="w-12/12 lg:w-10/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Items currentItems={currentItems} />
+        <div className="container mx-auto mt-10 w-auto ">
+          <div className="flex">
+            <CardCategory className="hidden lg:contents " />
+
+            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <Items currentItems={currentItems} />
+            </div>
           </div>
-          {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-white">
-            <ReactPaginate
-              nextLabel="Next"
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={3}
-              marginPagesDisplayed={2}
-              pageCount={pageCount}
-              previousLabel="Previous"
-              pageClassName="page-item"
-              pageLinkClassName="page-link"
-              previousClassName="page-item"
-              previousLinkClassName="page-link"
-              nextClassName="page-item"
-              nextLinkClassName="page-link"
-              breakLabel="..."
-              breakClassName="page-item"
-              breakLinkClassName="page-link"
-              containerClassName="pagination"
-              activeClassName="active"
-              renderOnZeroPageCount={null}
-            />
-          </div> */}
         </div>
+        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-white mt-20">
+          <ReactPaginate
+            nextLabel="Next"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={3}
+            marginPagesDisplayed={2}
+            pageCount={pageCount}
+            previousLabel="Previous"
+            pageClassName="page-item"
+            pageLinkClassName="page-link"
+            previousClassName="page-item"
+            previousLinkClassName="page-link"
+            nextClassName="page-item"
+            nextLinkClassName="page-link"
+            breakLabel="..."
+            breakClassName="page-item"
+            breakLinkClassName="page-link"
+            containerClassName="pagination"
+            activeClassName="active"
+            renderOnZeroPageCount={null}
+          />
+        </div> */}
       </section>
     </>
   )

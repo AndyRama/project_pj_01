@@ -90,7 +90,7 @@ const CardProgram = ({ className }) => {
         </motion.h2>
       </div>
 
-      <div className="container px-16 mx-auto">
+      <div className="container px-4 md:px-16 mx-auto">
         {programs.map((program, index) => (
           <div
             key={index}

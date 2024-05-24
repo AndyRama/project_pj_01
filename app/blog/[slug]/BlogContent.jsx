@@ -24,7 +24,8 @@ const BlogContent = ({ post }) => {
   )
 
   let MDXContent
-  if (!post) return null
+
+  if (!posts) return null
 
   if (!post) {
     console.log('Blog Post not found')
@@ -44,12 +45,12 @@ const BlogContent = ({ post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="pt-44 pb-20 container mx-auto"
+      className="pt-44 pb-20 container px-4 mx-auto"
     >
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-16 max-w-4xl mx-auto">
           {/* Content title post */}
-          <h1 className="text-white text-center text-4xl lg:text-6xl font-medium">
+          <h1 className="text-white text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
           </h1>
 
@@ -63,40 +64,40 @@ const BlogContent = ({ post }) => {
             <span className="mx-3">•</span>
 
             {post.categories?.map((category, index) => (
-              <span
+              <Link
                 href={`/blog/categories/${slugify(category.title)}`}
                 key={category.title}
                 className="font-medium"
               >
                 {category.title}
                 {index < post.categories.length - 1 ? ` | ` : ``}
-              </span>
+              </Link>
             ))}
           </p>
         </div>
 
         {/* Content Image post */}
-        <div>
+        <div className="mb-16">
           <Image
             src={post.image}
             width={1065}
             height={644}
-            className="object-cover object-top w-full rounded-md mb-16 "
+            className="object-cover object-top rounded-md w-full"
             alt={post.title}
           />
         </div>
+
         {/* Content Article */}
         <div className="flex">
-          <CardCategory className="w-3/12 mr-2" />
-          <article className="text-white prose mx-auto max-w-2xl w-auto lg:w-10/12 ">
+          <CardCategory className="hidden lg:contents w-3/12 mr-2" />
+          <article className="prose mx-auto max-w-3xl">
             <MDXContent />
           </article>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-20 lg:mt-32">
-          <h2 className="text-2xl text-white mb-10">
-            {' '}
-            Plus d&apos;article de blogs
+        <div className="max-w-5xl mx-auto mt-20 lg:mt-32">
+          <h2 className="text-2xl text-gray-700 mb-10">
+            Plus d&apos;articles de mon blog
           </h2>
 
           {/* Card others posts */}

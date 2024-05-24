@@ -1,20 +1,22 @@
 import React from 'react'
 import SubHero from '../components/about/SubHero'
 import Subscribe from '../components/Subscribe'
-import Testimonial from '../components/Testimonial'
+import Story from '../components/about/Story'
+import Hero from '../components/about/Hero'
 
-export const metadata = {
-  title: 'Coeur de la Team - Unlcoaching',
-}
-
-const page = () => {
+const Page = () => {
   return (
     <>
-      <SubHero className="pt-32" title="Le coeur de la team" />
-      {/* <Testimonial /> */}
+      <SubHero
+        className="pt-32"
+        title="Le Coeur de la team"
+        subTitle="nos valeurs"
+      />
+      <Story />
+      <Hero />
       <Subscribe className="py-16 pt-32 lg:py-32" />
     </>
   )
 }
 
-export default page
+export default Page

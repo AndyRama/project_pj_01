@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const cardDescriptionLContent = {
+const cardDescriptionContent = {
   heading: {
     title: 'Mon approche',
     subTitle: 'Mes valeurs',
@@ -16,7 +16,7 @@ const cardDescriptionLContent = {
   },
 }
 
-const CardDescriptionL = ({ className }) => {
+const CardDescription = ({ className }) => {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -36,7 +36,7 @@ const CardDescriptionL = ({ className }) => {
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
               {/* Card Description - subTitle - Left */}
-              {cardDescriptionLContent.heading.subTitle && (
+              {cardDescriptionContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -50,12 +50,12 @@ const CardDescriptionL = ({ className }) => {
                   viewport={{ once: true }}
                   className="uppercase tracking-[2px] text-[12.5px] mt-10 mb-2 inline-block text-orange-400"
                 >
-                  {cardDescriptionLContent.heading.subTitle}
+                  {cardDescriptionContent.heading.subTitle}
                 </motion.span>
               )}
 
               {/* CardDescriptionLContent - Left - Title */}
-              {cardDescriptionLContent.heading.title && (
+              {cardDescriptionContent.heading.title && (
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -69,7 +69,7 @@ const CardDescriptionL = ({ className }) => {
                   viewport={{ once: true }}
                   className="text-2xl lg:text-4xl text-white mb-7"
                 >
-                  {cardDescriptionLContent.heading.title}
+                  {cardDescriptionContent.heading.title}
                 </motion.h2>
               )}
 
@@ -87,11 +87,11 @@ const CardDescriptionL = ({ className }) => {
                 viewport={{ once: true }}
                 className="leading-relaxed mb-10 text-white"
               >
-                {cardDescriptionLContent.content.description}
+                {cardDescriptionContent.content.description}
               </motion.p>
             </div>
 
-            <div className="lg:w-6/12 mt">
+            <div className="lg:w-6/12 ">
               {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
@@ -110,4 +110,4 @@ const CardDescriptionL = ({ className }) => {
     </section>
   )
 }
-export default CardDescriptionL
+export default CardDescription

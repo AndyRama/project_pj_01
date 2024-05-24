@@ -22,7 +22,7 @@ const Subscribe = ({ className }) => {
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
         {/* Logo - content left*/}
-        <div className=" flex justify-center items-center pb-10 ">
+        <div className=" flex justify-center items-center pb-5">
           <Image
             src={IconLogo}
             weight={150}
@@ -33,7 +33,7 @@ const Subscribe = ({ className }) => {
         </div>
         <div className=" flex justify-center items-center">
           <div className="w-8/12 flex gap-0">
-            <div className="text-center w-screen max-w-md mx-auto mb-10">
+            <div className="text-center w-screen max-w-md mx-auto mb-8">
               {subscribeContent.heading.subtitle && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-5  text-white flex justify-center "
+                  className="uppercase tracking-[3px] text-[12.5px] mb-5 text-white flex justify-center "
                 >
                   {subscribeContent.heading.subtitle}
                 </motion.div>

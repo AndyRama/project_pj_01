@@ -43,8 +43,8 @@ const SubHero = ({ className, title, subTitle }) => {
                     transition: { delay: 0.03, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px]
-                  mb-5 inline-block text-gray-500"
+                  className="uppercase tracking-[3px] text-[18px]
+                  mb-5 inline-block text-orange-400 font-bold"
                 >
                   {subTitle}
                 </motion.span>

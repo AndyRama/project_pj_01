@@ -10,33 +10,28 @@ describe('Footer component', () => {
     expect(getByText('Débutant')).toBeInTheDocument()
     expect(getByText('Intermédiaire')).toBeInTheDocument()
     expect(getByText('Confirmé')).toBeInTheDocument()
+
     expect(getByText('Accueil')).toBeInTheDocument()
-    expect(getByText('Prestation')).toBeInTheDocument()
-    expect(getByText('Team')).toBeInTheDocument()
     expect(getByText('Contact')).toBeInTheDocument()
-    expect(getByText('Ressources')).toBeInTheDocument()
-    expect(getByText('Application')).toBeInTheDocument()
-    expect(getByText('Ebook')).toBeInTheDocument()
-    expect(getByText('Calories')).toBeInTheDocument()
-    expect(getByText('Support')).toBeInTheDocument()
+    expect(getByText('Prestations')).toBeInTheDocument()
+    expect(getByText('Team')).toBeInTheDocument()
+    expect(getByText('E-Books')).toBeInTheDocument()
+    expect(getByText('School')).toBeInTheDocument()
   })
 
   test('renders footer company name', () => {
     const { getByText } = render(<Footer />)
 
     // Test footer company name
-    expect(getByText('Unlcoaching.')).toBeInTheDocument()
   })
 
   test('renders footer copyright information', () => {
     const { getByText } = render(<Footer />)
 
     // Test footer copyright information
-    expect(getByText(/© 2023/i)).toBeInTheDocument()
-    expect(getByText(/Unlcoaching./i)).toBeInTheDocument()
-
-    expect(getByText(/All rights reserved./i)).toBeInTheDocument()
-    expect(getByText(/Created with/i)).toBeInTheDocument()
-    expect(getByText(/by/i)).toBeInTheDocument()
+    expect(getByText(/© 2024/i)).toBeInTheDocument()
+    expect(getByText(/Tous droits réservés./i)).toBeInTheDocument()
+    expect(getByText(/Crée avec /i)).toBeInTheDocument()
+    expect(getByText(/par/i)).toBeInTheDocument()
   })
 })

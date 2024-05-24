@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellowLight: '#FFF3D9',
+        yellowLight:'#FFF3D9'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -17,5 +17,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

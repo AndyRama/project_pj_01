@@ -37,7 +37,7 @@ const CardDescriptionL = ({ className }) => {
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
           <div className="lg:w-8/12 lg:flex gap-10 items-center">
-            <div className="lg:w-6/12 lg:order-2 relative ">
+            <div className="lg:w-6/12 lg:order-2 relative">
               {/* Card Description - subTitle - Left */}
               {cardDescriptionLContent.heading.subTitle && (
                 <motion.span
