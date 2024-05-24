@@ -168,7 +168,7 @@ const Hero = ({ className }) => {
                 className="z-[2] relative bg-cover bg-center"
               >
                 <Image
-                  src="/images/jeremy3.jpg"
+                  src="/images/jeremy.jpg"
                   width={800}
                   height={900}
                   alt="hero image"
