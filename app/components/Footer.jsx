@@ -112,7 +112,6 @@ const Footer = ({ className }) => {
                   alt="Instagrame-iconne"
                 >
                   <FaInstagramSquare />
-                  <span className="sr-only">Instagram</span>
                 </Link>
               </span>
               <span>
@@ -122,7 +121,6 @@ const Footer = ({ className }) => {
                   alt="facebook-iconne"
                 >
                   <FaFacebook />
-                  <span className="sr-only">Facebook</span>
                 </Link>
               </span>
               <span>
@@ -132,7 +130,6 @@ const Footer = ({ className }) => {
                   alt="Linkedin-iconne"
                 >
                   <FaLinkedin />
-                  <span className="sr-only">LinkedIn</span>
                 </Link>
               </span>
             </div>

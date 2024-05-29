@@ -74,6 +74,7 @@ export default function Navigation() {
                   height={60}
                   alt="logo"
                   className="bg-black rounded-full"
+                  fetchpriority="high"
                 />
               </span>
               {/* Name Link - content left*/}

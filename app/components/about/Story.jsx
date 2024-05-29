@@ -107,7 +107,7 @@ const storyContent = {
 const Story = ({ className }) => {
   return (
     <section>
-      <div className="container px-4 mx-auto mt-32">
+      <div className="container px-4 mx-auto mt-48">
         <div className="md:flex w-full md:w-10/12 mx-auto items-stretch md:gap-7 ">
           <div className="md:w-4/12 self-center space-y-7 mb-7 md:mb-0 ">
             {storyContent.column1.imgs.map((item, index) => {

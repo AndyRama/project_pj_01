@@ -19,20 +19,21 @@
 }
 
 .pagination li a {
-  @apply rounded-full w-10 h-10 inline-flex items-center justify-center transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600 py-4 px-5 text-white hover:bg-white hover:text-orange-600 hover:shadow-2xl;
+  @apply rounded-full w-10 h-10 inline-flex items-center justify-center transition-all
+  duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
+  py-4 px-5 text-white hover:bg-white hover:text-orange-600 hover:shadow-2xl;
 }
 
 .pagination li.active a {
   @apply bg-white shadow-2xl text-orange-600;
 }
 
-/* .pagination li:first-child {
-  @apply !mr-2 md: !mr-5;
+.pagination li:first-child {
+  @apply !mr-2 md:!mr-5;
 }
-
 .pagination li:last-child {
-  @apply !ml-2 md: !ml-5;
-} */
+  @apply !ml-2 md:!ml-5;
+}
 
 .pagination li:first-child a {
   @apply w-auto px-3 md:px-5 rounded-none;
@@ -42,21 +43,12 @@
   @apply w-auto px-3 md:px-5 rounded-none;
 }
 
-.prose h1,
-h2,
-h3,
-h4 {
+.prose h1, h2, h3, h4 {
   @apply !font-medium text-slate-900;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+
+.imageDestock {
+  top:0 !important;
+  right:0;
 }
