@@ -1,37 +1,61 @@
-'use client'
-import React from 'react'
-import Image from 'next/image'
-import IconLogo from './../asset/Icons/logo.svg'
-import { motion } from 'framer-motion'
-import { BiSolidPaperPlane } from 'react-icons/bi'
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import IconLogo from './../asset/Icons/logo.svg';
+import { motion } from 'framer-motion';
+import { BiSolidPaperPlane } from 'react-icons/bi';
 
 const subscribeContent = {
   heading: {
     title: 'Ne manquez jamais une actualité.',
     subtitle: 'Rejoinds la communauté',
-    description:
-      'Je partage de nombreux conseils et pratique chaques semaines dans mes articles !',
+    description: 'Je partage de nombreux conseils et pratique chaques semaines dans mes articles !',
   },
   form: {
     placeholder: 'Entrer ton Email',
   },
-}
+};
 
 const Subscribe = ({ className }) => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('/api/resend', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setMessage('Merci pour votre abonnement !');
+        setEmail('');
+      } else {
+        setMessage('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+      }
+    } catch (error) {
+      setMessage('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+    }
+  };
+
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
-        {/* Logo - content left*/}
-        <div className=" flex justify-center items-center pb-5">
+        <div className="flex justify-center items-center pb-5">
           <Image
             src={IconLogo}
-            weight={150}
+            width={150}
             height={150}
             alt="logo"
             className="bg-black rounded-full"
           />
         </div>
-        <div className=" flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <div className="w-8/12 flex gap-0">
             <div className="text-center w-screen max-w-md mx-auto mb-8">
               {subscribeContent.heading.subtitle && (
@@ -76,6 +100,7 @@ const Subscribe = ({ className }) => {
             }}
             viewport={{ once: true }}
             className="flex relative w-auto max-w-xl mx-auto justify-center gap-5 items-center"
+            onSubmit={handleSubmit}
           >
             <input
               className="appearance-none bg-white py-4 px-7 w-auto lg:w-screen
@@ -83,6 +108,8 @@ const Subscribe = ({ className }) => {
               placeholder={subscribeContent.form.placeholder}
               required
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button
               type="submit"
@@ -94,6 +121,20 @@ const Subscribe = ({ className }) => {
               <BiSolidPaperPlane />
             </button>
           </motion.form>
+          {message && (
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.9, duration: 0.5 },
+              }}
+              viewport={{ once: true }}
+              className="w-auto max-w-md mx-auto mt-10 text-center text-white text-opacity-80"
+            >
+              {message}
+            </motion.p>
+          )}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
@@ -102,7 +143,7 @@ const Subscribe = ({ className }) => {
               transition: { delay: 0.9, duration: 0.5 },
             }}
             viewport={{ once: true }}
-            className="w-auto max-w-md mx-auto mt-10 text-center text-white text-opacity-80 "
+            className="w-auto max-w-md mx-auto mt-10 text-center text-white text-opacity-80"
           >
             {subscribeContent.heading.description}
           </motion.p>
@@ -112,7 +153,7 @@ const Subscribe = ({ className }) => {
         <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Subscribe
+export default Subscribe;
