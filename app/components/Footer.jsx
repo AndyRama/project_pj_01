@@ -77,7 +77,7 @@ const footerContent = {
 const Copyright = () => {
   return (
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white ">
-      <p className="text-center items-center mx-auto text-sm">
+      <div className="text-center items-center mx-auto text-sm">
         &copy; 2024{' '}
         <Link href="/" className="text-orange-400">
           Unlcoaching{' '}
@@ -88,7 +88,7 @@ const Copyright = () => {
         <Link href="/" className="text-orange-400">
           Andy Ramaroson
         </Link>
-      </p>
+      </div>
     </div>
   )
 }
@@ -174,7 +174,7 @@ const Footer = ({ className }) => {
           </div>
         </div>{' '}
         {/* Version 2 */}
-        <p className="text-right items-right mx-auto text-sm pb-0">
+        <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
             className="text-orange-400 hover:text-white"
@@ -187,7 +187,7 @@ const Footer = ({ className }) => {
           >
             Terms{' '}
           </Link>
-        </p>
+        </div>
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
