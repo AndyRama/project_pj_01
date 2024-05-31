@@ -46,12 +46,16 @@ const PostCard = ({ index, post }) => {
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
 
-        <h3 className="mb-4 text-white">
+        <h3 className="mb-4 text-orange-400">
           <Link href={post.url} className="text-lg leading-none">
             {post.title}
           </Link>
         </h3>
-        <p>
+
+        <p className="text-white mb-3 text-[14px] tracking-[1px]">
+          {post.excerpt}
+        </p>
+        <div>
           <Link
             href={post.url}
             className="text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
@@ -67,7 +71,8 @@ const PostCard = ({ index, post }) => {
           >
             lire l&apos;article
           </Link>
-        </p>
+            <span className="text-orange-400 ml-28"> Lecture 5 min</span>
+        </div>
       </div>
     </motion.div>
   )

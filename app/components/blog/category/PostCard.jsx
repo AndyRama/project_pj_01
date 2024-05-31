@@ -51,7 +51,7 @@ const PostCard = ({ post, index }) => {
           </Link>
         </h3>
 
-        <p>
+        <div>
           <Link
             href={`/${post.url}`}
             className={`text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
@@ -67,7 +67,9 @@ const PostCard = ({ post, index }) => {
           >
             lire l&apos;article
           </Link>
-        </p>
+          <span className="text-orange-400 ml-32"> Lecture 5 min</span>
+
+        </div>
       </div>
     </motion.div>
   )
