@@ -25,7 +25,7 @@ const SubHero = ({ className, title, subTitle }) => {
     <section className={`${className}`}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[50vh] xl:h-[60vh] w-[max] -mt-[150px] bg-center bg-cover"
+        className="h-[50vh] md:h-[90vh] lg:h-[70vh] w-[max] -mt-[130px] bg-center bg-cover"
         style={{
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
@@ -52,7 +52,7 @@ const SubHero = ({ className, title, subTitle }) => {
 
               {/* Content center - title */}
               {title && (
-                <motion.h1
+                <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
                     opacity: 1,
@@ -63,7 +63,7 @@ const SubHero = ({ className, title, subTitle }) => {
                   className="text-4xl text-bold md:text-5xl xl:text-7xl text-white"
                 >
                   {title}
-                </motion.h1>
+                </motion.h2>
               )}
             </div>
           </div>

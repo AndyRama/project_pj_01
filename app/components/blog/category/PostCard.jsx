@@ -67,7 +67,7 @@ const PostCard = ({ post, index }) => {
           >
             lire l&apos;article
           </Link>
-          <span className="text-orange-400 ml-32"> Lecture 5 min</span>
+          <span className="text-orange-400 ml-14"> Lecture 5 min</span>
 
         </div>
       </div>

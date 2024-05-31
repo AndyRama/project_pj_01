@@ -59,6 +59,7 @@ const Items = ({ currentItems }) => {
                   <p className="text-white mb-3 text-[14px] tracking-[1px]">
                     {post.excerpt}
                   </p>
+
                   <div>
                     <Link
                       href={post.url}
@@ -75,7 +76,7 @@ const Items = ({ currentItems }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-400 ml-32"> Lecture 5 min</span>
+                    <span className="text-orange-400 ml-14"> Lecture 5 min</span>
                   </div>
                 </div>
               </Link>
@@ -85,6 +86,7 @@ const Items = ({ currentItems }) => {
     </>
   )
 }
+
 const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   const [currentItems, setCurrentItems] = useState(null)
   const [pageCount, setPageCount] = useState(0)

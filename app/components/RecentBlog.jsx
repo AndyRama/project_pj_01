@@ -67,11 +67,11 @@ const PostCard = ({ index, post }) => {
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
             hover:before:scale-x-[1] hover:before:scale-y-[1]
-            hover:before:scale-z-[1] pb-2"
+            hover:before:scale-z-[1] pb-2 mr-22 md:mr-28"
           >
             lire l&apos;article
           </Link>
-            <span className="text-orange-400 ml-28"> Lecture 5 min</span>
+            <span className="text-orange-400"> Lecture 5 min</span>
         </div>
       </div>
     </motion.div>

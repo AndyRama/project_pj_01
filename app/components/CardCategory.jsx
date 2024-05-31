@@ -10,42 +10,36 @@ import { MdHome } from 'react-icons/md'
 
 const iconMapping = {
   icon1: (
-    <MdHome
-      data-testid="icon1"
-      className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
-    />
-  ),
-  icon2: (
     <SiFranprix
       data-testid="icon2"
       className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
     />
   ),
-  icon3: (
+  icon2: (
     <MdFitnessCenter
       data-testid="icon3"
       className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
     />
   ),
-  icon4: (
+  icon3: (
     <BiBulb
     data-testid="icon4"
       className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
       />
   ),
-  icon5: (
+  icon4: (
     <MdOutlineSportsKabaddi
     data-testid="icon5"
     className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
     />
   ),
-  icon6: (
+  icon5: (
     <MdOutlineSportsKabaddi
     data-testid="icon6"
     className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
     />
   ),
-  icon7: (
+  icon6: (
     <MdFitnessCenter
     data-testid="icon7"
     className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
@@ -61,45 +55,39 @@ const CardCategoriesContent = {
   },
   step: [
     {
-      title1: 'Categories',
+      title1: 'Nutrition',
       icon1: 'icon1',
       btn1: {
-        href: '/blog',
-        label: 'Catégories',
-      },
-      title2: 'Nutrition',
-      icon2: 'icon2',
-      btn2: {
         href: '/blog/categories/nutrition',
         label: 'Alimentation',
       },
-      title3: 'Fitness',
-      icon3: 'icon3',
-      btn3: {
+      title2: 'Fitness',
+      icon2: 'icon2',
+      btn2: {
         href: '/blog/categories/fitness',
         label: 'Fitness',
       },
-      title4: 'Complément Alim.',
-      icon4: 'icon4',
-      btn4: {
+      title3: 'Complément Alim.',
+      icon3: 'icon3',
+      btn3: {
         href: '/blog/categories/complement',
         label: 'Complément Alim.',
       },
-      title5: 'Entraînement',
-      icon5: 'icon5',
-      btn5: {
+      title4: 'Entraînement',
+      icon4: 'icon4',
+      btn4: {
         href: '/blog/categories/entrainement',
         label: 'Entraînement',
       },
-      title6: 'Compétition',
-      icon6: 'icon6',
-      btn6: {
+      title5: 'Compétition',
+      icon5: 'icon5',
+      btn5: {
         href: '/blog/categories/competition',
         label: 'Compétition',
       },
-      title7: 'Exercices',
-      icon7: 'icon7',
-      btn7: {
+      title6: 'Exercices',
+      icon6: 'icon6',
+      btn6: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
@@ -129,19 +117,22 @@ const CardCategory = ({ className }) => {
             className="group duration-300 bg-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] mr-3"
           >
             <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
-              {/* <span className="text-2xl flex">
-                <h2
-                  data-testid="categories-title"
-                  className="text-3xl text-white"
-                >
-                  Catégories
-                </h2>
-              </span> */}
+              <span className="text-3xl flex">
+                <MdHome className="mt-2 mr-2 border-orange-500 rounded-sm text-orange-500 hover:text-white  bg-orange-500 bg-opacity-10" />
+                <Link href="/blog">
+                  <h2
+                    data-testid="categories-title"
+                    className="text-3xl text-white hover:text-orange-400"
+                    >
+                    Catégories
+                  </h2>
+                </Link>
+              </span>
               <p className="text-justify leading-relaxed text-[15px] text-gray-500 duration-300 transition-all ease-in-out group-hover:text-white">
                 {step.description}
               </p>
 
-              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6','title7'].map(
+              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>

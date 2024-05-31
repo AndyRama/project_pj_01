@@ -98,8 +98,7 @@ const PricingPack = () => {
         id="pack"
         className="text-white text-2xl md:text-5xl text-center mb-20"
       >
-        Pack <br />
-        Musculation / Perte de poids
+        Pack <br/> Musculation / Perte de poids
       </h2>
       <div className="container px-4 md:px-16 mx-auto">
         {/* Main Card Pricing - content  */}
