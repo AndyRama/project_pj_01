@@ -34,7 +34,7 @@ const PostCard = ({ post, index}) => {
         />
       </Link>
 
-      <div className="p-8 bg-[#2F2E2E] rounded-b-md">
+      <div className="p-4 bg-[#2F2E2E] rounded-b-md">
         <p className='text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]'>
           { format(parseISO(post.date), "LLL d, yyyy")} • { post.author}
         </p>
@@ -43,14 +43,15 @@ const PostCard = ({ post, index}) => {
             {post.title}
           </Link>
         </h3>
-        <p>
+        <div>
           <Link href={`/${urlWithoutBlog}`} 
             className="text-white uppercase text-[12px] tracking-[2px] border-b-2
             pb-2 inline-block border-orange-400"
           >
           lire l&apos;article
           </Link>
-        </p>
+          <span className="text-orange-400 ml-20 md:ml-32">Lecture 5 min</span>
+        </div>
       </div>
     </motion.div>
   )

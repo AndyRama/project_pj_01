@@ -45,14 +45,13 @@ const Items = ({ currentItems, Post }) => {
                 <div className="p-8">
                   <p className="text-white mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}{' '}
-                    •<span className="text-orange-400"> Lecture 5 min</span>
                   </p>
                   <div className="text-white font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
 
                   <h3 className="mb-4">
                     <Link
                       href={`/${post.url}`}
-                      className="text-white text-lg leading-none text-center "
+                      className="text-orange-400 text-lg leading-none text-center "
                     >
                       {post.title}
                     </Link>
@@ -60,7 +59,7 @@ const Items = ({ currentItems, Post }) => {
                   <p className="text-white mb-3 text-[14px] tracking-[1px]">
                     {post.excerpt}
                   </p>
-                  <p>
+                  <div>
                     <Link
                       href={`/${post.url}`}
                       className={` text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
@@ -76,7 +75,8 @@ const Items = ({ currentItems, Post }) => {
                     >
                       lire l&apos;article
                     </Link>
-                  </p>
+                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
+                  </div>
                 </div>
               </Link>
             </motion.div>

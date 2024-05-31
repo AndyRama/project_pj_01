@@ -38,14 +38,14 @@ const PostCard = ({ post, index }) => {
         />
       </Link>
 
-      <div className="p-8 bg-[#2F2E2E] rounded-b-md">
+      <div className="p-4 bg-[#2F2E2E] rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
         <h3 className="mb-4">
           <Link
             href={`/${post.url}`}
-            className="text-white text-lg leading-none"
+            className="text-orange-400 text-lg leading-none"
           >
             {post.title}
           </Link>
@@ -63,12 +63,11 @@ const PostCard = ({ post, index }) => {
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
             hover:before:scale-x-[1] hover:before:scale-y-[1]
-            hover:before:scale-z-[1]`}
+            hover:before:scale-z-[1] `}
           >
             lire l&apos;article
           </Link>
-          <span className="text-orange-400 ml-14"> Lecture 5 min</span>
-
+          <span className="text-orange-400 ml-20">Lecture 5 min</span>
         </div>
       </div>
     </motion.div>

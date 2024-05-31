@@ -25,7 +25,7 @@ const SubHero = ({ className, title, subTitle }) => {
     <section className={`${className}`}>
       {/* Image - main - bg-cover  */}
       <div
-        className="h-[50vh] md:h-[90vh] lg:h-[70vh] w-[max] -mt-[130px] bg-center bg-cover"
+        className="h-[50vh] lg:h-[70vh] w-[max] -mt-[150px] bg-center bg-cover"
         style={{
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}

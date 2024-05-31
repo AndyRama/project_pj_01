@@ -76,7 +76,7 @@ const Items = ({ currentItems }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-400 ml-14"> Lecture 5 min</span>
+                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>
