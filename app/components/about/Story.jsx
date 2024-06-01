@@ -95,9 +95,9 @@ const storyContent = {
   },
 
   storyText: {
-    heading: 'Crafting Spaces, Shaping Dreams',
-    p1: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga maxime molestias cumque consequuntur vero iure debitis odio repudiandae ut saepe. Velit consectetur corporis quod impedit adipisci, voluptatem rerum laborum accusantium! ',
-    p2: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit hic earum qui quia. Error deserunt magnam labore maiores explicabo autem tempore iusto, expedita eligendi quibusdam dicta, illo quidem velit quas.',
+    heading: 'Chère communauté,',
+    p1: "Je tiens à exprimer ma profonde gratitude pour votre soutien continu et votre engagement envers notre programme de formation en ligne. Vos retours positifs et votre enthousiasme sont une source d'inspiration constante pour moi. Voir vos progrès et savoir que ma formation vous aide à atteindre vos objectifs me remplit de fierté et de satisfaction. Votre réussite est ma plus grande récompense, et je suis honoré de faire partie de votre parcours.",
+    p2: "N'hésitez pas à partager vos expériences et vos réalisations avec moi et avec le reste de la communauté. Ensemble, nous pouvons continuer à apprendre, à grandir et à nous surpasser. Merci encore pour votre confiance et votre soutien. J'ai hâte de continuer à travailler avec vous et à célébrer vos succès futurs.",
     signature: '/images/Bill_Smith_Signature.svg',
     name: 'Jeremy Prat |',
     roleTitle: 'Coach Sportif',
@@ -107,7 +107,7 @@ const storyContent = {
 const Story = ({ className }) => {
   return (
     <section>
-      <div className="container px-4 mx-auto mt-48">
+      <div className="container px-4 mx-auto mt-32">
         <div className="md:flex w-full md:w-10/12 mx-auto items-stretch md:gap-7 ">
           <div className="md:w-4/12 self-center space-y-7 mb-7 md:mb-0 ">
             {storyContent.column1.imgs.map((item, index) => {

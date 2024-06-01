@@ -15,8 +15,8 @@ const Page = () => {
       />
       <Story />
       <Hero />
-      <Subscribe className="py-16 pt-22 lg:py-32" />
       <Testimonials />
+      <Subscribe className="py-16 pt-22 lg:py-32" />
     </>
   )
 }

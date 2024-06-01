@@ -9,54 +9,68 @@ import user3 from './../../public/images/user3.jpg'
 import user4 from './../../public/images/user4.jpg'
 import user5 from './../../public/images/user5.jpg'
 import user6 from './../../public/images/user6.jpg'
+import user7 from './../../public/images/jeremy.jpg'
+// import user8 from './../../public/images/user6.jpg'
 
 const testimonials = [
   {
     user: 'John Doe',
     company: 'Stellar Solutions',
     image: user1,
-    text: 'I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.',
+    text: "La formation de Jeremy m'a vraiment aidé à progresser. Son approche pédagogique est claire et ses conseils sont pratiques et applicables immédiatement.",
   },
   {
     user: 'Jane Smith',
     company: 'Blue Horizon Technologies',
     image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
+    text: 'Je suis très satisfaite de la formation en ligne de Jeremy  Son expertise et sa manière de transmettre les connaissances ont fait toute la différence pour moi.',
   },
   {
     user: 'David Johnson',
     company: 'Quantum Innovations',
     image: user3,
-    text: 'Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.',
+    text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
   },
   {
     user: 'Ronee Brown',
     company: 'Fusion Dynamics',
     image: user4,
-    text: 'Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!',
+    text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
   },
   {
     user: 'Michael Wilson',
     company: 'Visionary Creations',
     image: user5,
-    text: 'I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.',
+    text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
   },
   {
     user: 'Emily Davis',
     company: 'Synergy Systems',
     image: user6,
-    text: 'The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.',
+    text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
   },
+  {
+    user: 'Jéremy Prat',
+    company: 'Coach Sportif',
+    image: user7,
+    text: "N'oubliez pas, chaque petit pas compte et contribue à notre succès collectif. Continuons à avancer, main dans la main, vers nos objectifs communs.",
+  },
+  // {
+  //   user: 'Emily Davis',
+  //   company: 'Synergy Systems',
+  //   image: user6,
+  //   text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
+  // },
 ]
 
 const Testimonials = () => {
   return (
-    <div className="px-4 tracking-wide">
+    <div className="px-4 tracking-wide mb-48">
       <h3 className="text-orange-500 text-xl text-center">
         Retour de ma formation
       </h3>
-      <h2 className="text-white text-3xl text-center mb-20">
-        Ce qu&apos;ils pensent de moi !
+      <h2 className="text-white text-3xl text-center mb-10">
+        Ce qu&apos;ils pensent de mes services !
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
@@ -65,15 +79,15 @@ const Testimonials = () => {
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image
-                  className="w-12 h-12 mr-6 rounded-full border border-neutral-300"
+                  className="w-12 h-12 mr-6 rounded-full"
                   src={testimonial.image}
                   alt="profile"
-                  width={20}
-                  height={20}
+                  width={200}
+                  height={200}
                 />
                 <div>
                   <h6>{testimonial.user}</h6>
-                  <span className="text-sm font-normal italic text-gray-600">
+                  <span className="text-sm font-normal italic text-orange-500">
                     {testimonial.company}
                   </span>
                 </div>

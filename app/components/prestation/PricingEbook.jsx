@@ -44,7 +44,7 @@ const PricingEbook = () => {
   const delay = (index) => index * 0.05
 
   return (
-    <section className="mt-10 mb-20">
+    <section className="mt-10 mb-10">
       <h3 className="text-orange-500 text-xl text-center">Autres contenus</h3>
       <h2
         className="text-white text-2xl md:text-4xl text-center mb-20"
