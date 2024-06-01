@@ -14,7 +14,7 @@ import user7 from './../../public/images/jeremy.jpg'
 
 const testimonials = [
   {
-    user: 'John Doe',
+    user: 'Emlie Prevot',
     company: 'Stellar Solutions',
     image: user1,
     text: "La formation de Jeremy m'a vraiment aidé à progresser. Son approche pédagogique est claire et ses conseils sont pratiques et applicables immédiatement.",
@@ -38,13 +38,13 @@ const testimonials = [
     text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
   },
   {
-    user: 'Michael Wilson',
+    user: 'Serena Wilson',
     company: 'Visionary Creations',
     image: user5,
     text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
   },
   {
-    user: 'Emily Davis',
+    user: 'Marc Davis',
     company: 'Synergy Systems',
     image: user6,
     text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
