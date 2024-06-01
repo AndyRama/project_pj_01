@@ -12,40 +12,39 @@ const iconMapping = {
   icon1: (
     <SiFranprix
       data-testid="icon2"
-      className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon2: (
     <MdFitnessCenter
       data-testid="icon3"
-      className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon3: (
     <BiBulb
-    data-testid="icon4"
-      className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
-      />
+      data-testid="icon4"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+    />
   ),
   icon4: (
     <MdOutlineSportsKabaddi
-    data-testid="icon5"
-    className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
+      data-testid="icon5"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon5: (
     <MdOutlineSportsKabaddi
-    data-testid="icon6"
-    className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
+      data-testid="icon6"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon6: (
     <MdFitnessCenter
-    data-testid="icon7"
-    className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10"
+      data-testid="icon7"
+      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
-
 }
 const CardCategoriesContent = {
   heading: {
@@ -91,7 +90,6 @@ const CardCategoriesContent = {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
-   
     },
   ],
 }
@@ -118,12 +116,12 @@ const CardCategory = ({ className }) => {
           >
             <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
               <span className="text-3xl flex">
-                <MdHome className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 hover:text-white  bg-orange-500 bg-opacity-10" />
+                <MdHome className="mt-1 mr-2 rounded-sm  text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 top-0 bg-opacity-10" />
                 <Link href="/blog">
                   <h2
                     data-testid="categories-title"
-                    className="text-3xl text-white hover:text-orange-400"
-                    >
+                    className="text-3xl text-white hover:text-orange-500"
+                  >
                     Catégories
                   </h2>
                 </Link>
@@ -141,7 +139,7 @@ const CardCategory = ({ className }) => {
                         <h3
                           className="text-xl hover:text-gray-500 text-white pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
                         relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px]
-                        before:bg-orange-600 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
+                        before:bg-gradient-to-r from-orange-500 to-orange-800  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
                         before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
                         hover:before:scale-y-[1] hover:before:scale-z-[1]"
                         >

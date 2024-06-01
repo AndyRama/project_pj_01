@@ -14,7 +14,7 @@ const Page = () => {
         subTitle="nos valeurs"
       />
       <Story />
-      <Hero />
+      <Hero className="mb-20" />
       <Testimonials />
       <Subscribe className="py-16 pt-22 lg:py-32" />
     </>
