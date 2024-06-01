@@ -45,6 +45,7 @@ const PricingEbook = () => {
 
   return (
     <section className="mt-10 mb-20">
+      <h3 className="text-orange-500 text-xl text-center">Autres contenus</h3>
       <h2
         className="text-white text-2xl md:text-4xl text-center mb-20"
         id="E-Books"
@@ -68,14 +69,14 @@ const PricingEbook = () => {
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
-                <p className="text-xl mb-6 text-orange-400 text-center">
+                <p className="text-xl mb-6 text-orange-500 text-center">
                   {option.subtitle}
                 </p>
                 <hr />
 
                 {/* Card Pricing - Header - Price  */}
                 <p className="mt-2 mb-1 text-center">
-                  <span className="text-4xl text-orange-400 mt-6 mr-2">
+                  <span className="text-4xl text-orange-500 mt-6 mr-2">
                     {option.price}
                   </span>
                 </p>
@@ -91,8 +92,8 @@ const PricingEbook = () => {
                     duration: 0.5,
                   }}
                   className="inline-flex justify-center items-center text-black text-center 
-                  w-full h-12 p-5 mt-6 tracking-tight text-xl bg-orange-400 hover:bg-transparent 
-                  hover:border hover:border-orange-400 hover:text-white rounded-md transition 
+                  w-full h-12 p-5 mt-6 tracking-tight text-xl bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-transparent 
+                  hover:text-white rounded-md transition 
                   duration-200"
                 >
                   {option.btn.label}
@@ -106,7 +107,7 @@ const PricingEbook = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: delay(index), duration: 0.5 }}
-                      className="mt-8 flex items-center text-orange-400"
+                      className="mt-8 flex items-center text-orange-500"
                     >
                       •<span className="ml-2 text-white">{feature}</span>
                     </motion.li>

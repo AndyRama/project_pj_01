@@ -52,7 +52,7 @@ const CardImage = ({ card, index }) => {
             transition-all ease-in-out group-hover:scale-[1.1]"
       />
       <div>
-        <p className=" uppercase text-[13px] mt-5 text-left tracking-[1px] text-orange-400 font-bold">
+        <p className=" uppercase text-[13px] mt-5 text-left tracking-[1px] text-orange-500 font-bold">
           {card.title} {card.years}
         </p>
       </div>

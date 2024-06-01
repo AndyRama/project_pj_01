@@ -114,7 +114,7 @@ const CardDescriptionR = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2  text-orange-400 md:visible invisible "
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 text-orange-500 md:visible invisible "
                 >
                   {cardDescriptionRContent.heading.subTitle}
                 </motion.span>

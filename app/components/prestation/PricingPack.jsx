@@ -92,13 +92,13 @@ const PricingPack = () => {
   return (
     <section className="mt-10 mb-20">
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-r from-orange-500 to-orange-800 "></div>
       </div>
       <h2
         id="pack"
         className="text-white text-2xl md:text-5xl text-center mb-20"
       >
-        Pack <br/> Musculation / Perte de poids
+        Pack <br /> Musculation / Perte de poids
       </h2>
       <div className="container px-4 md:px-16 mx-auto">
         {/* Main Card Pricing - content  */}
@@ -117,16 +117,16 @@ const PricingPack = () => {
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
-                <p className="text-xl mb-6 text-orange-400 text-center">
+                <p className="text-xl mb-6 text-orange-500 text-center">
                   {option.subtitle}
                 </p>
                 <hr />
                 {/* Card Pricing - Header - Price  */}
                 <p className="mt-2 mb-1 text-center">
-                  <span className="text-4xl text-orange-400  mt-6 mr-2">
+                  <span className="text-4xl text-orange-500  mt-6 mr-2">
                     {option.price}
                   </span>
-                  <span className="text-orange-400 tracking-tight">/ Mois</span>
+                  <span className="text-orange-500 tracking-tight">/ Mois</span>
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
                 <p className="text-xl mb-6 text-white text-center">
@@ -144,8 +144,8 @@ const PricingPack = () => {
                     duration: 0.5,
                   }}
                   className="inline-flex justify-center items-center text-black text-center
-                   w-full h-12 p-5 tracking-tight text-xl bg-orange-400 hover:bg-transparent
-                   hover:border hover:border-orange-400 hover:text-white rounded-md transition 
+                   w-full h-12 p-5 tracking-tight text-xl bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-transparent
+                    hover:text-white rounded-md transition 
                    duration-200"
                 >
                   Choisir le plan
@@ -159,7 +159,7 @@ const PricingPack = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: delay(index), duration: 0.5 }}
-                      className="mt-8 flex items-center text-orange-400"
+                      className="mt-8 flex items-center text-orange-500"
                     >
                       •<span className="ml-2 text-white">{feature}</span>
                     </motion.li>

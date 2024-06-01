@@ -29,7 +29,7 @@ const CardDescription = ({ className }) => {
     <section className={`${className}]`} ref={ref}>
       <div className="container px-4 mx-auto">
         <div className="transform-gpu blur-3xl">
-          <div className="absolute right-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-[#fb923c] to-[#e78738]"></div>
+          <div className="absolute right-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
         </div>
         {/* Main Card Description - content - Left */}
         <div className="lg:flex justify-center rounded-md py-0 ">
@@ -48,7 +48,7 @@ const CardDescription = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mt-10 mb-2 inline-block text-orange-400"
+                  className="uppercase tracking-[2px] text-[12.5px] mt-10 mb-2 inline-block text-orange-500"
                 >
                   {cardDescriptionContent.heading.subTitle}
                 </motion.span>

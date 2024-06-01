@@ -4,6 +4,7 @@ import PricingPack from '../components/prestation/PricingPack'
 import PricingDetails from '../components/prestation/PricingDetails'
 import PricingEbook from '../components/prestation/PricingEbook'
 import Subscribe from '../components/Subscribe'
+import Testimonials from '../components/Testimonials'
 
 export const metadata = {
   title: 'Unlcoaching by Jeremy Prat',
@@ -17,6 +18,7 @@ const page = () => {
       <PricingEbook />
       <SubHero className="hidden lg:contents" />
       <Subscribe className="py-16 lg:py-32 lg:mt-[-35rem] xl:mt-[-38rem]" />
+      <Testimonials />
     </>
   )
 }

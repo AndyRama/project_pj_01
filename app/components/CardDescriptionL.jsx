@@ -51,7 +51,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-400 mt-10"
+                  className="uppercase tracking-[2px] text-[12.5px] mb-2 inline-block text-orange-500 mt-10"
                 >
                   {cardDescriptionLContent.heading.subTitle}
                 </motion.span>
@@ -145,7 +145,7 @@ const CardDescriptionL = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-50 -z-30 w-72 h-80 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute left-0 opacity-50 -z-30 w-72 h-80 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
       </div>
     </section>
   )

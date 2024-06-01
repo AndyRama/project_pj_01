@@ -64,7 +64,7 @@ export default function Navigation() {
           <div>
             <Link
               href="/"
-              className=" flex flex-row text-3xl md:text-4xl text-orange-400 font-bold "
+              className=" flex flex-row text-3xl md:text-4xl text-orange-500 font-bold "
             >
               {/* Logo - content left*/}
               <span className="my-[-10px] mx-3">
@@ -94,7 +94,7 @@ export default function Navigation() {
                     href={menu.href}
                     className={`relative before:content-['']
                      before:absolute before:bottom-0 before:left-0 before:w-full
-                     before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                     before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
                      before:transistion-all before:duration-300 before:ease-in-out
                      before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                      before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -128,7 +128,7 @@ export default function Navigation() {
                 href="/prestations"
                 alt="Btn Subcribes"
                 className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-3 px-5 text-black hover:text-white
+                            font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-5 text-black hover:text-white
                             rounded-md"
               >
                 Rejoignez-nous !
@@ -195,7 +195,7 @@ export default function Navigation() {
                                     href={menu.href}
                                     className={`py-2 text-white hover:text-gray-500 inline-block relative before:content-['']
                                     before:absolute before:bottom-0 before:left-0 before:w-full
-                                    before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                                    before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
                                     before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                                     before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -203,7 +203,7 @@ export default function Navigation() {
                                     hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
                                     font-semibold pb-2 ${
                                       newPathname == menu.href
-                                        ? 'border-orange-400 before:scale-x-[1]'
+                                        ? 'border-orange-500 before:scale-x-[1]'
                                         : ' border-transparent'
                                     }`}
                                     onClick={() => setOpen(false)}
@@ -224,7 +224,7 @@ export default function Navigation() {
                             href="/prestations"
                             alt="btn subscribes"
                             className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-orange-400 py-4 px-5 text-black hover:text-white
+                            font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5 text-black hover:text-white
                             rounded-md"
                           >
                             Rejoignez-nous !

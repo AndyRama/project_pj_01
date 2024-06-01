@@ -118,7 +118,7 @@ const CardCategory = ({ className }) => {
           >
             <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
               <span className="text-3xl flex">
-                <MdHome className=" mr-2 border-orange-500 rounded-sm text-orange-500 hover:text-white  bg-orange-500 bg-opacity-10" />
+                <MdHome className="mt-1 mr-2 border-orange-500 rounded-sm text-orange-500 hover:text-white  bg-orange-500 bg-opacity-10" />
                 <Link href="/blog">
                   <h2
                     data-testid="categories-title"

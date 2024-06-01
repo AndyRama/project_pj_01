@@ -102,7 +102,7 @@ const Hero = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   data-testid="hero-subTitle"
-                  className=" text-orange-400 font-bold text-6xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
+                  className=" text-orange-500 font-bold text-4xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
                 >
                   {heroContent.intro.subTitle}
                 </motion.h1>

@@ -228,7 +228,7 @@ const Story = ({ className }) => {
             />
             <strong className="block mb-2 text-white font-medium">
               {storyContent.storyText.name + ' '}
-              <span className="text-orange-400">
+              <span className="text-orange-500">
                 {storyContent.storyText.roleTitle}
               </span>
             </strong>

@@ -138,7 +138,7 @@ const ContactForm = ({ className }) => {
                   type="submit"
                   className=" cursor-poniter w-full transistion-all duration-300
                   ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase
-                  bg-orange-400 py-4 px-5 text-white hover:bg-white
+                  bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5 text-white
                   hover:text-orange-600 hover:shadow-2xl rounded-md"
                   value="Submit"
                 />

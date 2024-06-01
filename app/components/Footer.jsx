@@ -79,13 +79,13 @@ const Copyright = () => {
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-white ">
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024{' '}
-        <Link href="/" className="text-orange-400">
+        <Link href="/" className="text-orange-500">
           Unlcoaching{' '}
         </Link>
         Tous droits réservés. Crée avec{' '}
         <BiSolidHeart className="text-red-400 mx-1 inline-block" />
         par{' '}
-        <Link href="/" className="text-orange-400">
+        <Link href="/" className="text-orange-500">
           Andy Ramaroson
         </Link>
       </div>
@@ -99,7 +99,7 @@ const Footer = ({ className }) => {
       <div className="container mx-auto px-4 relative mt-10">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
-            <Link href="#" className="text-[28px] text-orange-400 font-bold">
+            <Link href="#" className="text-[28px] text-orange-500 font-bold">
               Unlcoaching
               <span className="text-white">.</span>
             </Link>
@@ -148,14 +148,14 @@ const Footer = ({ className }) => {
                           className={`${
                             link.badge ? 'flex gap-2 items-center' : ''
                           }
-                            text-white duration-300 transition-all ease-in-out hover:text-orange-400`}
+                            text-white duration-300 transition-all ease-in-out hover:text-orange-500`}
                         >
                           {link.badge ? (
                             <>
                               <span>{link.label}</span>
                               <span
                                 className="py-0.5 px-1 rounded-full bg-orange-100
-                                    border border-orange-400 text-[10px] text-orange-400
+                                    border border-orange-500 text-[10px] text-orange-500
                                     invisible sm:visible"
                               >
                                 {link.badge}
@@ -177,13 +177,13 @@ const Footer = ({ className }) => {
         <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
-            className="text-orange-400 hover:text-white"
+            className="text-orange-500 hover:text-white"
           >
             Privacy{' '}
           </Link>{' '}
           <Link
             href="/document/terms"
-            className="text-white hover:text-orange-400"
+            className="text-white hover:text-orange-500"
           >
             Terms{' '}
           </Link>
@@ -191,8 +191,8 @@ const Footer = ({ className }) => {
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
-        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
-        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-trfrom-orange-500 to-orange-800"></div>
+        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-trfrom-orange-500 to-orange-800"></div>
       </div>
     </footer>
   )

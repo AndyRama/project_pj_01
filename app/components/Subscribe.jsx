@@ -1,27 +1,28 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import IconLogo from './../asset/Icons/logo.svg';
-import { motion } from 'framer-motion';
-import { BiSolidPaperPlane } from 'react-icons/bi';
+'use client'
+import React, { useState } from 'react'
+import Image from 'next/image'
+import IconLogo from './../asset/Icons/logo.svg'
+import { motion } from 'framer-motion'
+import { BiSolidPaperPlane } from 'react-icons/bi'
 
 const subscribeContent = {
   heading: {
     title: 'Ne manquez jamais une actualité.',
     subtitle: 'Rejoinds la communauté',
-    description: 'Je partage de nombreux conseils et pratique chaques semaines dans mes articles !',
+    description:
+      'Je partage de nombreux conseils et pratique chaques semaines dans mes articles !',
   },
   form: {
     placeholder: 'Entrer ton Email',
   },
-};
+}
 
 const Subscribe = ({ className }) => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
       const response = await fetch('/api/resend', {
@@ -30,18 +31,18 @@ const Subscribe = ({ className }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email }),
-      });
+      })
 
       if (response.ok) {
-        setMessage('Merci pour votre abonnement !');
-        setEmail('');
+        setMessage('Merci pour votre abonnement !')
+        setEmail('')
       } else {
-        setMessage('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+        setMessage("Erreur lors de l'envoi de l'email. Veuillez réessayer.")
       }
     } catch (error) {
-      setMessage('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+      setMessage("Erreur lors de l'envoi de l'email. Veuillez réessayer.")
     }
-  };
+  }
 
   return (
     <section className={`${className}`}>
@@ -114,7 +115,7 @@ const Subscribe = ({ className }) => {
             <button
               type="submit"
               className="apperance-none absolute top-1 right-1
-             bg-orange-400 text-[#1D1D1D] shadow-md w-12 h-12 rounded-full flex items-center justify-center"
+              bg-gradient-to-r from-orange-500 to-orange-800 text-[#1D1D1D] shadow-md w-12 h-12 rounded-full flex items-center justify-center"
               alt="submit"
               aria-label="Submit Form"
             >
@@ -150,10 +151,10 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
+        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Subscribe;
+export default Subscribe
