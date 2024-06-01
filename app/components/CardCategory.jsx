@@ -116,7 +116,6 @@ const CardCategory = ({ className }) => {
           >
             <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
               <span className="text-3xl flex">
-                <MdHome className="mt-1 mr-2 rounded-sm  text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 top-0 bg-opacity-10" />
                 <Link href="/blog">
                   <h2
                     data-testid="categories-title"
