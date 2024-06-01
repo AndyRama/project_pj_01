@@ -47,7 +47,7 @@ const Items = ({ currentItems }) => {
                     {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}{' '}
                   </p>
 
-                  <h3 className="mb-4 text-orange-400">
+                  <h3 className="mb-4 text-orange-500">
                     <Link
                       href={post.url}
                       className="text-lg font-bold leading-none"
@@ -67,7 +67,7 @@ const Items = ({ currentItems }) => {
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -76,7 +76,7 @@ const Items = ({ currentItems }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
+                    <span className="text-orange-500 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>

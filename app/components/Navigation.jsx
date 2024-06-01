@@ -195,7 +195,7 @@ export default function Navigation() {
                                     href={menu.href}
                                     className={`py-2 text-white hover:text-gray-500 inline-block relative before:content-['']
                                     before:absolute before:bottom-0 before:left-0 before:w-full
-                                    before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
+                                    before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
                                     before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                                     before:wil-change-transform hover:before:origin-[100%, 0%]

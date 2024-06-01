@@ -133,7 +133,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
     itemsPerPage,
     clickPaginate,
     ref,
-    items,
+    Items,
   ])
 
   const handlePageClick = (event) => {
