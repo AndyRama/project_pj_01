@@ -9,39 +9,39 @@ import { SiFranprix } from 'react-icons/si'
 import { MdHome } from 'react-icons/md'
 
 const iconMapping = {
+  // icon1: (
+  //   <SiFranprix
+  //     data-testid="icon2"
+  //     className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+  //   />
+  // ),
   icon1: (
-    <SiFranprix
-      data-testid="icon2"
+    <MdFitnessCenter
+      data-testid="icon1"
       className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon2: (
-    <MdFitnessCenter
-      data-testid="icon3"
+    <BiBulb
+      data-testid="icon2"
       className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon3: (
-    <BiBulb
-      data-testid="icon4"
+    <MdOutlineSportsKabaddi
+      data-testid="icon3"
       className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon4: (
     <MdOutlineSportsKabaddi
-      data-testid="icon5"
+      data-testid="icon4"
       className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
   icon5: (
-    <MdOutlineSportsKabaddi
-      data-testid="icon6"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
-    />
-  ),
-  icon6: (
     <MdFitnessCenter
-      data-testid="icon7"
+      data-testid="icon5"
       className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
     />
   ),
@@ -54,39 +54,33 @@ const CardCategoriesContent = {
   },
   step: [
     {
-      title1: 'Nutrition',
+      title1: 'Fitness',
       icon1: 'icon1',
       btn1: {
-        href: '/blog/categories/nutrition',
-        label: 'Alimentation',
-      },
-      title2: 'Fitness',
-      icon2: 'icon2',
-      btn2: {
         href: '/blog/categories/fitness',
         label: 'Fitness',
       },
-      title3: 'Complément Alim.',
-      icon3: 'icon3',
-      btn3: {
+      title2: 'Complément Alim.',
+      icon2: 'icon2',
+      btn2: {
         href: '/blog/categories/complement',
         label: 'Complément Alim.',
       },
-      title4: 'Entraînement',
-      icon4: 'icon4',
-      btn4: {
+      title3: 'Entraînement',
+      icon3: 'icon3',
+      btn3: {
         href: '/blog/categories/entrainement',
         label: 'Entraînement',
       },
-      title5: 'Compétition',
-      icon5: 'icon5',
-      btn5: {
+      title4: 'Compétition',
+      icon4: 'icon4',
+      btn4: {
         href: '/blog/categories/competition',
         label: 'Compétition',
       },
-      title6: 'Exercices',
-      icon6: 'icon6',
-      btn6: {
+      title5: 'Exercices',
+      icon5: 'icon5',
+      btn5: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
@@ -129,7 +123,7 @@ const CardCategory = ({ className }) => {
                 {step.description}
               </p>
 
-              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
+              {['title1', 'title2', 'title3', 'title4', 'title5'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>
