@@ -18,7 +18,11 @@ const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : ''
 
-export const UnlcoachingReviewEmail = ({ authorName, authorImage, reviewText }) => {
+export const UnlcoachingReviewEmail = ({
+  authorName,
+  authorImage,
+  reviewText,
+}) => {
   const previewText = `Read ${authorName}'s review`
 
   return (
@@ -30,7 +34,9 @@ export const UnlcoachingReviewEmail = ({ authorName, authorImage, reviewText }) 
         <Container className="mx-auto p-5 max-w-full w-[580px]">
           <Section>
             <Img
-              src={"https://res.cloudinary.com/dbtnehfrf/image/upload/v1717060484/Component_1_2_lragwc.png"}
+              src={
+                'https://res.cloudinary.com/dbtnehfrf/image/upload/v1717060484/Component_1_2_lragwc.png'
+              }
               width="96"
               height="96"
               alt={authorName}
@@ -40,7 +46,7 @@ export const UnlcoachingReviewEmail = ({ authorName, authorImage, reviewText }) 
           <Section className="pb-5">
             <Row>
               <Text className="text-2xl leading-tight font-bold text-gray-700">
-                Here's what {authorName} wrote
+                Here &apos;s what {authorName} wrote
               </Text>
               <Text className="text-lg leading-6 text-gray-700 bg-gray-100 p-6 rounded">
                 {reviewText}
@@ -51,7 +57,8 @@ export const UnlcoachingReviewEmail = ({ authorName, authorImage, reviewText }) 
               </Text>
               <Text className="text-lg leading-6 text-gray-700 pb-4">
                 While it’s too late to write a review of your own, you can send
-                your feedback to {authorName} using your Unlcoaching message thread.
+                your feedback to {authorName} using your Unlcoaching message
+                thread.
               </Text>
 
               <Button className="bg-red-500 rounded text-white text-lg py-4 text-center block w-full">
@@ -80,7 +87,7 @@ export const UnlcoachingReviewEmail = ({ authorName, authorImage, reviewText }) 
                   href="https://Unlcoaching.com/document/privacy"
                   className="text-lg leading-6 text-red-500 block"
                 >
-                  Mention Légal 
+                  Mention Légal
                 </Link>
               </Text>
               <Text>

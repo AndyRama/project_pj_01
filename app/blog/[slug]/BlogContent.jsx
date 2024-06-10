@@ -67,7 +67,7 @@ const BlogContent = ({ post }) => {
               <Link
                 href={`/blog/categories/${slugify(category.title)}`}
                 key={category.title}
-                className="font-medium"
+                className="font-medium hover:text-orange-500"
               >
                 {category.title}
                 {index < post.categories.length - 1 ? ` | ` : ``}
