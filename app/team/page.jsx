@@ -3,7 +3,7 @@ import SubHero from '../components/about/SubHero'
 import Subscribe from '../components/Subscribe'
 import Story from '../components/about/Story'
 import Hero from '../components/about/Hero'
-import Testimonials from '../components/Testimonials'
+// import Testimonials from '../components/Testimonials'
 
 const Page = () => {
   return (
@@ -15,7 +15,7 @@ const Page = () => {
       />
       <Story />
       <Hero className="mb-20" />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Subscribe className="py-16 pt-22 lg:py-32" />
     </>
   )
