@@ -43,12 +43,12 @@ const testimonials = [
     image: user5,
     text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
   },
-  {
-    user: 'Marc Davis',
-    company: 'Synergy Systems',
-    image: user6,
-    text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
-  },
+  // {
+  //   user: 'Marc Davis',
+  //   company: 'Synergy Systems',
+  //   image: user6,
+  //   text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
+  // },
   {
     user: 'Jéremy Prat',
     company: 'Coach Sportif',
