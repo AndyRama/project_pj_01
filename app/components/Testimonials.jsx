@@ -102,9 +102,9 @@ const Testimonials = () => {
       <h2 className="text-white text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center px-0 lg:px-16 ">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-8 py-2">
             <div className="text-white bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
@@ -127,10 +127,10 @@ const Testimonials = () => {
         ))}
       </div>
       {visibleCount < testimonials.length && (
-        <div className="text-right mt-10 mr-4">
+        <div className="text-right mt-10">
           <button
             onClick={loadMore}
-            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-6 py-2 rounded-md"
+            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-6 py-2 rounded-md  lg:mr-24 "
           >
             + de témoignages
           </button>
