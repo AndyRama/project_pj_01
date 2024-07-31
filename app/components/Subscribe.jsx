@@ -47,18 +47,18 @@ const Subscribe = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
-        <div className="flex justify-center items-center pb-5">
+        <div className="flex justify-center items-center">
           <Image
             src={IconLogo}
             width={150}
             height={150}
             alt="logo"
-            className="bg-black rounded-full"
+            className="rounded-full"
           />
         </div>
         <div className="flex justify-center items-center">
           <div className="w-8/12 flex gap-0">
-            <div className="text-center w-screen max-w-md mx-auto mb-8">
+            <div className="text-center w-screen max-w-md mx-auto ">
               {subscribeContent.heading.subtitle && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-5 text-white flex justify-center "
+                  className="uppercase tracking-[3px] text-[12.5px] text-white flex justify-center "
                 >
                   {subscribeContent.heading.subtitle}
                 </motion.div>
@@ -151,7 +151,7 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
+        <div className=" lg:hidden absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
       </div>
     </section>
   )

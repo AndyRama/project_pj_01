@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const EbookOptions = [
@@ -14,16 +14,16 @@ const EbookOptions = [
     },
     features: [
       'Pack adapté aux débutants en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
       'Plan alimentaire adapté à tes besoins',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
       'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
-      'Communication whatsApp & Email + visio ou call chaque mois',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
     ],
   },
   {
     title: 'E-Book',
-    subtitle: 'la Mental',
+    subtitle: 'La Mental',
     price: '15€',
     btn: {
       href: '#',
@@ -31,17 +31,90 @@ const EbookOptions = [
     },
     features: [
       'Pack adapté aux débutants en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
       'Plan alimentaire adapté à tes besoins',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
       'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
-      'Communication whatsApp & Email + visio ou call chaque mois',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
+    ],
+  },
+  {
+    title: 'E-Book1',
+    subtitle: 'La Mental',
+    price: '15€',
+    btn: {
+      href: '#',
+      label: 'Commander',
+    },
+    features: [
+      'Pack adapté aux débutants en musculation.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
+      'Plan alimentaire adapté à tes besoins',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
+    ],
+  },
+  {
+    title: 'E-Book2',
+    subtitle: 'La Mental',
+    price: '15€',
+    btn: {
+      href: '#',
+      label: 'Commander',
+    },
+    features: [
+      'Pack adapté aux débutants en musculation.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
+      'Plan alimentaire adapté à tes besoins',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
+    ],
+  },
+  {
+    title: 'E-Book3',
+    subtitle: 'La Mental',
+    price: '15€',
+    btn: {
+      href: '#',
+      label: 'Commander',
+    },
+    features: [
+      'Pack adapté aux débutants en musculation.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
+      'Plan alimentaire adapté à tes besoins',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
+    ],
+  },
+  {
+    title: 'E-Book4',
+    subtitle: 'La Mental',
+    price: '15€',
+    btn: {
+      href: '#',
+      label: 'Commander',
+    },
+    features: [
+      'Pack adapté aux débutants en musculation.',
+      'Programme de musculation personnalisé en fonction de tes objectifs.',
+      'Plan alimentaire adapté à tes besoins',
+      'Accompagnement sur les divers TCA ou problématiques de santé.',
+      'Bilan mensuel photo + mensuration avec un suivi plus approfondi',
+      'Communication WhatsApp & Email + visio ou call chaque mois',
     ],
   },
 ]
 
 const PricingEbook = () => {
+  const [visibleCount, setVisibleCount] = useState(3)
   const delay = (index) => index * 0.05
+
+  const handleShowMore = () => {
+    setVisibleCount(EbookOptions.length)
+  }
 
   return (
     <section className="mt-10 mb-10">
@@ -55,7 +128,7 @@ const PricingEbook = () => {
       <div className="container px-4 md:px-16 mx-auto pb-32">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
-          {EbookOptions.map((option, index) => (
+          {EbookOptions.slice(0, visibleCount).map((option, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -117,6 +190,16 @@ const PricingEbook = () => {
             </motion.div>
           ))}
         </div>
+        {visibleCount < EbookOptions.length && (
+          <div className="text-right mt-10">
+            <button
+              onClick={handleShowMore}
+              className="px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-800 text-white rounded-md hover:bg-orange-700 transition duration-200"
+            >
+              Voir plus
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
