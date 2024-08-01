@@ -49,9 +49,9 @@ const Hero = ({ className }) => {
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
-        <div className="container px-4 md:px-16 mx-auto pt-28 md:pt-32">
-          <div className="md:flex justify-between  space-x-0 ">
-            <div className="lg:w-8/12 lg:mb-32">
+        <div className="container px-4 mx-auto pt-28 md:pt-32">
+          <div className="md:flex justify-between space-x-0 ">
+            <div className="lg:w-6/12 lg:mb-32">
               <div className="grid grid-cols-2">
                 {statContent.stats.map((stat, index) => (
                   <motion.div
@@ -85,7 +85,7 @@ const Hero = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   data-testid="hero-title"
-                  className=" text-white font-bold text-6xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-2"
+                  className=" text-white font-bold text-6xl md:text-6xl lg:text-7xl w-auto lg:w-screen max-w-xl mb-2"
                 >
                   {heroContent.intro.title}
                 </motion.h1>
@@ -102,7 +102,7 @@ const Hero = ({ className }) => {
                   }}
                   viewport={{ once: true }}
                   data-testid="hero-subTitle"
-                  className=" text-orange-500 font-bold text-4xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
+                  className=" text-orange-500 font-bold text-6xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
                 >
                   {heroContent.intro.subTitle}
                 </motion.h1>
@@ -152,7 +152,7 @@ const Hero = ({ className }) => {
 
             {/* Image right */}
 
-            <div className="md:w-6/12 ">
+            <div className="md:w-8/12 ">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
@@ -172,7 +172,7 @@ const Hero = ({ className }) => {
                   width={800}
                   height={900}
                   alt="hero image"
-                  className="rounded-md h-[300px] w-[400px] md:h-[400px] lg:w-[800px] lg:h-[600px]"
+                  className="rounded-md h-[300px] w-[400px] md:h-[400px] md:w-[500px] lg:w-[800px] lg:h-[600px]"
                 />
               </motion.div>
             </div>
