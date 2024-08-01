@@ -68,7 +68,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] text-white flex justify-center "
+                  className="uppercase tracking-[3px] text-[12.5px] text-white flex justify-center mt-10"
                 >
                   {subscribeContent.heading.subtitle}
                 </motion.div>
@@ -91,7 +91,7 @@ const Subscribe = ({ className }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col mx-auto justify-center">
+        <div className="flex flex-col mx-auto justify-center mt-10">
           <motion.form
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
@@ -104,7 +104,7 @@ const Subscribe = ({ className }) => {
             onSubmit={handleSubmit}
           >
             <input
-              className="appearance-none bg-white py-4 px-7 w-auto lg:w-screen
+              className="appearance-none bg-white  py-4 px-7 w-auto lg:w-screen
                 !pr-16 mwx-w-md shadow-md rounded-md outline outline-none"
               placeholder={subscribeContent.form.placeholder}
               required
@@ -151,7 +151,7 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className=" lg:hidden absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
+        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
       </div>
     </section>
   )
