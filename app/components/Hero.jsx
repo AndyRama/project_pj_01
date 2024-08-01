@@ -44,7 +44,7 @@ const Hero = ({ className }) => {
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="md-h-[110vh] -mt-[125px] bg-fixed bg-cover "
+        className="md-h-[110vh] -mt-[56px] bg-fixed bg-cover "
         style={{
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}

@@ -11,7 +11,7 @@ import Subscribe from "./components/Subscribe"
 export default function Home() {
   return (
     <>
-      <Hero className="pt-32 md:pt-22 pb-0 lg-pb:10" />
+      <Hero className="pt-32 pb-0 lg-pb:10" />
       <CardDescriptionL className=" pt-14 pb-15" />
       <CardDescriptionR className=" relative pt-14 pb-15 sm:bg-[#1D1D1D]" />
       <CardGridImage />
@@ -19,7 +19,7 @@ export default function Home() {
       <RecentBlog className="pt-14 pb-15 lg:pb-32"/>
       <CardProgram/>
       <Testimonials/>
-      <Subscribe className="py-16 pt-64 lg:py-32 bg-[#1D1D1D]"/>
+      <Subscribe className="py-16 pt-22 lg:py-32 bg-[#1D1D1D]"/>
     </>
   )
 }
