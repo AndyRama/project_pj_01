@@ -7,7 +7,6 @@ import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 import CardCategory from '../CardCategory'
-// import ReactPaginate from 'react-paginate'
 
 const Items = ({ currentItems }) => {
   return (
@@ -158,28 +157,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
             </div>
           </div>
         </div>
-        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-white mt-20">
-          <ReactPaginate
-            nextLabel="Next"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={2}
-            pageCount={pageCount}
-            previousLabel="Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
-            containerClassName="pagination"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-          />
-        </div> */}
+
       </section>
     </>
   )
