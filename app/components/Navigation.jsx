@@ -73,7 +73,7 @@ export default function Navigation() {
                   weight={60}
                   height={60}
                   alt="logo"
-                  className="bg-black rounded-full"
+                  className="rounded-full"
                 />
               </span>
               {/* Name Link - content left*/}
