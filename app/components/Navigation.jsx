@@ -59,7 +59,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <header className="py-4 fixed w-full z-[10] bg-[#1D1D1D] opacity-80 " alt="NavBar">
+      <header className="py-4 fixed w-full z-[10] bg-[#1D1D1D] opacity-90 " alt="NavBar">
         <div className=" px-4 md:px-14  mx-auto flex items-center justify-between">
           <div>
             <Link
@@ -174,7 +174,7 @@ export default function Navigation() {
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="relative -m-2 p-2 mt-3 -mr-7 text-white hover:text-gray-500"
+                              className="relative -m-2 p-2 -mt-5 -mr-5 text-white hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
                               <span className="absolute -inset-0.5" />

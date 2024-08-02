@@ -95,7 +95,7 @@ const Testimonials = () => {
   }
 
   return (
-    <div className="px-4 tracking-wide mb-48">
+    <div className="tracking-wide mb-48">
       <h3 className="text-orange-500 text-xl text-center">
         Retour de ma formation
       </h3>
@@ -127,10 +127,10 @@ const Testimonials = () => {
         ))}
       </div>
       {visibleCount < testimonials.length && (
-        <div className="text-right mt-10">
+        <div className="text-right">
           <button
             onClick={loadMore}
-            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-6 py-2 rounded-md  lg:mr-24 "
+            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-2 mr-8 lg:mr-24 rounded-md"
           >
             + de témoignages
           </button>
