@@ -17,10 +17,6 @@ const footerContent = {
           label: 'Accueil',
         },
         {
-          href: '/blog',
-          label: 'Blog',
-        },
-        {
           href: '/contact',
           label: 'Contact',
         },
@@ -59,15 +55,26 @@ const footerContent = {
         {
           href: '/blog',
           label: 'Blog',
-        },
-        {
-          href: '/',
-          label: 'School',
+          badge: 'New',
         },
         {
           href: '/prestations/#E-Books',
           label: 'E-Books',
-          badge: 'New',
+        },
+      ],
+    },
+    {
+      heading: 'Performance',
+      links: [
+        {
+          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Funlcoaching.com%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
+          label: 'LightHouse',
+          target: '_Blank',
+        },
+        {
+          href: 'https://www.websitecarbon.com/website/unlcoaching.com',
+          label: 'Co²',
+          target: '_Blank',
         },
       ],
     },
@@ -136,7 +143,7 @@ const Footer = ({ className }) => {
           </div>
 
           <div className="md:w-8/12 ">
-            <div className="grid grid-cols-3 md:grid-cols-3 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
                   <h3 className="text-gray-400 mb-3">{item.heading}</h3>
@@ -145,6 +152,7 @@ const Footer = ({ className }) => {
                       <li className="mb-2" key={link.label}>
                         <Link
                           href={link.href}
+                          target={link.target ? '_blank' : null}
                           className={`${
                             link.badge ? 'flex gap-2 items-center' : ''
                           }
