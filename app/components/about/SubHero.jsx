@@ -33,7 +33,7 @@ const SubHero = ({ className, title, subTitle }) => {
         <div className="lg:flex lg:w-10/12 mx-auto items-center justify-between">
           <div className="container px-4 mx-auto pt-20">
             {/* Content center - subtitle */}
-            <div className="text-center lg:max-w-3xl mx-auto mt-[75px] md:mt-[150px]">
+            <div className="text-center lg:max-w-4xl mx-auto mt-[115px] md:mt-[150px] lg:mt-[220px]">
               {subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}

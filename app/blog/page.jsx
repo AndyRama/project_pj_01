@@ -12,7 +12,7 @@ const page = () => {
     <>
       <SubHero className="pt-32" title="Dernier articles" subTitle="Mon blog" />
       <Posts className="pt-0 pb-52" itemsPerPage={50} />
-      <Subscribe className="py-16 lg:py-32" />
+      <Subscribe className="py-16 lg:py-32"/>
     </>
   )
 }

@@ -25,8 +25,8 @@ const heroContent = {
     description:
       'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
     btn: {
-      href: '/team',
-      label: '🧡 De la team !',
+      href: '/#programme',
+      label: 'Rejoignez-nous !',
     },
   },
 }
@@ -140,10 +140,10 @@ const Hero = ({ className }) => {
                   <Link
                     href={heroContent.intro.btn.href}
                     alt="Team Page redirection"
-                    className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-[#1D1D1D] inline-block hover:bg-transparent border hover:text-white hover:shadow-2xl mb-10"
-                  >
+                    className="block text-center text-[14px] tracking-2[2px]
+                            font-bold uppercase py-3 px-5 hover:text-orange-500 hover:shadow-2xl hover:bg-transparent border border-orange-500 text-white
+                            rounded-md"
+              >
                     {heroContent.intro.btn.label}
                   </Link>
                 </motion.button>

@@ -16,9 +16,9 @@ export default function Home() {
       <CardDescriptionR className=" relative pt-14 pb-15 sm:bg-[#1D1D1D]" />
       <CardGridImage />
       <CardDescription className="pb-15 sm:bg-[#1D1D1D]" />
-      <RecentBlog className="pt-14 pb-15 lg:pb-32"/>
       <CardProgram/>
       <Testimonials/>
+      <RecentBlog className="pt-14 pb-15 lg:pb-32"/>
       <Subscribe className="py-16 pt-22 lg:py-32 bg-[#1D1D1D]"/>
     </>
   )

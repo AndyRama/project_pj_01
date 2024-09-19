@@ -88,7 +88,7 @@ const testimonials = [
 ]
 
 const Testimonials = () => {
-  const [visibleCount, setVisibleCount] = useState(6)
+  const [visibleCount, setVisibleCount] = useState(8)
 
   const loadMore = () => {
     setVisibleCount(prevCount => prevCount + 6)
@@ -102,10 +102,10 @@ const Testimonials = () => {
       <h2 className="text-white text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
-      <div className="flex flex-wrap justify-center px-0 lg:px-16 ">
+      <div className="flex flex-wrap justify-center px-0 lg:px-16">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-8 py-2">
-            <div className="text-white bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-4 py-2 flex justify-center">
+            <div className="text-white bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin w-[300px] ">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image

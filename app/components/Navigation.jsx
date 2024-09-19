@@ -13,7 +13,7 @@ const navigationMenu = [
   { href: '/', label: 'Accueil' },
   { href: '/prestations', label: 'Prestations' },
   { href: '/blog', label: 'Blog' },
-  { href: '/team', label: 'Team' },
+  // { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
@@ -125,13 +125,13 @@ export default function Navigation() {
             {' '}
             <div>
               <Link
-                href="/prestations"
+                href="/team"
                 alt="Btn Subcribes"
-                className="block text-center text-[11.5px] tracking-2[2px]
-                            font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-5 text-black hover:text-white
-                            rounded-md"
-              >
-                Rejoignez-nous !
+                className="transistion-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase py-3 px-5
+                    rounded text-[#1D1D1D]  mb-10 bg-gradient-to-r from-orange-500 to-orange-800 hover:text-white"
+                  >
+                
+                🧡 De la team !
               </Link>
             </div>
           </div>
