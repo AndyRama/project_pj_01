@@ -49,7 +49,7 @@ const Hero = ({ className }) => {
           backgroundImage: `url('/images/salle-de-sport.jpg')`,
         }}
       >
-        <div className="container px-4 mx-auto pt-28 md:pt-32">
+        <div className="px-4 mx-auto flex justify-center pt-28 md:pt-32">
           <div className="md:flex justify-between space-x-0 ">
             <div className="lg:w-6/12 lg:mb-32">
               <div className="grid grid-cols-2">
@@ -152,7 +152,7 @@ const Hero = ({ className }) => {
 
             {/* Image right */}
 
-            <div className="md:w-8/12 ">
+            <div className="md:w-10/12">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
@@ -172,7 +172,7 @@ const Hero = ({ className }) => {
                   width={800}
                   height={900}
                   alt="hero image"
-                  className="rounded-md h-[300px] w-[400px] md:h-[400px] md:w-[500px] lg:w-[800px] lg:h-[600px]"
+                  className="rounded-md h-[300px] w-[400px] md:h-[400px] md:w-[500px] lg:h-[600px]"
                 />
               </motion.div>
             </div>
