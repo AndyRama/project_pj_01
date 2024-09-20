@@ -13,7 +13,7 @@ const navigationMenu = [
   { href: '/', label: 'Accueil' },
   { href: '/prestations', label: 'Prestations' },
   { href: '/blog', label: 'Blog' },
-  // { href: '/team', label: 'Team' },
+  { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
@@ -59,7 +59,10 @@ export default function Navigation() {
 
   return (
     <div>
-      <header className="py-4 fixed w-full z-[10] bg-[#1D1D1D] opacity-90 " alt="NavBar">
+      <header
+        className="py-4 fixed w-full z-[10] bg-[#1D1D1D] opacity-90 "
+        alt="NavBar"
+      >
         <div className=" px-4 md:px-14  mx-auto flex items-center justify-between">
           <div>
             <Link
@@ -125,13 +128,13 @@ export default function Navigation() {
             {' '}
             <div>
               <Link
-                href="/team"
+                href="/#programme"
                 alt="Btn Subcribes"
-                className="transistion-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase py-3 px-5
-                    rounded text-[#1D1D1D]  mb-10 bg-gradient-to-r from-orange-500 to-orange-800 hover:text-white"
-                  >
-                
-                🧡 De la team !
+                className="block text-center text-[14px] tracking-2[2px]
+                            font-bold uppercase py-3 px-5 hover:text-orange-500 hover:shadow-2xl hover:bg-transparent border border-orange-500 text-white
+                            rounded-md"
+              >
+                Rejoignez-nous !
               </Link>
             </div>
           </div>

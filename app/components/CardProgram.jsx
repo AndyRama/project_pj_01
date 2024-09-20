@@ -94,7 +94,7 @@ const CardProgram = ({ className }) => {
         {programs.map((program, index) => (
           <div
             key={index}
-            className="md:flex justify-between space-x-0 border-b border-gray-500 mb-10"
+            className="md:flex justify-between space-x-0 mb-10"
           >
             <div className="lg:w-8/12">
               <motion.h1
