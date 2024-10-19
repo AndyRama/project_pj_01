@@ -106,7 +106,7 @@ const GridTestimonial = () => {
       <h2 className="text-white text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-0 lg:px-16 max-w-7xl">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-0 lg:px-16 max-w-7xl">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
           <div
             key={index}
@@ -136,26 +136,25 @@ const GridTestimonial = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="justify-center mt-6 text-end">
+        {!isExpanded && visibleCount < testimonials.length && (
+          <button
+            onClick={loadMore}
+            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-3 mr-8 lg:mr-24 rounded-md text-left"
+          >
+            + de témoignages
+          </button>
+        )}
 
-        <div className="justify-center mt-6">
-          {!isExpanded && visibleCount < testimonials.length && (
-            <button
-              onClick={loadMore}
-              className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-2 rounded-md"
-            >
-              + de témoignages
-            </button>
-          )}
-
-          {isExpanded && (
-            <button
-              onClick={loadLess}
-              className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-2 rounded-md"
-            >
-              Voir moins
-            </button>
-          )}
-        </div>
+        {isExpanded && (
+          <button
+            onClick={loadLess}
+            className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-2 rounded-md"
+          >
+            Voir moins
+          </button>
+        )}
       </div>
     </div>
   )

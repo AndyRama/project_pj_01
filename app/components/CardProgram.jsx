@@ -90,13 +90,13 @@ const CardProgram = ({ className }) => {
         </motion.h2>
       </div>
 
-      <div className="container px-4  mx-auto">
+      <div className="container px-4 mx-auto">
         {programs.map((program, index) => (
           <div
             key={index}
             className="md:flex justify-between space-x-0 mb-10"
           >
-            <div className="lg:w-8/12">
+            <div className="md:w-6/12 lg:8/12">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
@@ -118,7 +118,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-white text-balance max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {program.description}
               </motion.p>
@@ -136,14 +136,14 @@ const CardProgram = ({ className }) => {
                   alt="prestations page"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase text-white hover:text-orange-500 
-                    hover:border-orange-400 bg-transparent py-4 px-5 rounded inline-block 
+                    hover:border-orange-400 bg-transparent py-4 px-s rounded inline-block 
                     border hover:shadow-2xl mb-10"
                 >
                   {program.btn.label}
                 </Link>
               </motion.button>
             </div>
-            <div className="md:w-6/12 mb-10">
+            <div className="w-full md:w-6/12 mb-10">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
@@ -162,7 +162,7 @@ const CardProgram = ({ className }) => {
                   width={300}
                   height={400}
                   alt="program image"
-                  className="rounded-md h-[300px] w-[400px] "
+                  className="rounded-md h-[300px] w-[400px] ml-4 "
                 />
               </motion.div>
             </div>
