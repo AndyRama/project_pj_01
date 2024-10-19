@@ -57,7 +57,7 @@ const programs = [
 const CardProgram = ({ className }) => {
   return (
     <section className={`${className}`}>
-      <div className="container px-4 md:px-8 mx-auto w-11/12 mb-10" id="programme">
+      <div className="container px-4 mx-auto w-12/12 mb-10" id="programme">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -90,7 +90,7 @@ const CardProgram = ({ className }) => {
         </motion.h2>
       </div>
 
-      <div className="container px-4 md:px-16 mx-auto">
+      <div className="container px-4  mx-auto">
         {programs.map((program, index) => (
           <div
             key={index}

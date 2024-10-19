@@ -24,10 +24,10 @@ const EbookOptions = [
   {
     title: 'E-Book',
     subtitle: 'La Mental',
-    price: '15€',
+    price: 'Free',
     btn: {
       href: '#',
-      label: 'Commander',
+      label: 'Télécharger',
     },
     features: [
       'Pack adapté aux débutants en musculation.',
@@ -41,10 +41,10 @@ const EbookOptions = [
   {
     title: 'E-Book1',
     subtitle: 'La Mental',
-    price: '15€',
+    price: 'Free',
     btn: {
       href: '#',
-      label: 'Commander',
+      label: 'Télécharger',
     },
     features: [
       'Pack adapté aux débutants en musculation.',
@@ -58,10 +58,10 @@ const EbookOptions = [
   {
     title: 'E-Book2',
     subtitle: 'La Mental',
-    price: '15€',
+    price: 'Free',
     btn: {
       href: '#',
-      label: 'Commander',
+      label: 'Télécharger',
     },
     features: [
       'Pack adapté aux débutants en musculation.',
@@ -75,10 +75,10 @@ const EbookOptions = [
   {
     title: 'E-Book3',
     subtitle: 'La Mental',
-    price: '15€',
+    price: 'Free',
     btn: {
       href: '#',
-      label: 'Commander',
+      label: 'Télécharger',
     },
     features: [
       'Pack adapté aux débutants en musculation.',
@@ -92,10 +92,10 @@ const EbookOptions = [
   {
     title: 'E-Book4',
     subtitle: 'La Mental',
-    price: '15€',
+    price: 'Free',
     btn: {
       href: '#',
-      label: 'Commander',
+      label: 'Télécharger',
     },
     features: [
       'Pack adapté aux débutants en musculation.',

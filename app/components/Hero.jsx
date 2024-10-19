@@ -3,6 +3,7 @@
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import  ReviewSmall from './../components/ReviewSmall'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const statContent = {
@@ -141,15 +142,17 @@ const Hero = ({ className }) => {
                     href={heroContent.intro.btn.href}
                     alt="Team Page redirection"
                     className=" transistion-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase py-3 px-5
-                    rounded text-[#1D1D1D]  mb-10 bg-gradient-to-r from-orange-500 to-orange-800 hover:text-white"
-              >
+                    rounded text-[#1D1D1D]  mb-20 bg-gradient-to-r from-orange-500 to-orange-800 hover:text-white"
+                  >
                     {heroContent.intro.btn.label}
                   </Link>
                 </motion.button>
               )}
+              
+              <ReviewSmall />
             </div>
 
-            {/* Image right */}
+            {/* Image right */}            
 
             <div className="md:w-10/12">
               <motion.div

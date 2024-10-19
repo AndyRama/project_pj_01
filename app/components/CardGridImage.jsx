@@ -5,12 +5,12 @@ import Image from 'next/image'
 
 const cards = [
   {
-    title: '#Arcachon #Team #Vélo #Event',
+    title: '#Arcachon #Team #Event',
     years: '#2023',
     image: '/images/groupArcachon.jpg',
   },
   {
-    title: '#Compétition #FR #Fitness',
+    title: '#Compétition #Fr #Fitness',
     years: '#2024',
     image: '/images/fitnessFrance.jpg',
   },
@@ -20,7 +20,7 @@ const cards = [
     image: '/images/reducation.jpg',
   },
   {
-    title: '#Concours #Prépa #Jeremy Prat',
+    title: '#Concours #Prépa #Jeremy P.',
     years: '#2024',
     image: '/images/coaching.jpg',
   },

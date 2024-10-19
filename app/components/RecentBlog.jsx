@@ -86,7 +86,7 @@ const RecentBlog = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container mx-auto rounded-md">
-        <div className=" px-4 lg:px-16 lg:flex justify-center mb-2">
+        <div className=" px-4 lg:flex justify-center mb-2">
           <div className="lg:w-8/12">
             {recentBlogContent.heading.subTitle && (
               <motion.span

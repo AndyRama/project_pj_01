@@ -5,7 +5,8 @@ import CardGridImage from "./components/CardGridImage"
 import CardDescription from "./components/CardDescription"
 import RecentBlog from "./components/RecentBlog"
 import CardProgram from "./components/CardProgram"
-import Testimonials from "./components/Testimonials"
+// import Testimonials from "./components/Testimonials"
+import GridTestimonials from "./components/GridTestimonials"
 import Subscribe from "./components/Subscribe"
 
 export default function Home() {
@@ -17,7 +18,8 @@ export default function Home() {
       <CardGridImage />
       <CardDescription className="pb-15 sm:bg-[#1D1D1D]" />
       <CardProgram/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
+      <GridTestimonials/>
       <RecentBlog className="pt-14 pb-15 lg:pb-32"/>
       <Subscribe className="py-16 pt-22 lg:py-32 bg-[#1D1D1D]"/>
     </>
