@@ -94,7 +94,7 @@ const CardProgram = ({ className }) => {
         {programs.map((program, index) => (
           <div
             key={index}
-            className="md:flex justify-between space-x-0 mb-10"
+            className="md:flex justify-around space-x-0 mb-10"
           >
             <div className="md:w-6/12 lg:8/12">
               <motion.h1
@@ -118,7 +118,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-balance max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed mx-auto text-white px-0 md:px-0 text-wrap max-w-xl lg:max-w-3xl text-md lg:text-lg mb-10 lg:mb-16"
               >
                 {program.description}
               </motion.p>
@@ -136,7 +136,7 @@ const CardProgram = ({ className }) => {
                   alt="prestations page"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase text-white hover:text-orange-500 
-                    hover:border-orange-400 bg-transparent py-4 px-s rounded inline-block 
+                    hover:border-orange-400 bg-transparent py-4 px-4 rounded hidden md:inline-block 
                     border hover:shadow-2xl mb-10"
                 >
                   {program.btn.label}
@@ -162,8 +162,28 @@ const CardProgram = ({ className }) => {
                   width={300}
                   height={400}
                   alt="program image"
-                  className="rounded-md h-[300px] w-[400px] ml-4 "
+                  className="rounded-md h-[300px] w-[400px]"
                 />
+                <motion.button
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.2, duration: 0.5 },
+                }}
+                viewport={{ once: true }}
+              >
+                <Link
+                  href={program.btn.href}
+                  alt="prestations page"
+                  className="transistion-all duration-300 ease-in-out text-[14px] 
+                    tracking-[2px] font-bold uppercase text-white hover:text-orange-500 
+                    hover:border-orange-400 bg-transparent py-4 px-4 rounded inline-block md:hidden mt-10
+                    border hover:shadow-2xl mb-10 "
+                >
+                  {program.btn.label}
+                </Link>
+              </motion.button>
               </motion.div>
             </div>
           </div>
