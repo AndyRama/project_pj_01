@@ -82,7 +82,7 @@ const BlogContent = ({ post }) => {
             src={post.image}
             width={1065}
             height={644}
-            className="object-fit object-top rounded-md border w-Full md:w-12/12 border-gray-200 mx-auto"
+            className="object-fit object-top rounded-md w-Full md:w-12/12 mx-auto"
             alt={post.title}
           />
         </div>

@@ -44,54 +44,18 @@ const testimonials = [
     text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
   },
   {
-    user: 'Jéremy Prat',
-    company: 'Coach Sportif',
-    image: user7,
-    text: "N'oubliez pas, chaque petit pas compte et contribue à notre succès collectif. Continuons à avancer, main dans la main, vers nos objectifs communs.",
-  },
-  {
-    user: 'Emlie Prevot',
-    company: 'Stellar Solutions',
-    image: user1,
-    text: "La formation de Jeremy m'a vraiment aidé à progresser. Son approche pédagogique est claire et ses conseils sont pratiques et applicables immédiatement.",
-  },
-  {
     user: 'Jane Smith',
     company: 'Blue Horizon Technologies',
     image: user2,
     text: 'Je suis très satisfaite de la formation en ligne de Jeremy  Son expertise et sa manière de transmettre les connaissances ont fait toute la différence pour moi.',
   },
-  {
-    user: 'David Johnson',
-    company: 'Quantum Innovations',
-    image: user3,
-    text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
-  },
-  {
-    user: 'Ronee Brown',
-    company: 'Fusion Dynamics',
-    image: user4,
-    text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
-  },
-  {
-    user: 'Serena Wilson',
-    company: 'Visionary Creations',
-    image: user5,
-    text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
-  },
-  {
-    user: 'Jéremy Prat',
-    company: 'Coach Sportif',
-    image: user6,
-    text: "N'oubliez pas, chaque petit pas compte et contribue à notre succès collectif. Continuons à avancer, main dans la main, vers nos objectifs communs.",
-  },
 ]
 
 const Testimonials = () => {
-  const [visibleCount, setVisibleCount] = useState(8)
+  const [visibleCount, setVisibleCount] = useState(4)
 
   const loadMore = () => {
-    setVisibleCount((prevCount) => prevCount + 6)
+    setVisibleCount((prevCount) => prevCount + 4)
   }
 
   return (
@@ -136,7 +100,7 @@ const Testimonials = () => {
           <div className="text-left px-0 md:px-0">
             <button
               onClick={loadMore}
-              className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-3 mr-8 lg:mr-24 rounded-md text-left"
+              className="bg-gradient-to-r from-orange-500 to-orange-800 text-white px-4 py-3 mr-8 lg:mr-24 rounded-md text-center"
             >
               + de témoignages
             </button>

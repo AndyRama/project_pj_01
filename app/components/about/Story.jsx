@@ -12,7 +12,13 @@ import img6 from '../../../public/images/story6.jpg'
 import img7 from '../../../public/images/story7.jpg'
 import img8 from '../../../public/images/story8.jpg'
 import img9 from '../../../public/images/story9.jpg'
-import img10 from '../../../public/images/story1.png'
+// import img10 from '../../../public/images/story21.jpg'
+import img11 from '../../../public/images/story11.jpg'
+import img12 from '../../../public/images/story12.jpg'
+import img13 from '../../../public/images/story13.jpg'
+import img14 from '../../../public/images/story14.jpg'
+import img15 from '../../../public/images/story15.jpg'
+import img16 from '../../../public/images/story16.jpg'
 
 const storyContent = {
   column1: {
@@ -36,6 +42,18 @@ const storyContent = {
         width: 1188,
         height: 1413,
       },
+      {
+        img: img11,
+        alt: 'Woman making a plan',
+        width: 1188,
+        height: 1413,
+      },
+      {
+        img: img14,
+        alt: 'Woman making a plan',
+        width: 1188,
+        height: 1413,
+      },      
     ],
   },
   column2: {
@@ -68,6 +86,20 @@ const storyContent = {
         height: 1413,
         tailwindClass: 'h-56 lg:h-96',
       },
+      {
+        img: img12,
+        alt: 'White curvy building',
+        width: 1188,
+        height: 1413,
+        tailwindClass: 'h-56 lg:h-96',
+      },
+      {
+        img: img15,
+        alt: 'White curvy building',
+        width: 1188,
+        height: 1413,
+        tailwindClass: 'h-56 lg:h-96',
+      },
     ],
   },
   column3: {
@@ -86,8 +118,15 @@ const storyContent = {
         height: 1413,
       },
       {
-        img: img10,
+        img: img13,
         alt: 'Man writting a plan',
+        width: 1188,
+        height: 1413,
+        tailwindClass: 'mt-20',
+      },
+      {
+        img: img16,
+        alt: 'Production',
         width: 1188,
         height: 1413,
       },

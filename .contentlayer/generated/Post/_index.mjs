@@ -2,9 +2,9 @@
 
 import blog__commentGarderUnBonMindsetMdx from './blog__Comment-garder-un-bon-mindset.mdx.json' assert { type: 'json' }
 import blog__comment_perdre_du_poids_de_maniere_saine_et_durableMdx from './blog__Comment_perdre_du_poids_de_maniere_saine_et_durable.mdx.json' assert { type: 'json' }
+import blog__guideDesCompetitionsDeBodybuildingEtFitnessMdx from './blog__Guide-des-competitions-de-bodybuilding-et-fitness.mdx.json' assert { type: 'json' }
+import blog__guide_complet_des_complements_alimentaires_dans_le_sportMdx from './blog__Guide_complet_des_complements_alimentaires_dans_le_sport.mdx.json' assert { type: 'json' }
 import blog__la_salle_de_sport_quand_on_debuteMdx from './blog__La_salle_de_sport_quand_on_debute.mdx.json' assert { type: 'json' }
 import blog__le_sommeil_est_capital_dans_la_pratique_sportiveMdx from './blog__Le_sommeil_est_capital_dans_la_pratique_sportive.mdx.json' assert { type: 'json' }
-import blog__guide_complet_des_complements_alimentaires_dans_le_sportMdx from './blog__Guide_complet_des_complements_alimentaires_dans_le_sport.mdx.json' assert { type: 'json' }
-import blog__guideDesCompetitionsDeBodybuildingEtFitnessMdx from './blog__Guide-des-competitions-de-bodybuilding-et-fitness.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__commentGarderUnBonMindsetMdx, blog__comment_perdre_du_poids_de_maniere_saine_et_durableMdx, blog__la_salle_de_sport_quand_on_debuteMdx, blog__le_sommeil_est_capital_dans_la_pratique_sportiveMdx, blog__guide_complet_des_complements_alimentaires_dans_le_sportMdx, blog__guideDesCompetitionsDeBodybuildingEtFitnessMdx]
+export const allPosts = [blog__commentGarderUnBonMindsetMdx, blog__comment_perdre_du_poids_de_maniere_saine_et_durableMdx, blog__guideDesCompetitionsDeBodybuildingEtFitnessMdx, blog__guide_complet_des_complements_alimentaires_dans_le_sportMdx, blog__la_salle_de_sport_quand_on_debuteMdx, blog__le_sommeil_est_capital_dans_la_pratique_sportiveMdx]
