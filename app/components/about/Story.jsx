@@ -21,8 +21,6 @@ import img16 from '../../../public/images/story16.jpg'
 import img17 from '../../../public/images/story17.jpg'
 import img18 from '../../../public/images/story18.jpg'
 import img19 from '../../../public/images/story19.jpg'
-// import img20 from '../../../public/images/story20.jpg'
-// import img21 from '../../../public/images/story21.jpg'
 
 const storyContent = {
   column1: {
@@ -32,7 +30,6 @@ const storyContent = {
         alt: 'Team',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
       },
       {
         img: img2,
@@ -73,49 +70,49 @@ const storyContent = {
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img5,
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img6,
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img7,
         alt: 'Team metting',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img12,
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img15,
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
       {
         img: img18,
         alt: 'White curvy building',
         width: 1188,
         height: 1413,
-        tailwindClass: 'h-56 lg:h-96',
+        tailwindClass: 'lg:h-96',
       },
     ],
   },
@@ -139,7 +136,6 @@ const storyContent = {
         alt: 'Man writting a plan',
         width: 1188,
         height: 1413,
-        tailwindClass: 'mt-20',
       },
       {
         img: img16,
