@@ -109,7 +109,7 @@ const EbookOptions = [
 ]
 
 const PricingEbook = () => {
-  const [visibleCount, setVisibleCount] = useState(3)
+  const [visibleCount, setVisibleCount] = useState(2)
   const delay = (index) => index * 0.05
 
   const handleShowMore = () => {
@@ -191,7 +191,7 @@ const PricingEbook = () => {
           ))}
         </div>
         {visibleCount < EbookOptions.length && (
-          <div className="text-right mt-10">
+          <div className="text-right mt-10 hidden ">
             <button
               onClick={handleShowMore}
               className="px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-800 text-white rounded-md hover:bg-orange-700 transition duration-200"
