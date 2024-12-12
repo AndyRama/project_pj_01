@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const FAQ = () => {
   // Utilisation du hook useState pour suivre l'index actif
@@ -107,7 +106,7 @@ const FAQ = () => {
           <p className="mb-4 text-white">
             Retrouvez ici les réponses à vos questions sur nos services de coaching et programmes personnalisés.
           </p>
-          <Link href="/contact" className="text-white px-4 py-2 rounded hover:border hover:border-white ">Contact</Link>
+          <button className="bg-black text-white px-4 py-2 rounded hover:border hover:border-white ">Contact</button>
         </div>
 
         {/* Section droite : questions et réponses */}
