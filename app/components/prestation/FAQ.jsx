@@ -106,7 +106,7 @@ const FAQ = () => {
           <p className="mb-4 text-white">
             Retrouvez ici les réponses à vos questions sur nos services de coaching et programmes personnalisés.
           </p>
-          <button className="bg-black text-white px-4 py-2 rounded hover:border hover:border-white ">Contact</button>
+          {/* <button className="bg-black text-white px-4 py-2 rounded hover:border hover:border-white ">Contact</button> */}
         </div>
 
         {/* Section droite : questions et réponses */}
@@ -123,7 +123,7 @@ const FAQ = () => {
               {activeIndex === index && (
                 <ul className="text-white pb-4 list-disc pl-6">
                   {faq.answer.map((line, lineIndex) => (
-                    <li key={lineIndex}>{line}</li>
+                    <div key={lineIndex}>{line}</div>
                   ))}
                 </ul>
               )}
