@@ -3,6 +3,7 @@ import SubHero from './../components/about/SubHero'
 import PricingPack from '../components/prestation/PricingPack'
 import PricingDetails from '../components/prestation/PricingDetails'
 import PricingEbook from '../components/prestation/PricingEbook'
+import FAQ from '../components/prestation/FAQ'
 import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
 
@@ -16,6 +17,7 @@ const page = () => {
       <PricingPack />
       <PricingDetails />
       <PricingEbook />
+      <FAQ/>
       <Testimonials />
       <SubHero className="hidden lg:contents" />
       <Subscribe className="py-16 lg:py-32 lg:mt-[-40rem] xl:mt-[-38rem]" />
