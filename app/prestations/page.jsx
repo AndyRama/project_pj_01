@@ -16,8 +16,8 @@ const page = () => {
       <SubHero className="pt-32" title="Prestations" />
       <PricingPack />
       <PricingDetails />
-      <PricingEbook />
       <FAQ/>
+      <PricingEbook />
       <Testimonials />
       <SubHero className="hidden lg:contents" />
       <Subscribe className="py-16 lg:py-32 lg:mt-[-40rem] xl:mt-[-38rem]" />
