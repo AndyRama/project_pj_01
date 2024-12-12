@@ -134,7 +134,7 @@ const PricingEbook = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: delay(index), duration: 0.5 }}
-              className="w-full sm:w-1/2 lg:w-1/3 p-2"
+              className="w-full lg:w-1/2 p-2"
             >
               <div className="p-10 bg-[#2F2E2E] rounded-md">
                 {/* Card Pricing - Header - Title */}
