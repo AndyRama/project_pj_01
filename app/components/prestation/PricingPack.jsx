@@ -9,6 +9,7 @@ const pricingOptions = [
     subtitle: 'Débutant (4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois)',
+    btnStripe:"https://buy.stripe.com/test_6oE2bO0H692y4VydQT",
     features: [
       'Pack adapté aux débutants dans la musculation.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -23,6 +24,7 @@ const pricingOptions = [
     subtitle: 'Intermédiaire (4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois)',
+    btnStripe:"https://buy.stripe.com/test_6oE2bO0H692y4VydQT",
     features: [
       'Pack adapté aux initiés ayant déjà des bases en musculation.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -37,6 +39,7 @@ const pricingOptions = [
     subtitle: 'Confirmé (4 Mois)',
     price: '150€',
     subPrice: '(3 * 150€ / 3 mois)',
+    btnStripe:"https://buy.stripe.com/test_6oE2bO0H692y4VydQT",
     features: [
       'Pack adapté aux initiés ayant déjà des bases en musculation depuis plusieurs années.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -51,6 +54,7 @@ const pricingOptions = [
     subtitle: 'Débutant (1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois)',
+    btnStripe:"https://buy.stripe.com/test_7sI3fS1La92y3Ru28a",
     features: [
       'Pack adapté aux débutants en musculation.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -64,6 +68,7 @@ const pricingOptions = [
     subtitle: 'Intermédiaire (1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois)',
+    btnStripe:"https://buy.stripe.com/test_7sI3fS1La92y3Ru28a",    
     features: [
       'Pack adapté aux initiés ayant déjà des bases en musculation.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -77,6 +82,7 @@ const pricingOptions = [
     subtitle: 'Confirmé (1 Mois)',
     price: '150€',
     subPrice: '(1 * 150€ / 1 mois)',
+    btnStripe:"https://buy.stripe.com/test_7sI3fS1La92y3Ru28a",
     features: [
       'Pack adapté aux initiés ayant déjà des bases en musculation.',
       'Programme de musculation personnalisé en fonction de tes objectifs.',
@@ -135,7 +141,7 @@ const PricingPack = () => {
                   {option.subPrice}
                 </p>
                 <motion.a
-                  href="#"
+                  href={option.btnStripe}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{

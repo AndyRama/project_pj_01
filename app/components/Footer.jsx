@@ -92,7 +92,7 @@ const Copyright = () => {
         Tous droits réservés. Crée avec{' '}
         <BiSolidHeart className="text-red-400 mx-1 inline-block" />
         par{' '}
-        <Link href="/" className="text-orange-500">
+        <Link href="andyramaaroson.com" className="text-orange-500">
           Andy Ramaroson
         </Link>
       </div>
@@ -114,7 +114,7 @@ const Footer = ({ className }) => {
             <div className="flex mt-5 pr-10">
               <span>
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/unlcoaching.school/"
                   className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
                   alt="Instagrame-iconne"
                 >
@@ -123,20 +123,11 @@ const Footer = ({ className }) => {
               </span>
               <span>
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/Unlcoaching"
                   className="text-[28px] text-white  hover:text-orange-200  font-bold mr-10"
                   alt="facebook-iconne"
                 >
                   <FaFacebook />
-                </Link>
-              </span>
-              <span>
-                <Link
-                  href="#"
-                  className="text-[28px] text-white hover:text-orange-200 font-bold mr-10"
-                  alt="Linkedin-iconne"
-                >
-                  <FaLinkedin />
                 </Link>
               </span>
             </div>
