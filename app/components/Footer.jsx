@@ -125,7 +125,7 @@ const Footer = ({ className }) => {
                 <Link
                   href="https://www.facebook.com/Unlcoaching"
                   className="text-[28px] text-white  hover:text-orange-200  font-bold mr-10"
-                  alt="facebook-iconne"
+                  alt="facebook-icon"
                 >
                   <FaFacebook />
                 </Link>
