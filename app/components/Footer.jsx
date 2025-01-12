@@ -92,7 +92,7 @@ const Copyright = () => {
         Tous droits réservés. Crée avec{' '}
         <BiSolidHeart className="text-red-400 mx-1 inline-block" />
         par{' '}
-        <Link href="andyramaaroson.com" className="text-orange-500">
+        <Link href="https://www.andyramaroson.com" className="text-orange-500">
           Andy Ramaroson
         </Link>
       </div>
