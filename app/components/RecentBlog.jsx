@@ -72,7 +72,7 @@ const PostCard = ({ index, post }) => {
           >
             lire l&apos;article
           </Link>
-          <span className="text-orange-500 px-4 md:px-0 ml-20 md:ml-28">Lecture 5 min</span>
+          <span className="text-orange-500 px-4 md:px-0 ml-16 md:ml-22">Lecture 5 min</span>
         </div>
       </div>
     </motion.div>
@@ -146,7 +146,7 @@ const RecentBlog = ({ className }) => {
 
       <div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-          gap-4 w-full lg:w-10/12 mx-auto mt-10 mb-10 px-4"
+          gap-4 w-full mx-auto mt-10 mb-10 px-4"
       >
         {posts.slice(0, 4).map((post, index) => (
           <PostCard key={index} index={index} post={post} />
