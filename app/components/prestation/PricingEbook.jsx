@@ -125,7 +125,7 @@ const PricingEbook = () => {
       >
         Les E-Books
       </h2>
-      <div className="container px-0 md:px-16 mx-auto pb-32">
+      <div className="container px-0 md:px-16 lg:px-24 mx-auto pb-32">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap">
           {EbookOptions.slice(0, visibleCount).map((option, index) => (
@@ -136,7 +136,7 @@ const PricingEbook = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full lg:w-1/2  p-2"
             >
-              <div className="p-10 bg-[#2F2E2E] rounded-md mx-auto w-[330px] md:w-[400px]">
+              <div className="p-10 bg-[#2F2E2E] rounded-md mx-auto w-[330px] md:w-[400px] xl:w-[450px]">
                 {/* Card Pricing - Header - Title */}
                 <p className="text-4xl mb-1 text-center text-white">
                   {option.title}

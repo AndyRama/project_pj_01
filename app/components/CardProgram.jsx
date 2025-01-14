@@ -57,7 +57,7 @@ const programs = [
 const CardProgram = ({ className }) => {
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto w-10/12 mb-10" id="programme">
+      <div className="container px-4 mx-auto w-9/12 mb-10 mt-10" id="programme">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{

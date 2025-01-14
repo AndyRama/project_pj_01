@@ -63,7 +63,7 @@ const GridTestimonial = () => {
       <h2 className="text-white text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-0 lg:px-16 max-w-7xl">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-0 lg:px-16 max-w-6xl">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
           <div
             key={index}

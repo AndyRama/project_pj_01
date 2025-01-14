@@ -12,7 +12,7 @@ const recentBlogContent = {
     title: 'Articles récents',
     subTitle: 'Mon blog',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elitd non pariatur veritatis ipsum dolorsit amet consectetur, adipisicing elitd non pariatur veritatis it amet consectetur, adipisicing elitd non pariatur veritatis..',
+      '',
   },
 }
 const PostCard = ({ index, post }) => {
