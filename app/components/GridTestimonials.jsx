@@ -27,23 +27,23 @@ const testimonials = [
     image: user3,
     text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
   },
-  {
-    user: 'Ronee Brown',
-    company: 'Fusion Dynamics',
-    image: user4,
-    text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
-  },
-  {
-    user: 'Serena Wilson',
-    company: 'Visionary Creations',
-    image: user5,
-    text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy. Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
-  },
+  // {
+  //   user: 'Ronee Brown',
+  //   company: 'Fusion Dynamics',
+  //   image: user4,
+  //   text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
+  // },
+  // {
+  //   user: 'Serena Wilson',
+  //   company: 'Visionary Creations',
+  //   image: user5,
+  //   text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy. Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
+  // },
 ];
 
 const GridTestimonial = () => {
   const [visibleCount, setVisibleCount] = useState(3);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const loadMore = () => {
     setVisibleCount(testimonials.length);
@@ -94,7 +94,7 @@ const GridTestimonial = () => {
           </div>
         ))}
       </div>
-      <div className="justify-right mt-6 text-center">
+      {/* <div className="justify-right mt-6 text-center">
         {!isExpanded && visibleCount < testimonials.length && (
           <button
             onClick={loadMore}
@@ -112,7 +112,7 @@ const GridTestimonial = () => {
             Voir moins
           </button>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

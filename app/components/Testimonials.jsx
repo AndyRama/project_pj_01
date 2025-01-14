@@ -31,24 +31,6 @@ const testimonials = [
     image: user3,
     text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
   },
-  {
-    user: 'Ronee Brown',
-    company: 'Fusion Dynamics',
-    image: user4,
-    text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
-  },
-  {
-    user: 'Serena Wilson',
-    company: 'Visionary Creations',
-    image: user5,
-    text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
-  },
-  {
-    user: 'Jane Smith',
-    company: 'Blue Horizon Technologies',
-    image: user2,
-    text: 'Je suis très satisfaite de la formation en ligne de Jeremy  Son expertise et sa manière de transmettre les connaissances ont fait toute la différence pour moi.',
-  },
 ]
 
 const Testimonials = () => {
@@ -66,7 +48,7 @@ const Testimonials = () => {
       <h2 className="text-white text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
-      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-0 lg:px-16 max-w-7xl">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-0 lg:px-16 max-w-7xl">
         {testimonials.slice(0, visibleCount).map((testimonial, index) => (
           <div key={index} className="flex justify-center">
             <div className="text-white bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin w-[280px]">

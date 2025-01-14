@@ -94,8 +94,7 @@ const CardProgram = ({ className }) => {
         {programs.map((program, index) => (
           <div
             key={index}
-            className="md:flex justify-around space-x-0 mb-10"
-          >
+            className="md:flex justify-around space-x-0 mb-10">
             <div className="md:w-6/12 lg:8/12">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -143,7 +142,7 @@ const CardProgram = ({ className }) => {
                 </Link>
               </motion.button>
             </div>
-            <div className="w-full md:w-6/12 mb-10">
+            <div className="w-full md:w-4/12 mb-10">
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 whileInView={{
@@ -165,25 +164,25 @@ const CardProgram = ({ className }) => {
                   className="rounded-md h-[300px] w-[400px]"
                 />
                 <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: { delay: 0.2, duration: 0.5 },
-                }}
-                viewport={{ once: true }}
-              >
-                <Link
-                  href={program.btn.href}
-                  alt="prestations page"
-                  className="transistion-all duration-300 ease-in-out text-[14px] 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: true }}
+                >
+                  <Link
+                    href={program.btn.href}
+                    alt="prestations page"
+                    className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase text-white hover:text-orange-500 
                     hover:border-orange-400 bg-transparent py-4 px-4 rounded inline-block md:hidden mt-10
                     border hover:shadow-2xl mb-10 "
-                >
-                  {program.btn.label}
-                </Link>
-              </motion.button>
+                  >
+                    {program.btn.label}
+                  </Link>
+                </motion.button>
               </motion.div>
             </div>
           </div>
